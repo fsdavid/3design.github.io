@@ -10,7 +10,6 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <!-- general -->
-<link rel="stylesheet" type="text/css" href="css/slicknav.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
 <meta charset="utf-8">
@@ -19,7 +18,6 @@
 <meta name="description" content="This is the website of the BigBrain Project.">
 <meta name="keywords" content="Neuro, Brain, Research, Big Data, Science, Medicine">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script> -->
 </head>
 <body>
 <div id="main-wrapper">
@@ -40,25 +38,86 @@
     </div>
   </nav>
 
-  <!-- first section -->
+  <!-- mission section -->
   <section>
     <div class="section-content">
-      <img src="images/bigbrain.png" class="BigBrainPic">
-      <div class="text-box">
-        <h1># the BigBrain</h1>
-        <h2>a high-resolution brain atlas and dataset</h2>
-        <p>The BigBrain is an ultra-high resolution brain atlas and dataset. At 20 microns resolution, the total dataset is over a terabyte in size and is open to the public.</p>
-        <p>The BigBrain can be experienced in a browser using Neuroglancer. Alternately, you can access the dataset itself in LORIS.</p>
-        <p>This website is currently under construction and more content will follow shortly.</p>
-        <a href="https://bigbrain.humanbrainproject.org/"><button class="float-left">open Neuroglancer</button></a>
-        <a href="https://bigbrain.loris.ca/"><button class="float-right">open LORIS</button></a>
-        <div class="clear-all"></div>
+      <div class="col-2">
+        <img src="images/bigbrain.png" class="BigBrainPic">
+      </div>
+      <div class="col-2">
+        <div class="text-box">
+          <h1># the BigBrain</h1>
+          <h2>our mission</h2>
+          <p>Neuroimaging methods rely on accurate brain models as ground truth to develop reliable approaches for probing the brain. Currently existing computer-based 3D neuroimaging tools cannot reproduce the anatomical details available from freshly cut brains, particularly for very convoluted cortical regions and in the subcortical areas. With the advent of the BigBrain - a human brain that has been sectioned post-mortem, stained with a marker for cell bodies and scanned at very high resolution, then reconstructed in 3D - (Amunts et al., 2013), we believe that there will be improvement in the precision and quality of neuroimaging support for qualitative and quantitative investigation of the brain.</p>
+          <a href="https://bigbrain.loris.ca/"><button class="float-right">see the History</button></a>
+        </div>
       </div>
     </div>
   </section>
+  <div class="clear-all"></div>
 
+  <!-- technical section -->
+  <section class="lt-grey-bg">
+    <div class="section-content flex">
+      <h1 class="full-width text-center"># about the BigBrain</h1>
+      <h2 class="full-width text-center">technical information</h2>
+      <div class="icon">
+        <img src="images/icon-dataset.png">
+        <p>Full dataset over 1TB in size</p>
+      </div>
+      <div class="icon">
+        <img src="images/icon-resolution.png">
+        <p>Scans at 20μm resolution</p>
+      </div>
+      <div class="icon">
+        <img src="images/icon-formats.png">
+        <p>Multiple formats</p>
+      </div>
+      <div class="icon">
+        <img src="images/icon-brain.png">
+        <p>An expanding brain atlas</p>
+      </div>
+      <div class="icon">
+        <img src="images/icon-discourse.png">
+        <p>A thriving community</p>
+      </div>
+      <div class="full-width clear-all">
+        <div class="button-holder">
+          <a href="https://bigbrain.humanbrainproject.org/"><button class="float-left">open Neuroglancer</button></a>
+          <a href="https://bigbrain.loris.ca/"><button class="float-right">open LORIS</button></a>
+          <div class="clear-all"></div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <div class="clear-all"></div>
+
+  <!-- vision section -->
+  <section>
+    <div class="section-content">
+      <div class="col-2">
+        <img src="images/pm3966o.png" class="BigBrainPic">
+      </div>
+      <div class="col-2">
+        <div class="text-box">
+          <h1># toward the Future</h1>
+          <h2>our vision</h2>
+          <p>Our goal is to create an open-source, web-based, federated, high-resolution reference brain atlas and mapping tool as a neuroinformatics platform and neuroscience resource for research, training, education and outreach. We hope to build a pluridisciplinary community around this platform, with users and contributors from multiple and diverse fields of study exchanging information (methods, data, results) and sharing experiences online (real-time online collaboration).</p>
+          <p>This  open science platform will facilitate exchange and dissemination of research that make use of the BigBrain dataset alone or in combination with biological samples (omics data), high resolution postmortem (sMRI, photon microscopy, polarised light imaging),  and *in vivo* imaging data (functional and metabolic from MRI, MRS, PET, EEG/MEG, etc).</p>
+          <a href="https://bigbrain.loris.ca/"><button class="float-right">join the Community</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="clear-all"></div>
+ 
   <!-- footer -->
-  <footer>
+  <footer>  
+    <blockquote class="quote-holder">
+      <img class="quote-image" src="images/portrait-test.jpg">
+      <p class="quote-text">"The BigBrain is everthing I ever wanted" - Dr. Brains</p>
+    </blockquote>
     <div class="section-content flex">
       <a href="https://www.fz-juelich.de/">
         <img src="images/logo-julich.jpg">
@@ -80,6 +139,7 @@
         });
     });
 </script>
+
 <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="js/jquery.slicknav.js"></script>
 <script type="text/javascript">
