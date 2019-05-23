@@ -23,8 +23,9 @@ p, ul, ol {
 li {
   margin-left: 1em;
 }
-
-
+section {
+  overflow: auto;
+}
 
 /*** 
 *
@@ -66,6 +67,8 @@ a:visited {
 button {
   border: none;
   background: #2C8EB3;
+  width: 100%;
+  margin-bottom: 20px;
   padding: 10px 20px;
   color: #fff;
   font-size: 1em;
@@ -75,6 +78,12 @@ button {
 }
 button:hover {
   background: #DC2627;
+}
+@media screen and (min-width: 640px) {
+  button {
+    width: auto;
+    margin: 0;
+  }
 }
 .dropcap{
   color: #ff0000;
@@ -121,6 +130,12 @@ button:hover {
   justify-content: space-evenly;
   align-items: center;
 }
+.full-width {
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
 /*** 
 *
 * Content 
@@ -131,7 +146,42 @@ button:hover {
   height: 100%;
   overflow: auto;
 }
+.col-2,
+.col-3,
+.col-4 {
+  width: 100%;
+  margin: 0 auto;
+}
+.section-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  overflow: auto;
+}
+.section-content p:last-of-type {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 640px) {
+  .col-4 {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
 
+}
+@media screen and (min-width: 800px) {
+  .col-2 {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+  .col-4 {
+    width: 25%;
+    float: left;
+    margin: 0;
+  }
+}
 /* navigation */
 .brand-border-1 {
   display: block;
@@ -225,45 +275,44 @@ ul.hide {
   }
 }
 
-/* placeholder */
-section {
-  padding: 0 40px;
-}
-.section-content {
-  width: 100%;
-  max-width: 1200px;
-  margin: 80px auto;
-}
-.section-content p:last-of-type {
-  margin-bottom: 40px;
-}
+/* body content */
+
 .BigBrainPic {
   display: block;
   width: 100%;
   max-width: 600px;
   height: auto;
-  margin: 0 auto;
+  padding: 20px;
 }
 .text-box {
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto 40px;
+  max-width: 1280px;
+  padding: 20px;
 }
-.text-box button {
+.icon {
+  width: 100%;
+  max-width: 75px;
+  text-align: center;
+  margin: 10px;
+  float: left;
+}
+.icon img {
   width: 100%;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 640px) {
-  .text-box button {
-    width: auto;
-    margin: 0;
-  }
+.button-holder {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 40px;
+  margin: 0 auto;
 }
+
 /* footer */
 
 footer {
+  position: relative;
   background-color: #000;
-  padding: 40px;
+  padding: 80px 0 40px;
 }
 footer a {
   display: flex;
@@ -273,11 +322,64 @@ footer a {
   padding: 20px 30px;
   margin: 20px;
   max-width: 300px;
-  min-width: 200px;
-  height: 90px;
+  min-width: 125px;
+  height: auto;
 }
 footer a img {
   width: 100%;
   height: auto;
 }
-
+footer .flex {
+  flex-wrap: nowrap;
+}
+footer .section-content {
+  margin: 0 auto;
+}
+blockquote {
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 150px);
+  height: 100px;
+  width: 300px;
+  z-index: 999;
+}
+.quote-image {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  border-radius: 50px;
+  border: 5px solid #2C8EB3;
+  float: left;
+  z-index: 100;
+}
+p.quote-text {
+  position: absolute;
+  top: 12.5px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: .875rem;
+  font-weight: bold;
+  color: #fff;
+  width: 220px;
+  height: 75px;
+/*  border: 5px solid #2C8EB3;*/
+  overflow: auto;
+  background: #2C8EB3;
+  padding: 10px 10px 10px 25px;
+  float: left;
+  z-index: 99;
+}
+@media screen and (min-width: 640px) {
+  footer {
+    padding: 80px 40px;
+  }
+    blockquote {
+    width: 350px;
+  }
+  p.quote-text {
+    width: 270px;
+    font-size: 1rem;
+  }
+}
