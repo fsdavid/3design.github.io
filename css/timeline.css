@@ -1,9 +1,9 @@
-===== Vertical Timeline =====*/
+/*===== Vertical Timeline =====*/
 #conference-timeline {
   position: relative;
   max-width: 920px;
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 #conference-timeline .timeline-start,
 #conference-timeline .timeline-end {
@@ -12,13 +12,14 @@
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
-  background: #00b0bd;
-  padding: 15px 23px;
+  background: #2C8EB3;
+  padding: 15px;
   color: #fff;
   max-width: 5%;
-  width: 100%;
+  width: 150px;
   text-align: center;
   margin: 0 auto;
+  border-radius: 15px;
 }
 #conference-timeline .conference-center-line {
   position: absolute;
@@ -27,12 +28,13 @@
   top: 0;
   left: 50%;
   margin-left: -2px;
-  background: #00b0bd;
+  background: #2C8EB3;
   z-index: -1;
 }
 #conference-timeline .conference-timeline-content {
-  padding-top: 67px;
+  /*padding-top: 67px;*/
   padding-bottom: 67px;
+  margin-top: -20px
 }
 .timeline-article {
   width: 100%;
@@ -64,7 +66,7 @@
   padding: 27px 25px;
 }
 .timeline-article p {
-  margin: 0 0 0 60px;
+  /*margin: 0 0 0 60px;*/
   padding: 0;
   font-weight: 400;
   color: #242424;
@@ -78,7 +80,7 @@
   font-size: 44px;
   top: 10px;
   left: -60px;
-  color: #00b0bd;
+  color: #2C8EB3;
 }
 .timeline-article .content-left-container {
   float: left;
@@ -86,7 +88,7 @@
 .timeline-article .content-right-container {
   float: right;
 }
-.timeline-article .content-left:before,
+/*.timeline-article .content-left:before,
 .timeline-article .content-right:before{
   position: absolute;
   top: 20px;
@@ -94,7 +96,7 @@
   font-family: "FontAwesome";
   color: #fff;
 }
-/*.timeline-article .content-left:before {
+.timeline-article .content-left:before {
   content: "\f0da";
   right: -8px;
 }
@@ -111,17 +113,17 @@
   margin-left: -31px;
   color: #fff;
   border-radius: 100%;
-  background: #00b0bd;
+  background: #2C8EB3;
 }
 .timeline-article .meta-date .date,
 .timeline-article .meta-date .month {
   display: block;
   text-align: center;
-  font-weight: 900;
+  font-weight: bold;
 }
 .timeline-article .meta-date .date {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 64px;
 }
 .timeline-article .meta-date .month {
   font-size: 18px;
@@ -159,14 +161,14 @@
     padding: 10px 25px;
     min-height: 65px;
   }
-  .timeline-article .content-left:before {
+/*  .timeline-article .content-left:before {
     content: "\f0d9";
     right: auto;
     left: -8px;
   }
   .timeline-article .content-right:before {
     display: none;
-  }
+  }*/
 }
 @media only screen and (max-width: 400px) {
   .timeline-article p {
@@ -174,7 +176,12 @@
   }
   .timeline-article p span.article-number {
     display: none;
-  }
-  
+  }  
 }
-/*===== // Resonsive Vertical Timeline =====
+/*===== // Resonsive Vertical Timeline =====*/
+/*custom css*/
+.timeline-article img,
+#conference-timeline .timeline-end img {
+  width: 100%;
+  height: auto;
+}

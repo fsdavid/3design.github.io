@@ -26,6 +26,9 @@ li {
 section {
   overflow: auto;
 }
+img {
+  display: block;
+}
 
 /*** 
 *
@@ -156,13 +159,32 @@ button:hover {
   width: 100%;
   max-width: 1200px;
   margin: 80px auto;
-  padding: 0 40px;
+  padding: 0 20px;
   overflow: auto;
 }
 .section-content p:last-of-type {
   margin-bottom: 40px;
 }
+.section-content.no-margin p:last-of-type {
+  margin-bottom: 0;
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 @media screen and (min-width: 640px) {
+  .section-content {
+    padding: 0 40px;
+  }
   .col-4 {
     width: 50%;
     float: left;
