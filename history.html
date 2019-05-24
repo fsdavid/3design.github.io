@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
+<!-- general -->
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/timeline.css" />
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+<meta charset="utf-8">
+<title>the BigBrain</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="This is the website of the BigBrain Project.">
+<meta name="keywords" content="Neuro, Brain, Research, Big Data, Science, Medicine">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<!-- The timeline was designed and coded by Ratko Solaja and the original can be seen here: https://codepen.io/Ratko_Solaja/pen/ztxkw -->
+</head>
+<body>
+<div id="main-wrapper">
+  <!-- navigation -->
+
+  <nav class="site-nav">
+    <div class="brand-border-1"></div>
+    <div class="brand-border-2"></div>
+    <div class="brand-border-3"></div>
+    <div class="nav-container">
+      <div class="branding"><a href="https://bigbrainproject.org">the BigBrain</a></div>
+      <div id="showmenu">Menu</div>
+      <ul id="menu" class="nav-list hide">
+        <li class="nav-item active"><a href="history.html">History</a></li>
+        <li class="nav-item"><a href="coming-soon.html">Dataset</a></li>
+        <li class="nav-item"><a href="coming-soon.html">Community</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- mission section -->
+  <section>
+    <div class="section-content">
+      <!-- Vertical Timeline -->
+      <section id="conference-timeline">
+        <div class="timeline-start">Start</div>
+        <div class="conference-center-line"></div>
+        <div class="conference-timeline-content">
+          <!-- Article -->
+          <div class="timeline-article">
+            <div class="content-left-container">
+              <div class="content-left">
+                <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it! <span class="article-number">01</span></p>
+              </div>
+              <span class="timeline-author">John Doe</span>
+            </div>
+            <div class="content-right-container">
+              <div class="content-right">
+                <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. <span class="article-number">02</span></p>
+              </div>
+              <span class="timeline-author">John Doe</span>
+            </div>
+            <div class="meta-date">
+              <span class="date">18</span>
+              <span class="month">APR</span>
+            </div>
+          </div>
+          <!-- // Article -->
+          
+          <!-- Article -->
+          <div class="timeline-article">
+            <div class="content-left-container">
+              <div class="content-left">
+                <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it! <span class="article-number">01</span></p>
+              </div>
+              <span class="timeline-author">John Doe</span>
+            </div>
+            <div class="content-right-container">
+              <div class="content-right">
+                <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. <span class="article-number">02</span></p>
+              </div>
+              <span class="timeline-author">John Doe</span>
+            </div>
+            <div class="meta-date">
+              <span class="date">18</span>
+              <span class="month">APR</span>
+            </div>
+          </div>
+          <!-- // Article -->
+          
+          <!-- Article -->
+          <div class="timeline-article">
+            <div class="content-left-container">
+              <div class="content-left">
+                <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it! <span class="article-number">01</span></p>
+              </div>
+              <span class="timeline-author">John Doe</span>
+            </div>
+            <div class="content-right-container">
+              <div class="content-right">
+                <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. <span class="article-number">02</span></p>
+              </div>
+              <span class="timeline-author">John Doe</span>
+            </div>
+            <div class="meta-date">
+              <span class="date">18</span>
+              <span class="month">APR</span>
+            </div>
+          </div>
+          <!-- // Article -->
+        </div>
+        <div class="timeline-end">End</div>
+      </section>
+      <!-- // Vertical Timeline -->
+    </div>
+  </section>
+  <div class="clear-all"></div>
+ 
+  <!-- footer -->
+  <footer>  
+    <blockquote class="quote-holder">
+      <img class="quote-image" src="images/portrait-test.jpg">
+      <p class="quote-text">"The BigBrain is everthing I ever wanted" - Dr. Brains</p>
+    </blockquote>
+    <div class="section-content flex">
+      <a href="https://www.fz-juelich.de/">
+        <img src="images/logo-julich.jpg">
+      </a>
+      <a href="https://mcgill.ca/">
+        <img src="images/logo-mcgill.png">
+      </a>
+    </div>
+  </footer>
+  <div class="brand-border-1"></div>
+  <div class="brand-border-2"></div>
+  <div class="brand-border-3"></div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#showmenu').click(function() {
+                $('.nav-list').toggleClass("hide");
+        });
+    });
+</script>
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#menu').slicknav({
+    label: ''
+  });
+});
+</script> -->
+
+</body></html>
