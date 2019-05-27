@@ -28,6 +28,8 @@ section {
 }
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 /*** 
@@ -60,11 +62,11 @@ p {
   margin-bottom: 1em;
 }
 a {
-  color: #b30000;
-  transition: background-color 0.25s ease;
+  color: #8c0000;
+  transition: color 0.25s ease;
 }
 a:hover,
-a:visited {
+a:focus {
   color: #DC2627;
 }
 button {
@@ -131,10 +133,13 @@ button:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: stretch;
 }
 .full-width {
   width: 100%;
+}
+h2.full-width:last-of-type {
+  margin-bottom: 40px;
 }
 .text-center {
   text-align: center;
@@ -407,5 +412,43 @@ p.quote-text {
   p.quote-text {
     width: 270px;
     font-size: 1rem;
+  }
+}
+.namecard-holder {
+  justify-content: flex-start;
+}
+.namecard {
+  display: block;
+  width: calc(50% - 30px);
+  padding: 30px;
+  margin: 0 15px 30px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+.namecard img {
+  border-radius: 200px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+.namecard a {
+  display: block;
+  width: 100%;
+}
+.primary {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+}
+@media screen and (min-width: 800px){
+  .namecard {
+    width: calc(33% - 30px);
+  }
+}
+@media screen and (min-width: 1024px){
+  .namecard {
+    width: calc(25% - 30px);
   }
 }
