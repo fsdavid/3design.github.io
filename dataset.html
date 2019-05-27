@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
+<!-- general -->
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+<meta charset="utf-8">
+<title>the BigBrain</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="This is the website of the BigBrain Project.">
+<meta name="keywords" content="Neuro, Brain, Research, Big Data, Science, Medicine">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="main-wrapper">
+  <!-- navigation -->
+
+  <nav class="site-nav">
+    <div class="brand-border-1"></div>
+    <div class="brand-border-2"></div>
+    <div class="brand-border-3"></div>
+    <div class="nav-container">
+      <div class="branding"><a href="index.html">the BigBrain</a></div>
+      <div id="showmenu">Menu</div>
+      <ul id="menu" class="nav-list hide">
+        <li class="nav-item"><a href="history.html">History</a></li>
+        <li class="nav-item active"><a href="dataset.html">Dataset</a></li>
+        <li class="nav-item"><a href="community.html">Community</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- dataset section -->
+  <section>
+    <div class="section-content">
+      <div class="col-2">
+        <img src="images/neuroglancer.png" class="BigBrainPic">
+      </div>
+      <div class="col-2">
+        <div class="text-box">
+          <h1># the BigBrain online</h1>
+          <h2>explore using Neuroglancer</h2>
+          <p>Explore the high resolution human brain model online in the open source Neuroglancer viewer.</p>
+          <a href="https://bigbrain.humanbrainproject.org/"><button class="float-right">open viewer</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="section-content">
+      <div class="col-2">
+        <img src="images/loris.png" class="BigBrainPic">
+      </div>
+      <div class="col-2">
+        <div class="text-box">
+          <h1># download the BigBrain</h1>
+          <h2>full dataset available on LORIS</h2>
+          <p>The full dataset of images, volumes, and surfaces are available on LORIS.</p>
+          <a href="https://bigbrain.loris.ca/"><button class="float-right">open LORIS</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="section-content">
+      <div class="col-2">
+        <img src="images/publications.png" class="BigBrainPic">
+      </div>
+      <div class="col-2">
+        <div class="text-box">
+          <h1># the BigBrain Publications</h1>
+          <h2>list of publications</h2>
+          <p>The BigBrain has been the subject of many publications.</p>
+          <a href="https://bigbrain.loris.ca/"><button class="float-right">see publications</button></a>
+        </div>
+      </div>
+    </div>    
+  </section>
+  <div class="clear-all"></div>
+
+  <!-- faq section -->
+  <section class="lt-grey-bg">
+    <div class="section-content flex">
+      <h1 class="full-width text-center"># BigBrain FAQ</h1>
+      <h2 class="full-width text-center">frequently asked questions about the BigBrain</h2>
+      <!-- accordian -->
+      <div class="accordian">
+        <ul>
+          <li>
+            <h3 class="title">
+              <span class="fa fa-plus"></span>
+              <span class="faq-q">Q: </span>
+              <p class="question">What is the BigBrain</p>
+            </h3>
+            <p class="answer"><span class="faq-q">A: </span>The bigbrain is the brain of a 65yo man with no neurological or psychiatric diseases in clinical records at time of death. The brain was embedded in paraffin and sectionned in 7404 coronal histological sections (20 microns), stained for cell bodies. The bigbrain is the digitized reconstruction of the hi-res histological sections (20 microns isotropic).</p>
+          </li>
+          <li>
+            <h3 class="title">
+              <span class="faq-q">Q: </span>
+              <p class="question">What are all the volumes listed in the table?</p>
+              <span class="fa fa-plus"></span>
+            </h3>
+            <p class="answer"><span class="faq-q">A: </span>The volumes are represented in either stereotaxic space (MNI-ICBM152 or MNI-SYN24) or in native histological space. The stereotaxic registration is not perfect but it is very good. The templates for registration (ICBM152 and SYN24) are made available in those tables. The bigbrain volumes are offered at 100, 200, 300, 400 microns isotropic in both MINC (.mnc) and NIfTI (.nii) formats.</p>
+          </li>
+          <li>
+            <h3 class="title">
+              <span class="faq-q">Q: </span>
+              <p class="question">Why is the aligned bigbrain showing such strong asymmetry?</p>
+              <span class="fa fa-plus"></span>
+            </h3>
+            <p class="answer"><span class="faq-q">A: </span>The asymmetry results from aligning the histology sections to the MRI of the brain after it was extracted from the skull and set in formalin. We do not have a post-mortem MRI of the undistorted brain inside the head.</p>
+          </li>
+          <li>
+            <h3 class="title">
+              <span class="faq-q">Q: </span>
+              <p class="question">The intensities are wrong in the NIfTI volumes. How can I view them correctly?</p>
+              <span class="fa fa-plus"></span>
+            </h3>
+            <p class="answer"><span class="faq-q">A: </span>There was a problem with the initial data conversion to NIfTI format. The NIfTI volumes have been replaced on Sept 3, 2013. You will have to download the new volumes to view them in fslview, mricron or afni tools.</p>
+          </li>
+          <li>
+            <h3 class="title">
+              <span class="fa fa-plus"></span>
+              <span class="faq-q">Q: </span>
+              <p class="question">Where are the 100um NIfTI volumes?</p>
+            </h3>
+            <p class="answer"><span class="faq-q">A: </span>The 100um NIfTI volumes cannot be created because they are too large for the data converter.</p>
+          </li>
+          <li>
+            <h3 class="title">
+              <span class="faq-q">Q: </span>
+              <p class="question">How can I download the MINC volumes? The files appear incomplete.</p>
+              <span class="fa fa-plus"></span>
+            </h3>
+            <p class="answer"><span class="faq-q">A: </span>Your browser may be limiting the maximum size of the file to transfer. This is problematic for the 100-micron MINC volumes.</p>
+          </li>
+          <li>
+            <h3 class="title">
+              <span class="faq-q">Q: </span>
+              <p class="question">How can I view the MINC volumes?</p>
+              <span class="fa fa-plus"></span>
+            </h3>
+            <p class="answer"><span class="faq-q">A: </span>MINC is an imaging format developed at the MNI. To obtain binaries (mostly Linux and OSX) of the MINC tools, download the MINC Tool Kit <a href="http://www.bic.mni.mcgill.ca/ServicesSoftware/HomePage">here</a>. The viewers are called register and Display.</p>
+          </li>
+          <li>
+            <h3 class="title">
+              <span class="faq-q">Q: </span>
+              <p class="question">How do I view the volumes online?</p>
+              <span class="fa fa-plus"></span>
+            </h3>
+            <p class="answer"><span class="faq-q">A: </span>The web-based viewer is TissueStack. Documentation is available at: <a href="http://www.tissuestack.org/">http://www.tissuestack.org/</a>. As you will soon discover, there is a limitation in the zoom factor in TissueStack.</p>
+          </li>
+          <li>
+            <h3 class="title">
+              <span class="faq-q">Q: </span>
+              <p class="question">How can I view the OBJ surfaces?</p>
+              <span class="fa fa-plus"></span>
+            </h3>
+            <p class="answer"><span class="faq-q">A: </span>The OBJ surfaces are viewable in <a href="https://brainbrowser.cbrain.mcgill.ca">Brainbrowser</a>, <a href="http://www.math.mcgill.ca/keith/surfstat">Surfstat (MATLAB-based) toolbox</a>, <a href="https://wiki.mouseimaging.ca/display/MICePub/brain-view">Brain-view</a>, or overlaid on the corresponding volume in Display, etc.</p>
+          </li>
+          <li>
+            <h3 class="title">
+              <span class="faq-q">Q: </span>
+              <p class="question">Is there an MRI of the bigbrain?</p>
+              <span class="fa fa-plus"></span>
+            </h3>
+            <p class="answer"><span class="faq-q">A: </span>Yes, there is one of the fixed brain (removed from skull). It has an isotropic voxel size resolution of 0.444mm, and is available in the Raw_Data/MRI subdirectory. Note that the current version is in "processing space" with y-z axes flipped. A new one in proper histological space will be supplied soon.</p>
+          </li>
+          <li>
+            <h3 class="title">
+              <span class="faq-q">Q: </span>
+              <p class="question">How can I view the volumes as in the bigbrain videos?</p>
+              <span class="fa fa-plus"></span>
+            </h3>
+            <p class="answer"><span class="faq-q">A: </span>The bigbrain videos were created using Atelier3D, a licensed software which is currently not distributed. The volume read in Atelier3D is at 20-micron isotropic, which is too big for file transfers. This is why reduced volumes at 100, 200, 300, 400 microns have been created. </p>
+          </li>
+          <li>
+            <h3 class="title">
+              <span class="faq-q">Q: </span>
+              <p class="question">Is there sound to the bigbrain videos?</p>
+              <span class="fa fa-plus"></span>
+            </h3>
+            <p class="answer"><span class="faq-q">A: </span>No </p>
+          </li>
+          <li>
+            <h3 class="title">
+              <span class="faq-q">Q: </span>
+              <p class="question">Is there a way to mass-download the data files?</p>
+              <span class="fa fa-plus"></span>
+            </h3>
+            <p class="answer"><span class="faq-q">A: </span>Yes. As of March 12th, 2014, all sections and volumes are available on an anonymous FTP server located at the same address as this site. We recommend connecting to the FTP server using a command line or GUI client (e.g., <a href="https://filezilla-project.org">Filezilla</a>), but not a web browser. % ftp bigbrain.loris.ca (enter anonymous as the username and your e-mail as the password) Use the command "ls" to list the contents, "cd" to change directory, "get" to download files.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="clear-all"></div>
+
+  <!-- footer -->
+  <footer>  
+    <blockquote class="quote-holder">
+      <img class="quote-image" src="images/portrait-test.jpg">
+      <p class="quote-text">"The BigBrain is everthing I ever wanted" - Dr. Brains</p>
+    </blockquote>
+    <div class="section-content flex">
+      <a href="https://www.fz-juelich.de/">
+        <img src="images/logo-julich.jpg">
+      </a>
+      <a href="https://mcgill.ca/">
+        <img src="images/logo-mcgill.png">
+      </a>
+    </div>
+  </footer>
+  <div class="brand-border-1"></div>
+  <div class="brand-border-2"></div>
+  <div class="brand-border-3"></div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#showmenu').click(function() {
+                $('.nav-list').toggleClass("hide");
+        });
+    });
+</script>
+
+<script>
+  $(function(){
+    $(".accordian h3").click(function(e){
+    $(".accordian ul p.answer").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+</body></html>

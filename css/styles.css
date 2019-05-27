@@ -43,7 +43,7 @@ strong {
   font-weight: bold;
   color: #FF7F00;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: "arial narrow", sans-serif;
 }
 h1 {
@@ -58,12 +58,19 @@ h2 {
   color: #144E76;
   margin-bottom: .5rem;
 }
+h3 {
+  font: 'arial', sans-serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #144E76;
+  font-weight: bold;
+}
 p {
   margin-bottom: 1em;
 }
 a {
   color: #8c0000;
-  transition: color 0.25s ease;
+  transition: all 0.25s ease;
 }
 a:hover,
 a:focus {
@@ -272,6 +279,7 @@ li.nav-item a {
   padding: 20px 30px;
   color: #343434;
   transition: all 0.25s ease;
+  cursor: pointer;
 }
 ul.nav-list li.nav-item a:hover,
 div.branding a:hover,
@@ -442,6 +450,16 @@ p.quote-text {
   margin: 0 auto;
   overflow: auto;
 }
+.partners a {
+  width: calc(50% - 30px);
+  max-width: 200px;
+  margin: 0 15px 15px;
+}
+@media screen and (min-width: 640px){
+  .partners a {
+    width: 
+  }
+}
 @media screen and (min-width: 800px){
   .namecard {
     width: calc(33% - 30px);
@@ -451,4 +469,85 @@ p.quote-text {
   .namecard {
     width: calc(25% - 30px);
   }
+}
+
+div.accordian ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+div.accordian li {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+}
+.accordian {
+  width: 100%;
+  max-width: 800px;
+  /*box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);*/
+  /*margin: 5% auto;*/
+  color: #b5b5b5;
+}
+.accordian .title {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0;
+  /*border: 1px solid #ddd;*/
+  transition: all .25s ease;
+  line-height: 1.75rem;
+  overflow: auto;
+}
+.accordian .title:hover {
+  background-color: #8B8B8B;
+  /*background-color: #DC2627;*/
+}
+.accordian ul p {
+  display: none;
+  background: #fff;
+  margin: 0 !important;
+  padding: 30px;
+  /*border: 1px solid #ddd;*/
+  /*border-top: none;*/
+  color: #343434;
+}
+.accordian ul p.question {
+  display: inline-block !important;
+  border: none;
+  background: none;
+  padding: 0;
+  color: #144E76;
+  float: left;
+  width: calc(100% - 70px);
+  pointer-events: none;
+}
+.open {
+  transform: rotate(45deg);
+  transition: all .25s ease;
+}
+.accordian ul ul li:last-child a {
+  border-bottom: 0;
+}
+.fa {
+  transition: all .25s ease;
+  float: right;
+  color: #2C8EB3;
+  font-size: 1.75rem;
+  pointer-events: none;
+}
+.faq-q {
+  font-family: 'arial', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #2C8EB3;
+  font-size: 2rem;
+  float: left;
+  width: 40px;
+  pointer-events: none;
+}
+.answer .faq-q {
+    line-height: 1rem;
+}
+.accordian h3 {
+  cursor: pointer;
 }
