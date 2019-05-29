@@ -151,6 +151,9 @@ h2.full-width:last-of-type {
 .text-center {
   text-align: center;
 }
+.wordbreak {
+  word-break: break-all;
+}
 /*** 
 *
 * Content 
@@ -341,8 +344,7 @@ ul.hide {
 }
 .button-holder {
   width: 100%;
-  max-width: 600px;
-  padding: 0 40px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -443,6 +445,10 @@ p.quote-text {
 .namecard a {
   display: block;
   width: 100%;
+  margin-bottom: .5rem;
+}
+.card-jobtitle {
+  margin-bottom: .5rem;
 }
 .primary {
   width: 100%;
