@@ -319,7 +319,7 @@ ul.hide {
 .BigBrainPic {
   display: block;
   width: 100%;
-  max-width: 600px;
+  /*max-width: 600px;*/
   height: auto;
   padding: 20px;
 }
