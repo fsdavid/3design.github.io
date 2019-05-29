@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
+<!-- general -->
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+<meta charset="utf-8">
+<title>the BigBrain</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="This is the website of the BigBrain Project.">
+<meta name="keywords" content="Neuro, Brain, Research, Big Data, Science, Medicine">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="main-wrapper">
+  <!-- navigation -->
+
+  <nav class="site-nav">
+    <div class="brand-border-1"></div>
+    <div class="brand-border-2"></div>
+    <div class="brand-border-3"></div>
+    <div class="nav-container">
+      <div class="branding"><a href="index.html">the BigBrain</a></div>
+      <div id="showmenu">Menu</div>
+      <ul id="menu" class="nav-list hide">
+        <li class="nav-item"><a href="history.html">History</a></li>
+        <li class="nav-item"><a href="dataset.html">Dataset</a></li>
+        <li class="nav-item active"><a href="community.html">Community</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- discourse section -->
+  <section>
+    <div class="section-content">
+      <div class="col-2">
+        <img src="images/discourse.jpg" class="BigBrainPic">
+      </div>
+      <div class="col-2">
+        <div class="text-box">
+          <h1># the BigBrain community</h1>
+          <h2>developers, users, and support</h2>
+          <p>The BigBrain has a thriving community of users and developers. Join our discours forum to discuss, collaboreate, and find support for the BigBrain and applications related to this dataset.</p>
+          <a href="https://bigbrain-forum.loris.ca/"><button class="float-right">go to forum</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="clear-all"></div>
+
+  <!-- partners section -->
+  <section class="lt-grey-bg">
+    <div class="section-content flex">
+      <h1 class="full-width text-center"># BigBrain Partners</h1>
+      <h2 class="full-width text-center">How to contact the partners</h2>
+      <div class="contact-card">
+        <img src="images/julich.jpg" class="centre-pic">
+        <img src="images/logo-julich.jpg">
+        <address>Forschungszentrum Jülich</address>
+        <address>52425 Jülich</address>
+        <a href="https://www.fz-juelich.de">website</a>
+      </div>   
+      <div class="contact-card">
+        <img src="images/mcgill.jpg" class="centre-pic">
+        <img src="images/logo-mcgill.png">
+        <address>McGill University</address>
+        <address>845 Sherbrooke St W</address>
+        <address>Montreal, QC, Canada</address> 
+        <address>H3A 0G4</address>
+        <a href="https://mcgill.ca">website</a>
+      </div>  
+    </div>
+  </section>
+  <div class="clear-all"></div>
+
+    <section>
+    <div class="section-content flex partners">
+      <h1 class="full-width text-center"># Partners and Sponsors</h1>
+      <h2 class="full-width text-center">special thanks to:</h2>    
+      <a href="http://mcin.ca"><img src="images/partner-mcin.png"></a>  
+      <a href="https://www.humanbrainproject.eu/"><img src="images/partner-hbp.jpg"></a>
+      <a href="https://www.mcgill.ca/hbhl/"><img src="images/partner-hbhl.png"></a>
+      
+    </div>
+  </section>
+  <div class="clear-all"></div>
+
+  <!-- footer -->
+  <footer>  
+    <blockquote class="quote-holder">
+      <img class="quote-image" src="images/portrait-test.jpg">
+      <p class="quote-text">"The BigBrain is everthing I ever wanted" - Dr. Brains</p>
+    </blockquote>
+    <div class="section-content flex">
+      <a href="https://www.fz-juelich.de/">
+        <img src="images/logo-julich.jpg">
+      </a>
+      <a href="https://mcgill.ca/">
+        <img src="images/logo-mcgill.png">
+      </a>
+    </div>
+  </footer>
+  <div class="brand-border-1"></div>
+  <div class="brand-border-2"></div>
+  <div class="brand-border-3"></div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#showmenu').click(function() {
+                $('.nav-list').toggleClass("hide");
+        });
+    });
+</script>
+
+<script>
+  $(function(){
+    $(".accordian h3").click(function(e){
+    $(".accordian ul p.answer").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+</body></html>
