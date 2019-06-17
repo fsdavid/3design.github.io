@@ -188,3 +188,12 @@
 .timeline-end button {
   margin-bottom: 0;
 }
+.caption {
+  width: 50%;
+}
+.caption p {
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.125em;
+}
