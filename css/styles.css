@@ -265,6 +265,7 @@ nav.site-nav {
 ul.nav-list {
   display: block;
   list-style: none;
+  clear: both;
 }
 li.nav-item a,
 .branding a {
@@ -301,6 +302,7 @@ ul.hide {
   ul.nav-list {
     display: inline-block;
     float: right;
+    clear: none;
   }
   li.nav-item {
     margin: 0;
