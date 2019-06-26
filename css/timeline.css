@@ -193,13 +193,18 @@
   margin-bottom: 0;
 }
 .caption {
-  width: 50%;
+  width: 100%;
 }
 .caption p {
   padding: 10px;
   font-size: 12px;
   text-align: center;
   line-height: 1.125em;
+}
+@media screen and (min-width: 500px) {
+  .caption {
+    width: 50%;
+  }
 }
 .meta-date img {
   width: 50px;

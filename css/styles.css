@@ -13,7 +13,7 @@ body {
   min-width: 300px;
   /*overflow: hidden;*/
   font-family: "arial", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #343434;
 }
 p, ul, ol {
@@ -92,6 +92,10 @@ button:hover {
   background: #DC2627;
 }
 @media screen and (min-width: 640px) {
+  html,
+  body {
+    font-size: 14px;
+  }
   button {
     width: auto;
     margin: 0;
