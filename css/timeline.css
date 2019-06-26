@@ -114,6 +114,9 @@
   color: #fff;
   border-radius: 100%;
   background: #2C8EB3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .timeline-article .meta-date .date,
 .timeline-article .meta-date .month {
@@ -129,6 +132,7 @@
   font-size: 18px;
   line-height: 10px;
 }
+
 /*===== // Vertical Timeline =====*/
 
 /*===== Resonsive Vertical Timeline =====*/
@@ -196,4 +200,8 @@
   font-size: 12px;
   text-align: center;
   line-height: 1.125em;
+}
+.meta-date img {
+  width: 50px;
+  height: auto;
 }
