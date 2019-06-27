@@ -267,7 +267,7 @@ nav.site-nav {
   float: left;
 }
 ul.nav-list {
-  display: block;
+  display: none;
   list-style: none;
   clear: both;
 }

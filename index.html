@@ -43,7 +43,7 @@
   <section>
     <div class="section-content">
       <div class="col-2">
-        <img src="images/a3d.png" class="BigBrainPic">
+        <img src="images/bigbrain.png" class="BigBrainPic">
       </div>
       <div class="col-2">
         <div class="text-box">
@@ -65,7 +65,7 @@
   <div class="clear-all"></div>
   <!-- mission section -->
       <div class="col-2">
-        <img src="images/bigbrain.png" class="BigBrainPic">
+        <img src="images/a3d.png" class="BigBrainPic">
       </div>
       <div class="col-2">
         <div class="text-box">
@@ -164,11 +164,21 @@
   <div class="brand-border-3"></div>
 </div>
 
-<script>
+<!-- <script>
     $(document).ready(function() {
         $('#showmenu').click(function() {
                 $('.nav-list').toggleClass("hide");
         });
     });
+</script> -->
+<script>
+  $(function(){
+    $("#showmenu").click(function(e){
+    $("#menu").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
 </script>
 </body></html>
