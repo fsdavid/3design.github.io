@@ -440,14 +440,16 @@ p.quote-text {
   justify-content: flex-start;
 }
 .namecard {
+  position: relative;
   display: block;
   width: calc(50% - 30px);
   padding: 15px;
   margin: 0 15px 30px;
   border: 1px solid #ddd;
-  border-radius: 20px;
+  border-radius: 15px;
   text-align: center;
   background-color: #fff;
+  overflow: hidden;
 }
 .namecard img {
   border-radius: 200px;
@@ -458,6 +460,24 @@ p.quote-text {
   display: block;
   width: 100%;
   margin-bottom: .5rem;
+}
+.mcgill::after {
+  content: "";
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #DC2627;
+}
+.julich::after {
+  content: "";
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #144E76;
 }
 .card-name {
   font-weight: bold;
