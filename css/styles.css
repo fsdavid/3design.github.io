@@ -479,6 +479,58 @@ p.quote-text {
   left: 0;
   background-color: #144E76;
 }
+.contributors-list {
+  list-style: none;
+  list-style-position: inside;
+  width: 100%;
+}
+.contributor {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 10px 10px 15px;
+  overflow: hidden;
+  margin: 0 15px 15px;
+  flex-grow: 1;
+  width: 100%;
+}
+.julich-small::after {
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #144E76;
+}
+.mcgill-small::after {
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #DC2627;
+}
+.other-small::after {
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2C8EB3;
+}
+@media screen and (min-width: 800px) {
+  .contributors-list {
+    display: flex;
+    flex-flow: wrap;
+  }
+  .contributor {
+    margin: 0 7.5px 15px;
+    width: auto;
+  }
+}
 .card-name {
   font-weight: bold;
 }
@@ -506,7 +558,7 @@ p.quote-text {
 }
 @media screen and (min-width: 800px){
   .namecard {
-    width: calc(33% - 30px);
+    width: calc(33.33% - 30px);
   }
 }
 @media screen and (min-width: 1024px){
