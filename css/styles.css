@@ -492,7 +492,7 @@ p.quote-text {
   overflow: hidden;
   margin: 0 15px 15px;
   flex-grow: 1;
-  width: 100%;
+  /*width: 100%;*/
 }
 .julich-small::after {
   content: "";
@@ -527,7 +527,7 @@ p.quote-text {
     flex-flow: wrap;
   }
   .contributor {
-    margin: 0 7.5px 15px;
+    /*margin: 0 7.5px 15px;*/
     width: auto;
   }
 }
