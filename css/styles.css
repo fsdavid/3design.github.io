@@ -672,3 +672,18 @@ div.accordian li {
     width: 100%;
   }
 }
+.gallery {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+.gallery li {
+  display: inline-block;
+  width: 18.7%;
+  margin: 0 0 15px;
+  text-align: right;
+  line-height: 1.5em;
+
+  

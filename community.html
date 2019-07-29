@@ -14,6 +14,7 @@
 <!-- general -->
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+<link href="css/lightbox.css" rel="stylesheet" />
 <meta charset="utf-8">
 <title>the BigBrain</title>
 <meta name="viewport" content="width=device-width">
@@ -58,8 +59,28 @@
   </section>
   <div class="clear-all"></div>
 
-  <!-- partners section -->
+  <!-- gallery -->
   <section class="lt-grey-bg">
+    <div class="section-content flex">
+      <h1 class="full-width text-center"># Gallery</h1>
+      <h2 class="full-width text-center">Community made images of the BigBrain</h2>
+      <ul class="gallery">
+        <li>
+          <a href="images/gallery/konrad-1.jpg" data-lightbox="bbimages">
+            <img src="images/gallery/konrad-1.jpg">
+          </a>Konrad
+        </li>
+        <li>
+          <a href="images/gallery/konrad-2.jpg" data-lightbox="bbimages">
+            <img src="images/gallery/konrad-2.jpg" data-lightbox="bbimages">
+          </a>Konrad
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- partners section -->
+  <section >
     <div class="section-content flex">
       <h1 class="full-width text-center"># BigBrain Partners</h1>
       <h2 class="full-width text-center">How to contact the partners</h2>
@@ -86,7 +107,7 @@
   <div class="clear-all"></div>
 
 <!-- Additional partners and sponsors -->
-  <section>
+  <section class="lt-grey-bg">
     <div class="section-content flex partners">
       <h1 class="full-width text-center"># our Partners and Sponsors</h1>
       <h2 class="full-width text-center">those that made the BigBrain possible</h2>     
@@ -163,5 +184,13 @@
       }
     });
   });
+</script>
+<script src="js/lightbox.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'disableScrolling': true
+    })
 </script>
 </body></html>
