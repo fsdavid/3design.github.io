@@ -681,9 +681,20 @@ div.accordian li {
 }
 .gallery li {
   display: inline-block;
-  width: 18.7%;
+  width: 35%;
   margin: 0 0 15px;
   text-align: right;
   line-height: 1.5em;
+}
 
-  
+@media screen and (min-width: 600px) {
+  .gallery li {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .gallery li {
+    width: 18.7%;
+  }
+}
