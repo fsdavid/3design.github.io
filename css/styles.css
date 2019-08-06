@@ -674,7 +674,7 @@ div.accordian li {
 }
 .gallery {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   list-style: none;
   flex-flow: wrap;
   justify-content: space-evenly;
@@ -697,4 +697,34 @@ div.accordian li {
   .gallery li {
     width: 18.7%;
   }
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -100;
+}
+.content {
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.content h1 {
+  font-family: sans-serif;
+  color: #EB182D;
+  font-size: 3em;
+  text-shadow: 0px 0px 8px rgba(0,0,0,.9);
+}
+.content p {
+  font-family: serif;
+  color: #fff;
+  font-size: 1.5em;
+  text-shadow:  0px 0px 8px rgba(0,0,0,.9);
+  max-width: 300px;
+  margin: 0 auto;
 }
