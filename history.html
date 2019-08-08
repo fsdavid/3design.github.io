@@ -22,6 +22,8 @@
 <meta name="description" content="This is the website of the BigBrain Project.">
 <meta name="keywords" content="Neuro, Brain, Research, Big Data, Science, Medicine">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/jquery.matchHeight.js" type="text/javascript"></script>
+
 <!-- The timeline was designed and coded by Ratko Solaja and the original can be seen here: https://codepen.io/Ratko_Solaja/pen/ztxkw -->
 </head>
 <body>
@@ -53,14 +55,14 @@
           <!-- Article -->
           <div class="timeline-article">
             <div class="content-left-container">
-              <div class="content-left">
+              <div class="content-left" data-mh="timeline-group">
                 <div class="video-wrapper">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/wSHC_7yz0hs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
             <div class="content-right-container">
-              <div class="content-right">
+              <div class="content-right" data-mh="timeline-group">
                 <h1># History of BigBrain</h1>
                 <h2>what is the BigBrain</h2>
                 <p>BigBrain is a freely accessible high-resolution 3D digital atlas of the human brain, released in June 2013 by a team of researchers at the Montreal Neurological Institute (Canada) and the Forschungszentrum Jülich (Germany) and is part of the European Human Brain Project. The isotropic 3D spatial resolution of the BigBrain atlas is 20 µm, much finer than the typical 1 mm resolution of other existing 3D models of the human brain such as the Allen Brain Atlas. In 2014, BigBrain was cited in the top 10 MIT Technology Review.</p>
@@ -74,14 +76,14 @@
           <!-- Article -->
           <div class="timeline-article">
             <div class="content-left-container">
-              <div class="content-left">
+              <div class="content-left" data-mh="timeline-group">
                 <a href="images/history-aquisition.png" data-lightbox="bbstory">
                   <img src="images/history-aquisition.png">
                 </a>
               </div>
             </div>
             <div class="content-right-container">
-              <div class="content-right">
+              <div class="content-right" data-mh="timeline-group">
                 <h1># Acquisition</h1>
                 <h2>source brain</h2>
                 <p>The 3D model was created from the brain of an unidentified 65-year-old man who died with no known brain pathology. His brain, after being removed from the skull, was first scanned using an MRI machine, then embedded in paraffin. </p>
@@ -95,7 +97,7 @@
           <!-- Article -->
           <div class="timeline-article">
             <div class="content-left-container">
-              <div class="content-left flex">
+              <div class="content-left flex" data-mh="timeline-group">
                   <div class="caption">
                     <a href="images/history-digitize1.png" data-lightbox="bbstory">
                       <img src="images/history-digitize1.png">
@@ -112,7 +114,7 @@
               </div>
             </div>
             <div class="content-right-container">
-              <div class="content-right">
+              <div class="content-right" data-mh="timeline-group">
                 <h1># Digitization</h1>
                 <h2>scanning at 20μm</h2>
                 <p>In April 2004 the brain was sliced into 7,404 sections 20µm thick using a large-scale microtome. After each section was removed, the uncut face was photographed in order to provide an additional reference for removing distortion. The brain sections were placed on large glass slides and then stained for cell bodies using the Merker method, a process that causes the grey matter in the brain to be darkly stained while leaving the white matter uncolored. The stained sections were scanned and digitized using a flatbed scanner at 2400dpi, creating a one terabyte raw record. The acquisition process took about 1,000 hours of labor.</p>
@@ -126,14 +128,14 @@
           <!-- Article -->
           <div class="timeline-article">
             <div class="content-left-container">
-              <div class="content-left">
+              <div class="content-left" data-mh="timeline-group">
                 <a href="images/processing.png" data-lightbox="bbstory">
                   <img src="images/processing.png">
                 </a>
               </div>
             </div>
             <div class="content-right-container">
-              <div class="content-right">
+              <div class="content-right" data-mh="timeline-group">
                 <h1># Processing</h1>
                 <h2>digitally repairing the images</h2>
                 <p>The resulting digital images were then processed by human operators to remove artifacts, and by software to align them with the reference images and with neighboring sections, thereby correcting distortions that inevitably arise during histological processing. The corrected data were then assembled into a three-dimensional computer model with a spatial isotropic 3D resolution of 20 µm. The atlas took five years to complete.</p>
@@ -147,14 +149,14 @@
           <!-- Article -->
           <div class="timeline-article">
             <div class="content-left-container">
-              <div class="content-left">
+              <div class="content-left" data-mh="timeline-group">
                 <a href="images/a3d.png" data-lightbox="bbstory">
                   <img src="images/a3d.png">
                 </a>
               </div>
             </div>
             <div class="content-right-container">
-              <div class="content-right">
+              <div class="content-right" data-mh="timeline-group">
                 <h1># Visualization</h1>
                 <h2>rendering the BigBrain in 3D</h2>
                 <p>In Summer 2017 the first version of the Human Brain Project’s web-based 3D atlas viewer was released. NeHuBa (neuroglancer for human brain atlas) is  capable of displaying very large brain volumes, including oblique slicing, a whole brain overview, surface meshes, and maps. It allows to interactively choose difference template spaces and reference parcellations, find brain areas by name or visual selection, and browse additional region-specific multimodal data. The rendering of large volumetric data builds on the open source project Neuroglancer. BigBrain can be directly accessed at <a href="https://bigbrain.humanbrainproject.eu ">https://bigbrain.humanbrainproject.eu</a></p>
@@ -168,14 +170,14 @@
           <!-- Article -->
           <div class="timeline-article">
             <div class="content-left-container">
-              <div class="content-left">
+              <div class="content-left" data-mh="timeline-group">
                 <a href="images/history-analysis.png" data-lightbox="bbstory">
                   <img src="images/history-analysis.png">
                 </a>
               </div>
             </div>
             <div class="content-right-container">
-              <div class="content-right">
+              <div class="content-right" data-mh="timeline-group">
                 <h1># Analysis</h1>
                 <h2>segmentation of the BigBrain</h2>
                 <p>Different approaches are currently being used to trace distinct areas on the BigBrain: manual delineation of brain cortical areas and subcortical structures based on existing atlases, and automatic methods derived from artificial intelligence (machine learning and deep learning) to extract cortical layers or count groups of cells. </p>
@@ -189,14 +191,14 @@
           <!-- Article -->
           <div class="timeline-article">
             <div class="content-left-container">
-              <div class="content-left">
+              <div class="content-left" data-mh="timeline-group">
                 <a href="images/neuroglancer.png" data-lightbox="bbstory">
                   <img src="images/neuroglancer.png">
                 </a>
               </div>
             </div>
             <div class="content-right-container">
-              <div class="content-right">
+              <div class="content-right" data-mh="timeline-group">
                 <h1># Dissemination</h1>
                 <h2>sharing the atlas with the world</h2>
                 <p>Users have access to all data: from the raw scanned sections (in order to develop new reconstruction and repair workflows and tools), to the derived data from our own analyses (to be used in different pipelines and analyses). Our online viewers are also available, and the data can be accessed and managed via our neuroinformatics platforms LORIS and CBRAIN.</p>
@@ -534,5 +536,10 @@
       'wrapAround': true,
       'disableScrolling': true
     })
+</script>
+<script type="text/javascript">
+  $(function() {
+    $('.item').matchHeight();
+  });
 </script>
 </body></html>
