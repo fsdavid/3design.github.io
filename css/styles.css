@@ -684,7 +684,7 @@ div.accordian li {
 }
 .gallery {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   list-style: none;
   flex-flow: wrap;
   justify-content: space-evenly;
