@@ -158,6 +158,12 @@ h2.full-width:last-of-type {
 .wordbreak {
   word-break: break-all;
 }
+.spacer {
+  margin-bottom: 40px;
+}
+.small-spacer {
+  margin-bottom: 20px;
+}
 /*** 
 *
 * Content 
