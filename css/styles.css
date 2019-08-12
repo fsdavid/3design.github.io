@@ -187,6 +187,13 @@ h2.full-width:last-of-type {
 .section-content.no-margin p:last-of-type {
   margin-bottom: 0;
 }
+@media screen and (max-width: 599px) {
+  .keyline {
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 40px;
+    padding-bottom: 80px;
+  }
+}
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -685,7 +692,7 @@ div.accordian li {
 .gallery li {
   display: inline-block;
   width: 35%;
-  margin: 0 0 15px;
+  margin: 0 2.5px 15px;
 /*  text-align: right;*/
   line-height: 1.5em;
   font-size: 12px;

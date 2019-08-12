@@ -210,3 +210,14 @@
   width: 50px;
   height: auto;
 }
+@media only screen and (max-width: 449px) {
+   .timeline-article .content-left-container, .timeline-article .content-right-container {
+      margin-left: 0;
+  } 
+  .timeline-article .meta-date {
+    display: none;
+  }
+  #conference-timeline .conference-center-line {
+    display: none;
+  }
+}
