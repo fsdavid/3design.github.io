@@ -164,6 +164,9 @@ h2.full-width:last-of-type {
 .small-spacer {
   margin-bottom: 20px;
 }
+.center-spacer {
+  margin: 0 auto !important;
+}
 /*** 
 *
 * Content 
