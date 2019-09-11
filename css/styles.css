@@ -161,11 +161,14 @@ h2.full-width:last-of-type {
 .spacer {
   margin-bottom: 40px;
 }
-.small-spacer {
+.small-spacer 
   margin-bottom: 20px;
 }
 .center-spacer {
   margin: 0 auto !important;
+}
+.grey-border {
+  border: 1px solid #8B8B8B !important;
 }
 /*** 
 *
