@@ -473,15 +473,29 @@ p.quote-text {
   background-color: #fff;
   overflow: hidden;
 }
-.namecard img {
+.card-image {
   border-radius: 200px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
+}
+.card-image-square {
+  margin-bottom: 20px;
+  /*border: 1px solid #ddd;*/
 }
 .namecard a {
   display: block;
   width: 100%;
   margin-bottom: .5rem;
+}
+.tool-name {
+  text-align: left;
+}
+.tool-maker, .tool-description  {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.tool-link {
+  text-align: right;
 }
 .mcgill::after {
   content: "";
@@ -754,4 +768,7 @@ div.accordian li {
 }
 .flex-center{
   align-items: center;
+}
+.reference:before {
+  content: "●"
 }
