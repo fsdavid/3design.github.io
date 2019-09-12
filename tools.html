@@ -90,7 +90,16 @@
   <div class="brand-border-2"></div>
   <div class="brand-border-3"></div>
 </div>
-
+<script>
+  $(function(){
+    $("#showmenu").click(function(e){
+    $("#menu").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
 <script src="js/lightbox.js"></script>
 <script>
     lightbox.option({
