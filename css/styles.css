@@ -493,6 +493,12 @@ p.quote-text {
   background-color: #fff;
   overflow: hidden;
 }
+@media screen and (max-width: 399px) {
+  .fullcard {
+    width: 100%;
+  }
+}
+
 .card-image {
   border-radius: 200px;
   margin-bottom: 20px;
@@ -795,10 +801,16 @@ div.accordian li {
 .reference {
   display: inline-block;
   margin-bottom: 10px;
-  border-left: 3px solid #2C8EB3;
+  border-left: 5px solid #2C8EB3;
   padding-left: 10px;
 }
 .extra-pad {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.julich-bar {
+  border-left: 5px solid #144E76;
+}
+.mcgill-bar {
+  border-left: 5px solid #DC2627;
 }
