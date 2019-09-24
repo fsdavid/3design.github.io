@@ -173,6 +173,9 @@ h2.full-width:last-of-type {
 .grey-border {
   border: 1px solid #8B8B8B !important;
 }
+cite {
+  font-weight: bold;
+}
 /*** 
 *
 * Content 
@@ -792,6 +795,8 @@ div.accordian li {
 .reference {
   display: inline-block;
   margin-bottom: 10px;
+  border-left: 3px solid #2C8EB3;
+  padding-left: 10px;
 }
 .extra-pad {
   padding-top: 20px;
