@@ -176,6 +176,21 @@ h2.full-width:last-of-type {
 cite {
   font-weight: bold;
 }
+.horizontal-rule {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #c3c3c3;
+}
+.horizontal-rule:before, .horizontal-rule:after {
+  display: block;
+  content: "";
+  width:calc(50% - 100px);
+  border-bottom: 1px solid #c3c3c3;
+}
 /*** 
 *
 * Content 
