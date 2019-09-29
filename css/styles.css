@@ -421,7 +421,7 @@ footer {
   background-color: #000;
   padding: 80px 0 40px;
 }
-footer a {
+footer div a {
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -828,4 +828,12 @@ div.accordian li {
 }
 .mcgill-bar {
   border-left: 5px solid #DC2627;
+}
+.mcgill-joint {
+  display: block;
+  border-left: 5px solid #DC2627;
+  margin-bottom: 10px;
+}
+.mcgill-joint .reference {
+  margin-bottom: 0;
 }
