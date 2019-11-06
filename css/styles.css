@@ -354,7 +354,7 @@ div.branding a:hover,
 ul.hide {
   display: none;
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 870px) {
   ul.nav-list {
     display: inline-block;
     float: right;
@@ -837,7 +837,11 @@ div.accordian li {
 .mcgill-joint .reference {
   margin-bottom: 0;
 }
+.news-inline-link:first-of-type {
+  margin-top: .5rem;
+}
 
+/*slider css*/
 div#slider {
   overflow: hidden;
 }
@@ -864,4 +868,81 @@ div#slider figure {
   text-align: left;
   font-size: 0;
   animation: 20s slide infinite; 
+}
+
+/*ticker css*/
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding-left: 100%;
+  box-sizing: content-box;
+  z-index: 9999;
+}
+.ticker-wrap .ticker {
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+}
+.ticker-wrap .ticker__item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 1rem;
+  color: #fff;
+}
+.ticker-wrap .ticker__item a {
+  color: #fff;
+  transition: all 0.25s ease;
+}
+.ticker-wrap .ticker__item a:hover {
+  color: #DC2627;
+}
+/* anchors */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+@media screen and (min-width: 640px) {
+  a.anchor {
+    top: -140px;
+  }
 }
