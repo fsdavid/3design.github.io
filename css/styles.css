@@ -899,7 +899,7 @@ div#slider figure {
   bottom: 0;
   width: 100%;
   overflow: hidden;
-  height: 2rem;
+  height: 2.5rem;
   background-color: rgba(0, 0, 0, 0.75);
   padding-left: 100%;
   box-sizing: content-box;
@@ -907,8 +907,8 @@ div#slider figure {
 }
 .ticker-wrap .ticker {
   display: inline-block;
-  height: 2rem;
-  line-height: 2rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
   white-space: nowrap;
   padding-right: 100%;
   box-sizing: content-box;
@@ -924,7 +924,7 @@ div#slider figure {
 .ticker-wrap .ticker__item {
   display: inline-block;
   padding: 0 2rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #fff;
 }
 .ticker-wrap .ticker__item a {
