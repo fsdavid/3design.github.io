@@ -513,9 +513,8 @@ p.quote-text {
     width: 100%;
   }
 }
-
 .card-image {
-  border-radius: 200px;
+  border-radius: 250px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
 }
@@ -569,6 +568,7 @@ p.quote-text {
   overflow: hidden;
   margin: 0 15px 15px;
   flex-grow: 1;
+  background: #fff;
   /*width: 100%;*/
 }
 .julich-small::after {
@@ -637,10 +637,16 @@ p.quote-text {
   .namecard {
     width: calc(33.33% - 30px);
   }
+  .pi {
+    width: calc(50% - 30px);
+  }
 }
 @media screen and (min-width: 1024px){
   .namecard {
     width: calc(25% - 30px);
+  }
+  .pi {
+    width: calc(35% - 30px);
   }
 }
 
