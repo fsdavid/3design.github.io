@@ -389,6 +389,18 @@ ul.hide {
   max-width: 1280px;
   padding: 20px;
 }
+@media screen and (min-width: 800px) {
+  .text-box button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .text-box button {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
 .icon {
   width: 100%;
   max-width: 75px;
