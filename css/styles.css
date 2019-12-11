@@ -552,6 +552,31 @@ p.quote-text {
   width: 100%;
   margin-bottom: .5rem;
 }
+.teamcard {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  margin: 0 15px 30px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #fff;
+  overflow: hidden;
+  align-items: center;
+}
+@media screen and (min-width: 800px ) {
+  .teamcard {
+    width: calc(50% - 30px);
+  }
+}
+.teamcard-detail-holder{
+  padding: 10px 10px 20px;
+}
+.teamcard .card-image {
+  max-width: 100px;
+  margin: 10px 10px 20px;
+}
 .tool-name {
   text-align: left;
 }
