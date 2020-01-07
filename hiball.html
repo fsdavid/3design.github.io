@@ -21,29 +21,39 @@
 <meta name="author" content="Derek Lo @ 3design-dlo.com">
 <!-- general -->
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
 <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
 <meta charset="utf-8">
-<title>the BigBrain | HIBALL</title>
+<title>the BigBrain</title>
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="This is the page for the HIBALL project.">
+<meta name="description" content="This is the website of the BigBrain Project.">
 <meta name="keywords" content="Neuro, Brain, Research, Big Data, Science, Medicine">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/drop-down.js"></script>
 </head>
 <body>
 <div id="main-wrapper">
   <!-- navigation -->
-
   <nav class="site-nav">
     <div class="brand-border-1"></div>
     <div class="brand-border-2"></div>
     <div class="brand-border-3"></div>
     <div class="nav-container">
-      <div class="branding active"><a href="index.html">the BigBrain Project</a></div>
+      <div class="branding"><a href="index.html">the BigBrain Project</a></div>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
         <li class="nav-item"><a href="history.html">History</a></li>
         <li class="nav-item"><a href="dataset.html">Dataset</a></li>
-        <li class="nav-item"><a href="community.html">Community</a></li>
+        <li class="nav-item active"><a href="#!">Community</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="community.html">Our Community</a>
+            </li>
+            <li>
+              <a class="active" href="hiball.html">HIBALL</a>
+            </li>
+          </ul>
+        </li>
         <li class="nav-item"><a href="tools.html">Tools</a></li>
         <li class="nav-item"><a href="news.html">News</a></li>
         <li class="nav-item"><a href="references.html">References</a></li>
