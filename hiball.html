@@ -166,6 +166,23 @@
           </div>
         </div>
       </div>
+
+      <!-- Workpackages  -->
+      <div class="accordian accordian-wp">
+        <ul>
+          <li class="grey-border">
+            <h3 class="title">
+              <span class="fa fa-plus"></span>
+              <p class="question text-center">Title (Workpackage #1)</p>
+            </h3>
+            <p class="answer">
+              <span class="reference mcgill-bar"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate vestibulum convallis. Ut sed tincidunt ligula. Nam in enim rutrum, porttitor nisi vel, sodales ex.<a href="http://mcin-cnim.ca/wp-content/uploads/2017/08/Wagstyl-HBM-2017.png" target="_blank">link</a>
+              </span><br>
+            </p>
+          </li>
+        </ul>
+      </div>
   </section>
 <!-- sponsors -->
   <section>
@@ -209,6 +226,17 @@
   <div class="brand-border-2"></div>
   <div class="brand-border-3"></div>
 </div>
+
+<script>
+  $(function(){
+    $(".accordian h3").click(function(e){
+    $(".accordian ul p.answer").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
 
 <script>
   $(function(){
