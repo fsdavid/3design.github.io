@@ -416,14 +416,15 @@ ul.hide {
 }
 .icon {
   width: 100%;
-  max-width: 75px;
+  max-width: 160px;
   text-align: center;
   margin: 10px;
   float: left;
 }
 .icon img {
   width: 100%;
-  margin-bottom: 20px;
+  max-width: 75px;
+  margin: 0 auto 20px;
 }
 .button-holder {
   width: 100%;
