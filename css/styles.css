@@ -701,11 +701,6 @@ p.quote-text {
   background-color: #fff;
   overflow: hidden;
 }
-@media screen and (min-width: 500px) {
-  .sidebar-card {
-    width: calc(50% - 30px);
-    margin: 0 15px;  }
-  }
 @media screen and (min-width: 800px) {
   .contributors-list {
     display: flex;
@@ -715,6 +710,10 @@ p.quote-text {
     /*margin: 0 7.5px 15px;*/
     width: auto;
   }
+  .sidebar-card {
+    width: calc(33% - 30px);
+    margin: 0 15px;  
+  }  
 }
 .card-name {
   font-weight: bold;
