@@ -161,7 +161,7 @@ button:hover {
 .full-width {
   width: 100%;
 }
-h2.full-width:last-of-type {
+h2.full-width/*:last-of-type*/ {
   margin-bottom: 40px;
 }
 .text-center {
@@ -647,6 +647,15 @@ p.quote-text {
   left: 0;
   background-color: #144E76;
 }
+.other::after {
+  content: "";
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #2C8EB3;
+}
 .contributors-list {
   list-style: none;
   list-style-position: inside;
@@ -717,6 +726,7 @@ p.quote-text {
 }
 .card-name {
   font-weight: bold;
+  margin-bottom: .5em;
 }
 .card-jobtitle {
   margin-bottom: .5rem;
