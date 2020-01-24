@@ -575,9 +575,17 @@ p.quote-text {
   background-color: #fff;
   overflow: hidden;
 }
+.hiball-cards .namecard {
+  width: 100%;
+}
 @media screen and (max-width: 399px) {
   .fullcard {
     width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hiball-cards .namecard  {
+    width: calc(50% - 30px);
   }
 }
 .card-image {
@@ -610,6 +618,9 @@ p.quote-text {
 @media screen and (min-width: 800px ) {
   .teamcard {
     width: calc(50% - 30px);
+  }
+    .hiball-cards .namecard {
+    width: calc(33% - 30px) !important;
   }
 }
 .teamcard-detail-holder{
@@ -742,6 +753,7 @@ p.quote-text {
   max-width: 200px;
   margin: 0 15px 15px;
 }
+
 @media screen and (min-width: 640px){
   .partners a {
     width: 
