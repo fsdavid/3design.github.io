@@ -549,7 +549,7 @@ ul.hide {
   width: 100%;
   height: 100%;
   position: relative;
-  transition: transform 1s;
+  transition: transform .5s;
   transform-style: preserve-3d;
 }
 .card-face {
