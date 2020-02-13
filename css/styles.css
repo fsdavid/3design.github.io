@@ -515,15 +515,17 @@ ul.hide {
 .one-to-one-aspect {
   padding-bottom: 100%;
 }
-.quad-image img {
+.card-face img {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
-.quad-image span {
+.card-face span {
   position: relative;
-  z-index: 100;
+  /*z-index: 100;*/
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,.5);
@@ -532,11 +534,43 @@ ul.hide {
   padding: 20px;
   text-align: center;
   transition: all 0.25s ease;
+  transform-style: preserve-3d;
 }
-.quad-image span:hover,
-.quad-image span:focus {
+.card-face span:hover,
+.card-face span:focus {
   background-color:rgba(0,0,0,.75);
 }
+
+/*Hiball Animations*/
+.scene {
+  perspective: 400px;
+}
+.animated-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+}
+.face-front {
+  background-color: white;
+}
+.face-back {
+  background-color: grey;
+  transform: rotateY(180deg);
+}
+.card-flip {
+  transform: rotateY(180deg);
+}
+
 /* footer */
 
 footer {
@@ -1172,10 +1206,4 @@ a.anchor {
   a.anchor {
     top: -140px;
   }
-}
-
-/*Hiball Workpackages*/
-.accordian-wp {
-  max-width: 100%;
-  margin: 15px;
 }
