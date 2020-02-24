@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145481065-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145481065-1');
+</script>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
+<!-- general -->
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/timeline.css" />
+<link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+<link href="css/lightbox.css" rel="stylesheet" />
+<meta charset="utf-8">
+<title>the BigBrain</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="This is the website of the BigBrain Project.">
+<meta name="keywords" content="Neuro, Brain, Research, Big Data, Science, Medicine">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/drop-down.js"></script>
+<script src="js/jquery.matchHeight.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="main-wrapper">
+  <div class="social-media">
+    <a href="https://twitter.com/BigBrainProject"><i class="fab fa-twitter-square"></i></a>
+    <a href="mailto:info@bigbrainproject.org"><i class="fas fa-envelope-square"></i></a>
+    <a href="#main-wrapper"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navigation -->
+  <nav class="site-nav">
+    <div class="brand-border-1"></div>
+    <div class="brand-border-2"></div>
+    <div class="brand-border-3"></div>
+    <div class="nav-container">
+      <div class="branding active"><a href="index.html">the BigBrain Project</a></div>
+      <div id="showmenu">Menu</div>
+      <ul id="menu" class="nav-list hide">
+        <li class="nav-item"><a href="hiball.html" class="active"><strong>HIBALL</strong></a></li>
+        <li class="nav-item"><a href="history.html">History</a></li>
+        <li class="nav-item"><a href="dataset.html">Dataset</a></li>
+        <li class="nav-item"><a href="community.html">Community</a></li>
+        <!-- <li class="nav-item"><a href="#!">Community</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="community.html">Our Community</a>
+            </li>
+            <li>
+              <a href="hiball.html">HIBALL</a>
+            </li>
+          </ul>
+        </li> -->
+        <li class="nav-item"><a href="tools.html">Tools</a></li>
+        <li class="nav-item"><a href="news.html">News</a></li>
+        <li class="nav-item"><a href="references.html">References</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- goal section -->
+  <section>
+    <div class="section-content end">
+        <div class="col-2">
+          <img src="images/bigbrain.png" class="BigBrainPic">
+        </div>
+        <div class="col-2">
+          <div class="text-box">
+            <h1>HIBALL</h1>
+            <h2 class="small-spacer">Open Community Resource</h2>
+            <p>HIBALL will streamline BigBrain infrastructure solutions to become highly interoperable with the brain initiatives in Canada and Europe, complementing ongoing work in the European Human Brain Project [link to HBP] and strengthening its infrastructure.</p>
+            <a href="hiball.html"><button class="float-right">back to HIBALL</button></a>
+          </div>
+        </div>
+        <div class="clear-all"></div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>  
+    <blockquote class="quote-holder">
+      <img class="quote-image" src="images/icon-aquisition.png">
+      <p class="quote-text">A community in the making.</p>
+    </blockquote>
+    <div class="section-content flex">
+      <a href="https://www.fz-juelich.de/">
+        <img src="images/logo-julich.jpg">
+      </a>
+      <a href="https://mcgill.ca/">
+        <img src="images/logo-mcgill.png">
+      </a>
+    </div>
+    <p class="center" style="color: #fff;">For information please email us at <a href="mailto:info@bigbrainproject.org">info@bigbrainproject.org</a>
+  </footer>
+  <div class="brand-border-1"></div>
+  <div class="brand-border-2"></div>
+  <div class="brand-border-3"></div>
+</div>
+
+<script>
+  $(function(){
+    $("#showmenu").click(function(e){
+    $("#menu").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+</body></html>
