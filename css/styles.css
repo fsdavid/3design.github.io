@@ -1158,6 +1158,15 @@ div#slider figure img {
   width: 20%; 
   float: left; 
 }
+div#slider figure .testimonial {
+  width: 20%;
+  float: left;
+}
+div#slider figure .testimonial img { 
+  width: auto;
+  max-width: 100%; 
+  height: auto;
+}
 @keyframes slide {
 0% { left: 0%; }
 20% { left: 0%; }
@@ -1174,14 +1183,14 @@ div#slider figure {
   width: 500%;
   margin: 0;
   left: 0;
-  text-align: left;
-  font-size: 0;
+  /*text-align: left;*/
+  /*font-size: 0;*/
   animation: 20s slide infinite; 
 }
 
 /*ticker css*/
 
-@-webkit-keyframes ticker {
+/*@-webkit-keyframes ticker {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -1242,7 +1251,7 @@ div#slider figure {
 }
 .ticker-wrap .ticker__item a:hover {
   color: #DC2627;
-}
+}*/
 /* anchors */
 a.anchor {
   display: block;
