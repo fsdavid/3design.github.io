@@ -37,9 +37,18 @@
 <body>
 <div id="main-wrapper">
   <div class="social-media">
-    <a href="https://twitter.com/BigBrainProject"><i class="fab fa-twitter-square"></i></a>
-    <a href="mailto:info@bigbrainproject.org"><i class="fas fa-envelope-square"></i></a>
-    <a href="#main-wrapper"><i class="fas fa-arrow-up"></i></a>
+    <a href="https://twitter.com/BigBrainProject" class="tooltip">
+      <i class="fab fa-twitter-square"></i>
+      <span class="tooltiptext">Twitter</span>
+    </a>
+    <a href="mailto:info@bigbrainproject.org" class="tooltip">
+      <i class="fas fa-envelope-square"></i>
+      <span class="tooltiptext">Email</span>
+    </a>
+    <a href="#main-wrapper" class="tooltip">
+      <i class="fas fa-arrow-up"></i>
+      <span class="tooltiptext">Top</span>
+    </a>
   </div>
   <!-- navigation -->
   <nav class="site-nav">
@@ -50,20 +59,29 @@
       <div class="branding"><a href="index.html">the BigBrain Project</a></div>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-        <li class="nav-item"><a href="hiball.html"><strong>HIBALL</strong></a></li>
-        <li class="nav-item"><a href="history.html">History</a></li>
-        <li class="nav-item"><a href="dataset.html">Dataset</a></li>
-        <li class="nav-item active"><a href="community.html">Community</a></li>
-        <!-- <li class="nav-item"><a href="#!">Community</a>
+        <li class="nav-item"><a href="#!"><strong>HIBALL</strong></a>
           <ul class="nav-dropdown">
             <li>
-              <a href="community.html">Our Community</a>
+              <a href="hiball.html">About HIBALL</a>
             </li>
             <li>
-              <a href="hiball.html">HIBALL</a>
+              <a href="hiball-goal-one.html">Goal One</a>
+            </li>
+            <li>
+              <a href="hiball-goal-two.html">Goal Two</a>
+            </li>
+            <li>
+              <a href="hiball-goal-three.html">Goal Three</a>
+            </li>
+            <li>
+              <a href="hiball-goal-four.html">Goal Four</a>
             </li>
           </ul>
-        </li> -->
+        </li>
+        <!-- <li class="nav-item"><a href="hiball.html"><strong>HIBALL</strong></a></li> -->
+        <li class="nav-item"><a href="history.html">History</a></li>
+        <li class="nav-item"><a href="dataset.html">Dataset</a></li>
+        <li class="nav-item"><a href="community.html" class="active">Community</a></li>
         <li class="nav-item"><a href="tools.html">Tools</a></li>
         <li class="nav-item"><a href="news.html">News</a></li>
         <li class="nav-item"><a href="references.html">References</a></li>
@@ -107,23 +125,23 @@
         <li>
           <a href="images/gallery/konrad-1.jpg" data-lightbox="bbimages">
             <img src="images/gallery/konrad-1.jpg">
-          </a><strong>Konrad Wagstyl et al</strong>, <a href="https://www.biorxiv.org/content/10.1101/580597v1">BigBrain Cortical layer segmentation</a>
+          </a><strong>Konrad Wagstyl et al</strong>, <a href="https://www.biorxiv.org/content/10.1101/580597v1">BigBrain Cortical layer segmentation,</a> 2019
         </li>
         <li>
           <a href="images/gallery/konrad-2.jpg" data-lightbox="bbimages">
             <img src="images/gallery/konrad-2.jpg">
-          </a><strong>Amunts, Schiffer, Dickscheid et al.</strong>, <a href="https://interactive-viewer.apps.hbp.eu/?templateSelected=Big+Brain+(Histology)&parcellationSelected=Cytoarchitectonic+Maps"> Ultrahigh resolution 3D maps of cytoarchitectonic areas in the Big Brain model</a>
+          </a><strong>Amunts, Schiffer, Dickscheid et al.</strong>, <a href="https://interactive-viewer.apps.hbp.eu/?templateSelected=Big+Brain+(Histology)&parcellationSelected=Cytoarchitectonic+Maps"> Ultrahigh resolution 3D maps of cytoarchitectonic areas in the Big Brain model (click to load NeHuBa)</a>
         </li>
         <li>
           <a href="images/gallery/BN_atlas.png" data-lightbox="bbimages">
             <img src="images/gallery/BN_atlas.png">
-          </a><strong>Lindsay Lewis</strong>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/27230218">Brainnetome atlas registered to the BigBrain surface (from FreeSurfer / fsaverage space)</a>, <a href="https://files.aievolution.com/hbm1901/abstracts/50439/W543_Lewis_0604_145029.pdf">Poster</a>
+          </a><strong>Lindsay Lewis</strong>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/27230218">Brainnetome atlas registered to the BigBrain surface (from FreeSurfer / fsaverage space),</a> 2016, <a href="https://files.aievolution.com/hbm1901/abstracts/50439/W543_Lewis_0604_145029.pdf">Poster</a>
         </li>
         <li>
           <a href="images/gallery/HCP_atlas.png" data-lightbox="bbimages">
             <img src="images/gallery/HCP_atlas.png">
           </a>
-          <strong>Lindsay Lewis</strong>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/27230218">MMP-1.0 / Glasser atlas registered to the BigBrain surface (from the Human Connectome Project / fs_LR space)</a>, <a href="https://files.aievolution.com/hbm1901/abstracts/50439/W543_Lewis_0604_145029.pdf">Poster</a>
+          <strong>Lindsay Lewis</strong>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/27230218">MMP-1.0 / Glasser atlas registered to the BigBrain surface (from the Human Connectome Project / fs_LR space),</a> 2016, <a href="https://files.aievolution.com/hbm1901/abstracts/50439/W543_Lewis_0604_145029.pdf">Poster</a>
         </li>
         <li>
           <a href="images/gallery/sherri-lee-jones-1.png" data-lightbox="bbimages">
@@ -147,7 +165,7 @@
           <a href="images/gallery/mona-image.jpg" data-lightbox="bbimages">
             <img src="images/gallery/mona-image.jpg">
           </a>
-          <strong>Mona Omidyeganeh</strong>, Validation of the Smoothing Method, <a href="https://docs.google.com/presentation/d/13iMVPKLTHx7YsL_saAPqIfCfHAp6udIYC0e6sRZvx4k/edit?usp=sharing">Google Slides</a>
+          <strong>Mona Omidyeganeh</strong>, Validation of the Smoothing Method, 2019,<a href="https://docs.google.com/presentation/d/13iMVPKLTHx7YsL_saAPqIfCfHAp6udIYC0e6sRZvx4k/edit?usp=sharing">Google Slides</a>
         </li>
       </ul>
       <h2 class="full-width text-center top-margin">Community made videos of the BigBrain</h2>
@@ -156,7 +174,7 @@
           <div class="youtube-container">
             <iframe src="https://www.youtube.com/embed/e5D5Y3_iEbo?modestbranding=1&amp;rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <strong>J. DeKraker et al.</strong>, Hippocampal subfield revealed through unfolding and unsupervised clustering of laminar and morphological features in 3D Big Brain (HD)
+          <strong>J. DeKraker et al.</strong>, Hippocampal subfield revealed through unfolding and unsupervised clustering of laminar and morphological features in 3D Big Brain (HD), 2019
         </li>
         <li>
           <div class="youtube-container">

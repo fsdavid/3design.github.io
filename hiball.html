@@ -37,9 +37,18 @@
 <body>
 <div id="main-wrapper">
   <div class="social-media">
-    <a href="https://twitter.com/BigBrainProject"><i class="fab fa-twitter-square"></i></a>
-    <a href="mailto:info@bigbrainproject.org"><i class="fas fa-envelope-square"></i></a>
-    <a href="#main-wrapper"><i class="fas fa-arrow-up"></i></a>
+    <a href="https://twitter.com/BigBrainProject" class="tooltip">
+      <i class="fab fa-twitter-square"></i>
+      <span class="tooltiptext">Twitter</span>
+    </a>
+    <a href="mailto:info@bigbrainproject.org" class="tooltip">
+      <i class="fas fa-envelope-square"></i>
+      <span class="tooltiptext">Email</span>
+    </a>
+    <a href="#main-wrapper" class="tooltip">
+      <i class="fas fa-arrow-up"></i>
+      <span class="tooltiptext">Top</span>
+    </a>
   </div>
   <!-- navigation -->
   <nav class="site-nav">
@@ -50,20 +59,29 @@
       <div class="branding"><a href="index.html">the BigBrain Project</a></div>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-        <li class="nav-item active"><a href="hiball.html"><strong>HIBALL</strong></a></li>
-        <li class="nav-item"><a href="history.html">History</a></li>
-        <li class="nav-item"><a href="dataset.html">Dataset</a></li>
-        <li class="nav-item"><a href="community.html">Community</a></li>
-        <!-- <li class="nav-item"><a href="#!">Community</a>
+        <li class="nav-item"><a href="#!" class="active"><strong>HIBALL</strong></a>
           <ul class="nav-dropdown">
             <li>
-              <a href="community.html">Our Community</a>
+              <a href="hiball.html">About HIBALL</a>
             </li>
             <li>
-              <a href="hiball.html">HIBALL</a>
+              <a href="hiball-goal-one.html">Goal One</a>
+            </li>
+            <li>
+              <a href="hiball-goal-two.html">Goal Two</a>
+            </li>
+            <li>
+              <a href="hiball-goal-three.html">Goal Three</a>
+            </li>
+            <li>
+              <a href="hiball-goal-four.html">Goal Four</a>
             </li>
           </ul>
-        </li> -->
+        </li>
+        <!-- <li class="nav-item"><a href="hiball.html"><strong>HIBALL</strong></a></li> -->
+        <li class="nav-item"><a href="history.html">History</a></li>
+        <li class="nav-item"><a href="dataset.html">Dataset</a></li>
+        <li class="nav-item"><a href="community.html" >Community</a></li>
         <li class="nav-item"><a href="tools.html">Tools</a></li>
         <li class="nav-item"><a href="news.html">News</a></li>
         <li class="nav-item"><a href="references.html">References</a></li>
@@ -81,10 +99,10 @@
           <p class="hiball-text">Welcome to the Helmholtz International BigBrain Analytics Learning Laboratory (HIBALL). Our aim is to transform the successful collaboration between McGill (MNI, BIC) and Forschungszentrum Jülich (INM-1, JSC) to the next level by reinforcing utilization and co-development of the latest AI and high-performance computing (HPC) technologies for building highly detailed 3D brain models, in close collaboration with CIFAR and MILA in Canada, and HAICU, the Helmholtz AI coordination unit.</p>
         </div>
         <div class="flex-center hiball-sponsors">
-          <a href="https://www.helmholtz.de/en/ "><img src="images/partner-helmholtz.png"></a> 
           <a href="https://www.fz-juelich.de/">
             <img src="images/logo-julich.jpg">
           </a>
+          <a href="https://www.helmholtz.de/en/ "><img src="images/partner-helmholtz.png"></a> 
           <a href="https://mcgill.ca/">
             <img src="images/logo-mcgill.png">
           </a> 
@@ -203,7 +221,7 @@
           <a href="https://www.fz-juelich.de" class="wordbreak">Forschungszentrum Jülich</a>
           <a href="">Jülich Supercomputing Centre</a>
         </div>
-        <div class="namecard other">
+        <div class="namecard mcgill">
           <div class="card-name">Dr. Boris Bernhardt</div>
           <div class="card-jobtitle">Project: Multimodal data integration</div>
           <a href="http://mica-mni.github.io/" class="">Multimodal & Multiscale Neuroscience</a>
@@ -237,7 +255,7 @@
           <div class="card-jobtitle">Project: Brain-inspired AI</div>
           <a href="http://rl.cs.mcgill.ca/" class="">Reason and Learning Lab</a>
         </div>
-        <div class="namecard other">
+        <div class="namecard mcgill">
           <div class="card-name">Dr. Blake Richards</div>
           <div class="card-jobtitle">Project: Brain-inspired AI</div>
           <a href="http://linclab.org/" class="">Linc Lab</a>
@@ -329,12 +347,20 @@
     <div class="section-content flex partners flex-center">
       <h1 class="full-width text-center">Additional Partners and Sponsors</h1>
       <h2 class="full-width text-center">those that contributed to the HIBALL project</h2>     
+      <div class="flex-center hiball-sponsors full-width">
+        <a href="https://www.fz-juelich.de/">
+          <img src="images/logo-julich.jpg">
+        </a>
+        <a href="https://www.helmholtz.de/en/ "><img src="images/partner-helmholtz.png"></a> 
+        <a href="https://mcgill.ca/">
+          <img src="images/logo-mcgill.png">
+        </a> 
+      </div>
       <a href="https://www.haicu.de/"><img src="images/logo-helmholtzai.png"></a>
       <a href="https://ebrains.eu/"><img src="images/logo-ebrains.png"></a>
       <a href="https://fenix-ri.eu/"><img src="images/fenix-logo.png"></a>
       <a href="https://mila.quebec/en/"><img src="images/logo-mila.png"></a>
       <a href="https://www.cifar.ca/"><img src="images/logo-cifar.png"></a>
-      <a href="https://mcgill.ca/"><img src="images/logo-mcgill.png"></a>
     </div>
   </section>
   <div class="clear-all"></div>
