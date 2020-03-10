@@ -1105,6 +1105,9 @@ height: 100%;
 .flex-center{
   align-items: center;
 }
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
 .reference {
   display: inline-block;
   margin-bottom: 10px;
