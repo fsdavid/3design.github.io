@@ -38,9 +38,18 @@
 <body>
 <div id="main-wrapper">
   <div class="social-media">
-    <a href="https://twitter.com/BigBrainProject"><i class="fab fa-twitter-square"></i></a>
-    <a href="mailto:info@bigbrainproject.org"><i class="fas fa-envelope-square"></i></a>
-    <a href="#main-wrapper"><i class="fas fa-arrow-up"></i></a>
+    <a href="https://twitter.com/BigBrainProject" class="tooltip">
+      <i class="fab fa-twitter-square"></i>
+      <span class="tooltiptext">Twitter</span>
+    </a>
+    <a href="mailto:info@bigbrainproject.org" class="tooltip">
+      <i class="fas fa-envelope-square"></i>
+      <span class="tooltiptext">Email</span>
+    </a>
+    <a href="#main-wrapper" class="tooltip">
+      <i class="fas fa-arrow-up"></i>
+      <span class="tooltiptext">Top</span>
+    </a>
   </div>
   <!-- navigation -->
   <nav class="site-nav">
@@ -48,23 +57,32 @@
     <div class="brand-border-2"></div>
     <div class="brand-border-3"></div>
     <div class="nav-container">
-      <div class="branding active"><a href="index.html">the BigBrain Project</a></div>
+      <div class="branding"><a href="index.html">the BigBrain Project</a></div>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-        <li class="nav-item"><a href="hiball.html" class="active"><strong>HIBALL</strong></a></li>
-        <li class="nav-item"><a href="history.html">History</a></li>
-        <li class="nav-item"><a href="dataset.html">Dataset</a></li>
-        <li class="nav-item"><a href="community.html">Community</a></li>
-        <!-- <li class="nav-item"><a href="#!">Community</a>
+        <li class="nav-item"><a href="#!" class="active"><strong>HIBALL</strong></a>
           <ul class="nav-dropdown">
             <li>
-              <a href="community.html">Our Community</a>
+              <a href="hiball.html">About HIBALL</a>
             </li>
             <li>
-              <a href="hiball.html">HIBALL</a>
+              <a href="hiball-goal-one.html">Goal One</a>
+            </li>
+            <li>
+              <a href="hiball-goal-two.html">Goal Two</a>
+            </li>
+            <li>
+              <a href="hiball-goal-three.html">Goal Three</a>
+            </li>
+            <li>
+              <a href="hiball-goal-four.html" class="active">Goal Four</a>
             </li>
           </ul>
-        </li> -->
+        </li>
+        <!-- <li class="nav-item"><a href="hiball.html"><strong>HIBALL</strong></a></li> -->
+        <li class="nav-item"><a href="history.html">History</a></li>
+        <li class="nav-item"><a href="dataset.html">Dataset</a></li>
+        <li class="nav-item"><a href="community.html" >Community</a></li>
         <li class="nav-item"><a href="tools.html">Tools</a></li>
         <li class="nav-item"><a href="news.html">News</a></li>
         <li class="nav-item"><a href="references.html">References</a></li>

@@ -38,9 +38,18 @@
 <body>
 <div id="main-wrapper">
   <div class="social-media">
-    <a href="https://twitter.com/BigBrainProject"><i class="fab fa-twitter-square"></i></a>
-    <a href="mailto:info@bigbrainproject.org"><i class="fas fa-envelope-square"></i></a>
-    <a href="#main-wrapper"><i class="fas fa-arrow-up"></i></a>
+    <a href="https://twitter.com/BigBrainProject" class="tooltip">
+      <i class="fab fa-twitter-square"></i>
+      <span class="tooltiptext">Twitter</span>
+    </a>
+    <a href="mailto:info@bigbrainproject.org" class="tooltip">
+      <i class="fas fa-envelope-square"></i>
+      <span class="tooltiptext">Email</span>
+    </a>
+    <a href="#main-wrapper" class="tooltip">
+      <i class="fas fa-arrow-up"></i>
+      <span class="tooltiptext">Top</span>
+    </a>
   </div>
   <!-- navigation -->
   <nav class="site-nav">
@@ -51,20 +60,29 @@
       <div class="branding"><a href="index.html">the BigBrain Project</a></div>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-        <li class="nav-item"><a href="hiball.html"><strong>HIBALL</strong></a></li>
-        <li class="nav-item active"><a href="history.html">History</a></li>
-        <li class="nav-item"><a href="dataset.html">Dataset</a></li>
-        <li class="nav-item"><a href="community.html">Community</a></li>
-        <!-- <li class="nav-item"><a href="#!">Community</a>
+        <li class="nav-item"><a href="#!"><strong>HIBALL</strong></a>
           <ul class="nav-dropdown">
             <li>
-              <a href="community.html">Our Community</a>
+              <a href="hiball.html">About HIBALL</a>
             </li>
             <li>
-              <a href="hiball.html">HIBALL</a>
+              <a href="hiball-goal-one.html">Goal One</a>
+            </li>
+            <li>
+              <a href="hiball-goal-two.html">Goal Two</a>
+            </li>
+            <li>
+              <a href="hiball-goal-three.html">Goal Three</a>
+            </li>
+            <li>
+              <a href="hiball-goal-four.html">Goal Four</a>
             </li>
           </ul>
-        </li> -->
+        </li>
+        <!-- <li class="nav-item"><a href="hiball.html"><strong>HIBALL</strong></a></li> -->
+        <li class="nav-item"><a href="history.html" class="active">History</a></li>
+        <li class="nav-item"><a href="dataset.html">Dataset</a></li>
+        <li class="nav-item"><a href="community.html" >Community</a></li>
         <li class="nav-item"><a href="tools.html">Tools</a></li>
         <li class="nav-item"><a href="news.html">News</a></li>
         <li class="nav-item"><a href="references.html">References</a></li>
@@ -93,7 +111,7 @@
               <div class="content-right" data-mh="timeline-group">
                 <h1>History of BigBrain</h1>
                 <h2>what is the BigBrain</h2>
-                <p>BigBrain is a freely accessible high-resolution 3D digital model of the human brain, released in June 2013 by a team of researchers at the Montreal Neurological Institute (Canada) and the Forschungszentrum Jülich (Germany) and is part of the European Human Brain Project. The isotropic 3D spatial resolution of the BigBrain model is 20 µm, much finer than the typical 1 mm resolution of other existing 3D models of the human brain. In 2014, BigBrain was cited in the top 10 MIT Technology Review.</p>
+                <p>BigBrain is a freely accessible high-resolution 3D digital model of the human brain, released in June 2013 by a team of researchers at the Montreal Neurological Institute (Canada) and the Forschungszentrum Jülich (Germany) and is part of the European Human Brain Project. The isotropic 3D spatial resolution of the BigBrain model is 20 µm, much finer than the typical 1 mm resolution of other existing 3D models of the human brain. In 2014, BigBrain was cited in the <a href="http://www.technologyreview.com/featuredstory/526501/brain-mapping/">Top 10 MIT Technology Review.</a></p>
               </div>
             </div>
             <div class="meta-date">
@@ -106,8 +124,11 @@
             <div class="content-left-container">
               <div class="content-left" data-mh="timeline-group">
                 <a href="images/history-aquisition.png" data-lightbox="bbstory">
-                  <img src="images/history-aquisition.png">
+                  <img src="images/history-aquisition.png">                  
                 </a>
+                <p class="caption">Digital rendering with CIVET<br>
+                  <a href="http://mcin-cnim.ca/wp-content/uploads/2017/08/RBIQ2016BigBrain.png">OHBM poster from 2016</a>
+                </p> 
               </div>
             </div>
             <div class="content-right-container">
@@ -126,17 +147,17 @@
           <div class="timeline-article">
             <div class="content-left-container">
               <div class="content-left flex" data-mh="timeline-group">
-                  <div class="caption">
+                  <div class="two-col">
                     <a href="images/history-digitize1.png" data-lightbox="bbstory">
                       <img src="images/history-digitize1.png">
-                      <p>Cutting of "BigBrain": using a microtome sections from the brain preserved in paraffin wax were cut into tiny slivers 20-micrometers thick. <br> Copyright: Amunts, Zilles, Evans et al.</p>
                     </a>
+                    <p class="caption">Cutting of "BigBrain": using a microtome sections from the brain preserved in paraffin wax were cut into tiny slivers 20-micrometers thick. <br> Copyright: Amunts, Zilles, Evans et al.</p>
                   </div>
-                  <div class="caption">
+                  <div class="two-col">
                     <a href="images/history-digitize2.png" data-lightbox="bbstory">
                       <img src="images/history-digitize2.png">
-                      <p>Histological stained sections of the "BigBrain". <br> Copyright:  Amunts, Zilles, Evans et al. </p>
                     </a>
+                    <p class="caption">Histological stained sections of the "BigBrain". <br> Copyright:  Amunts, Zilles, Evans et al. </p>
                   </div>
                   
               </div>
@@ -450,14 +471,16 @@
 <!-- value section -->
     <section>
     <div class="section-content end">
-      <div class="col-2">
-        <img src="images/dr-zilles-palomero.jpg" class="BigBrainPic">
-      </div>
-      <div class="col-2">
-        <div class="text-box">
-          <h1>Why create the BigBrain</h1>
-          <h2>a message from Dr. Zilles and Dr. Palomero-Gallagher</h2>
-          <p>the major advantage of the BigBrain for our work is that the image data of the human brain are registered as a 3D volume at very high spatial resolution. Since the human brain is folded, any part of the cortical ribbon may be subjected to the geometrical effects of this folding, i.e. the cortex is obliquely or even tangentially sectioned at various sites in a 2D representation, e.g. in images of single microtome sections. This effect hampers the measurement of any cortical structure which is bound to the 3D columnar architecture of the cortex. In contrast, the BigBrain allows analyses in 3D, and thus has opened the door to many studies which would not be possible in 2D representations.</p>
+      <div class="testimonial">
+        <div class="col-2 flex-center">
+          <img src="images/dr-zilles-palomero.jpg" class="BigBrainPic">
+        </div>
+        <div class="col-2">
+          <div class="text-box">
+            <h1>Why create the BigBrain</h1>
+            <h2>a message from Dr. Zilles and Dr. Palomero-Gallagher</h2>
+            <p>the major advantage of the BigBrain for our work is that the image data of the human brain are registered as a 3D volume at very high spatial resolution. Since the human brain is folded, any part of the cortical ribbon may be subjected to the geometrical effects of this folding, i.e. the cortex is obliquely or even tangentially sectioned at various sites in a 2D representation, e.g. in images of single microtome sections. This effect hampers the measurement of any cortical structure which is bound to the 3D columnar architecture of the cortex. In contrast, the BigBrain allows analyses in 3D, and thus has opened the door to many studies which would not be possible in 2D representations.</p>
+          </div>
         </div>
       </div>
     </div>
