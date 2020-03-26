@@ -523,7 +523,7 @@ ul.hide {
 }
 @media screen and (min-width: 800px) {
   .quad-image {
-    width: calc(25% - 30px);
+    width: calc(20% - 30px);
     margin: 15px;
   }
 }
