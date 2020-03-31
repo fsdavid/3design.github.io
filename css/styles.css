@@ -229,6 +229,100 @@ cite {
   width: 100%;
   margin: 0 auto;
 }
+.hero {
+  position: relative;
+  background: url(../images/backgrounds/coronal-mobile.png);
+  background-position: top left;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.hero-content {
+  position: relative;
+  margin-top: 70px;
+  padding: 20px;
+}
+.hero-content h1 {
+  margin-bottom: 30px;
+  text-shadow: 0px 0px 6px #fff;
+}
+.hero-flex {
+  display: flex;
+  flex-flow: column;
+}
+.hero-flex button {
+  margin-bottom: 20px;
+}
+.hero-logos {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: auto;
+}
+.hero-logos-link {
+  height: auto;
+  width: 50%;
+  padding: 10px 20px;
+  float: right;
+}
+.hero-logos-link img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 401px) {
+  .hero {
+    background: url(../images/backgrounds/coronal-small.png);
+    background-position: top left;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 600px) {
+  .hero-logos-link {
+    height: auto;
+    width: 25%;
+    padding: 20px;
+  }
+  .hero-content {
+    position: absolute;
+    max-width: 800px;
+    bottom: 100px;
+    left: 0;
+  }
+}
+@media screen and (min-width: 801px) {
+  .hero {
+    background: url(../images/backgrounds/coronal-medium.png);
+    background-position: top left;
+    background-size: cover;
+  }
+  .hero-content h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-logos-link {
+    height: auto;
+    width: 25%;
+    padding: 30px 20px;
+  }
+  .hero-logos-link img {
+    width: auto;
+    height: 75px;
+  }
+  .hero-content {
+    left: 40px;
+  }
+  .hero-content h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .hero {
+    background: url(../images/backgrounds/coronal-large.png);
+    background-position: center;
+    background-size: cover;
+  }
+}
 .section-content {
   width: 100%;
   max-width: 1200px;
@@ -242,6 +336,9 @@ cite {
 }
 .section-content.no-margin p:last-of-type {
   margin-bottom: 0;
+}
+.hero .section-content {
+  background-color: initial;
 }
 .sidebar-left {
   display: block;
