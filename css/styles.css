@@ -244,7 +244,7 @@ cite {
 }
 .hero-content h1 {
   margin-bottom: 30px;
-  text-shadow: 0px 0px 6px #fff;
+  text-shadow: 0px 0px 12px #fff;
 }
 .hero-flex {
   display: flex;
@@ -957,6 +957,18 @@ p.quote-text {
   background-color: #fff;
   overflow: hidden;
 }
+.frontpage-card {
+  position: relative;
+  display: block;
+  margin: 0 0 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+}
 @media screen and (min-width: 800px) {
   .contributors-list {
     display: flex;
@@ -970,6 +982,10 @@ p.quote-text {
     width: calc(33% - 30px);
     margin: 0 15px;  
   }  
+  .frontpage-card {
+    width: calc(33% - 30px);
+    margin: 0 15px; 
+  }
 }
 .card-name {
   font-weight: bold;
@@ -1396,4 +1412,7 @@ a.anchor {
   width: auto;
   max-width: 100%; 
   height: auto;
+}
+.max100 {
+  max-width: 100%;
 }
