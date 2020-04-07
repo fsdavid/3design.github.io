@@ -222,6 +222,49 @@
 
   <section>
     <div class="section-content end">
+      <div id="slick-slider-2" class="slider">
+        <div class="slider-card-holder">
+          <div class="frontpage-card" data-mh="cards">
+            <a class="twitter-timeline" data-width="100%" data-height="300" href="https://twitter.com/BigBrainProject?ref_src=twsrc%5Etfw">Tweets by BigBrainProject</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+        <div class="slider-card-holder">
+          <div class="frontpage-card" data-mh="cards">
+            <img src="images/partner-helmholtz.png" class="card-image-square">
+            <div class="tool-name">HIBALL</div>
+            <div class="tool-maker"><em>date:</em> Jan 20 2020</div>
+            <div class="tool-description">HIBALL, the new German-Canadian Lab, will build on the BigBrain Project’s AI-based 3D reconstruction of brain sections 
+            </div>
+            <a href="hiball.html" class="tool-link">To HIBALL page <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>  
+        <div class="slider-card-holder">
+          <div class="frontpage-card" data-mh="cards">
+            <img src="images/logo-neuro.jpg" class="card-image-square">
+            <div class="tool-name">4th BigBrain Workshop: Launch of HIBALL</div>
+            <div class="tool-maker"><em>date:</em> June 26 2020</div>
+            <div class="tool-description">This pre-OHBM event is dedicated to the formal inauguration of <a href="hiball.html" class="inline-link">HIBALL</a>. The workshop will be comprised of invited talks covering recent work on the BigBrain data. A poster session will facilitate in-depth discussion and opportunity for young researchers to present their work.
+            </div>
+            <a href="https://www.mcgill.ca/neuro/channels/event/fourth-bigbrain-workshop-launch-helmholtz-international-bigbrain-analytics-learning-laboratory-320401" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="slider-card-holder">
+          <div class="frontpage-card" data-mh="cards">
+            <h2>Recent Publications</h2>
+            <ul>
+              <li>one</li>
+              <li>two</li>
+              <li>three</li>
+            </ul>
+            <a href="references.html" class="tool-link">Go to references page <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--   <section>
+    <div class="section-content end">
       <div class="flex">
         <h1 class="full-width text-center spacer"><a href="news.html">News & Events</a></h1>
         <div class="flex">
@@ -246,8 +289,8 @@
           </div>
         </div>
       </div>
-    </div> <!-- end of content-section -->
-  </section>
+    </div> 
+  </section> -->
 
       <!-- value section -->
 <!--   <section>
@@ -299,6 +342,12 @@
 </script>
 
 <script type="text/javascript">
+  $(function() {
+    $('.item').matchHeight();
+  });
+</script>
+
+<script type="text/javascript">
    $(document).on('ready', function() {
     $('#slick-slider').slick({
       dots: true,
@@ -316,6 +365,36 @@
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  });
+});
+</script>
+
+<script type="text/javascript">
+   $(document).on('ready', function() {
+    $('#slick-slider-2').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplayspeed: 4000,
+      draggable: true,
+      mobilefirst: true,
+      pauseonhover: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1220,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
             infinite: true,
             dots: true
           }

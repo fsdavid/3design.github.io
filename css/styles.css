@@ -964,10 +964,16 @@ p.quote-text {
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 15px;
-  text-align: center;
+  /*text-align: center;*/
   background-color: #fff;
   overflow: hidden;
   width: 100%;
+}
+#slick-slider-2 .frontpage-card {
+  margin: 0;
+}
+.slider-card-holder {
+  padding: 15px;
 }
 @media screen and (min-width: 800px) {
   .contributors-list {
@@ -985,6 +991,9 @@ p.quote-text {
   .frontpage-card {
     width: calc(33% - 30px);
     margin: 0 15px; 
+  }
+  #slick-slider-2 .frontpage-card {
+    width: 100%;
   }
 }
 .card-name {
@@ -1310,13 +1319,15 @@ a.anchor {
 }
 
 /* slick slider */
-#slick-slider {
+#slick-slider,
+#slick-slider-2 {
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s ease;
     -webkit-transition: opacity 1s ease;
 }
-#slick-slider.slick-initialized {
+#slick-slider.slick-initialized,
+#slick-slider-2.slick-initialized {
     visibility: visible;
     opacity: 1;    
 }
