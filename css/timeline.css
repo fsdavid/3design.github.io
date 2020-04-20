@@ -199,7 +199,7 @@
 p.caption {
   padding: 2px;
   font-size: 10px;
-  text-align: center;
+  /*text-align: center;*/
   line-height: 1.125em;
 }
 @media screen and (min-width: 500px) {

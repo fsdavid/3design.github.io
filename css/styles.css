@@ -165,6 +165,13 @@ button:hover {
 .full-width {
   width: 100%;
 }
+.flex-baseline {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
 h2.full-width/*:last-of-type*/ {
   margin-bottom: 40px;
 }
@@ -209,6 +216,14 @@ cite {
   font-size: 1.25em;
   text-align: center;
 }
+.right-arrow {}
+.right-arrow::after {
+  content: "\f30b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+}
+
 /*** 
 *
 * Content 
@@ -220,7 +235,7 @@ cite {
   min-height: 100%;
   overflow: auto;
   position: relative;
-  background: url(../images/pattern.svg);
+  /*background: url(../images/pattern.svg);*/
   background-size: 60px 60px;
 }
 .col-2,
@@ -241,9 +256,13 @@ cite {
   position: relative;
   margin-top: 70px;
   padding: 20px;
+
 }
 .hero-content h1 {
   margin-bottom: 30px;
+  text-shadow: 0px 0px 12px #fff;
+}
+.hero-content p {
   text-shadow: 0px 0px 12px #fff;
 }
 .hero-content-extra h1 {
@@ -257,10 +276,11 @@ cite {
   margin-bottom: 20px;
 }
 .hero-logos {
-  position: absolute;
+  /*position: absolute;*/
   right: 0;
   bottom: 0;
   height: auto;
+
 }
 .hero-logos-link {
   height: auto;
@@ -298,6 +318,7 @@ cite {
     max-width: 800px;
     bottom: 100px;
     left: 0;
+    background: rgba(255,255,255,.75);
   }
   .bottom-zero {
     bottom: 0;
@@ -326,14 +347,18 @@ cite {
     padding: 30px 20px;
   }
   .hero-logos-link img {
-    width: auto;
-    height: 75px;
+    width: 100%;
+    /*height: 75px;*/
   }
   .hero-content {
     left: 40px;
+    border-radius: 25px;
   }
   .hero-content h1 {
     font-size: 40px;
+  }
+  .hero-content p {
+    font-size: 1.125em;
   }
   .hero-content-extra h1 {
     font-size: 2em;
@@ -1393,8 +1418,12 @@ a.anchor {
 .slider-pic {
   padding: 20px;
 }
-.slider {
-
+.slider-padding .testimonial {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.slider-padding .text-box {
+  padding: 0 20px;
 }
 .slider figure img { 
   width: 20%; 

@@ -24,8 +24,10 @@
 <link rel="stylesheet" type="text/css" href="slick/slick.css">
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/timeline.css" />
 <link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
 <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
 <link href="css/lightbox.css" rel="stylesheet" />
 <meta charset="utf-8">
 <title>the BigBrain</title>
@@ -98,40 +100,103 @@
   <!-- intro section -->
   <section class="hero">
     <div class="hero-content hero-content-extra">
-      <a class="hero-logos-link-2" href="hiball.html">
-        <img src="images/logo-hiball.png">
-      </a>
-      <p>HIBALL is the new funding umbrella for the BigBrain Project and aims to transform the successful collaboration between McGill (MNI, BIC) and Forschungszentrum Jülich (INM-1, JSC) to the next level by reinforcing utilization and co-development of the latest AI and high-performance computing (HPC) technologies for building highly detailed 3D brain models, in close collaboration with CIFAR and MILA in Canada, and HAICU, the Helmholtz AI coordination unit.</p>
-      <a class="hero-logos-link" href="https://www.helmholtz.de/en/">
-        <img src="images/partner-helmholtz.png">
-      </a>  
+      <h1>Vision and Mission</h1>
+      <p>Neuroimaging methods rely on accurate brain models as ground truth to develop reliable approaches for probing the brain. Currently existing computer-based 3D neuroimaging tools cannot reproduce the anatomical details available from freshly cut brains, particularly for very convoluted cortical regions and in the subcortical areas. With the advent of the BigBrain - a human brain that has been sectioned post-mortem, stained with a marker for cell bodies and scanned at very high resolution, then reconstructed in 3D - (Amunts et al., 2013), we believe that there will be improvement in the precision and quality of neuroimaging support for qualitative and quantitative investigation of the brain. The platform is developed in close interaction with the European "Human Brain Project", and tightly integrated with their web services.</p> 
     </div>
   </section>
   <div class="clear-all"></div>
 
+<!-- value section -->
+  <section>
+    <div class="section-content max100">
+      <h1 class="text-center spacer">History of BigBrain</h1>
+      <div id="slick-slider" class="slider slider-padding">
+
+          <div class="testimonial">
+            <div class="col-2 flex-center">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/wSHC_7yz0hs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-2">
+              <div class="text-box">
+                <h2>what is the BigBrain</h2>
+                <p>BigBrain is a freely accessible high-resolution 3D digital model of the human brain, released in June 2013 by a team of researchers at the Montreal Neurological Institute (Canada) and the Forschungszentrum Jülich (Germany) and is part of the European Human Brain Project. The isotropic 3D spatial resolution of the BigBrain model is 20 µm, much finer than the typical 1 mm resolution of other existing 3D models of the human brain. In 2014, BigBrain was cited in the <a href="http://www.technologyreview.com/featuredstory/526501/brain-mapping/">Top 10 MIT Technology Review.</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="col-2 flex-center">
+              <a href="images/history-aquisition.png">
+                  <img src="images/history-aquisition.png">                  
+                </a>
+                <p class="caption">Digital rendering with CIVET<br>
+                  <a href="http://mcin-cnim.ca/wp-content/uploads/2017/08/RBIQ2016BigBrain.png">OHBM poster from 2016</a>
+                </p> 
+            </div>
+            <div class="col-2">
+              <div class="text-box">
+                <h2>Acquisition: source brain</h2>
+                <p>The 3D model was created from the brain of an unidentified 65-year-old man who died with no known brain pathology. His brain, after being removed from the skull, was first scanned using an MRI machine, then embedded in paraffin. </p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="col-2 flex-baseline">
+                <div class="two-col"  data-lightbox="bbstory">
+                  <a href="images/history-digitize1.png">
+                    <img src="images/history-digitize1.png">
+                  </a>
+                  <p class="caption">Cutting of "BigBrain": using a microtome sections from the brain preserved in paraffin wax were cut into tiny slivers 20-micrometers thick. <br> Copyright: Amunts, Zilles, Evans et al.</p>
+                </div>
+                <div class="two-col"  data-lightbox="bbstory">
+                  <a href="images/history-digitize2.png">
+                    <img src="images/history-digitize2.png">
+                  </a>
+                  <p class="caption">Histological stained sections of the "BigBrain". <br> Copyright:  Amunts, Zilles, Evans et al. </p>
+                </div>
+            </div>
+            <div class="col-2">
+              <div class="text-box">
+                <h2>Digitization: scanning at 20μm</h2>
+                <p>In April 2004 the brain was sliced into 7,404 sections 20µm thick using a large-scale microtome. After each section was removed, the uncut face was photographed in order to provide an additional reference for removing distortion. The brain sections were placed on large glass slides and then stained for cell bodies using the Merker method, a process that causes the grey matter in the brain to be darkly stained while leaving the white matter uncolored. The stained sections were scanned and digitized using a flatbed scanner at 2400dpi, creating a one terabyte raw record. The acquisition process took about 1,000 hours of labor.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
   <!-- partners section -->
-  <section >
-    <div class="section-content flex">
-      <h1 class="full-width text-center">The BigBrain Partners</h1>
-      <h2 class="full-width text-center">How to contact the partners</h2>
-      <div class="contact-card">
-        <img src="images/julich.jpg" class="centre-pic">
-        <img src="images/logo-julich.jpg">
-        <address>Structural and functional organisation of the brain (INM-1)</address>
-        <address>Forschungszentrum</address>
-        <address>Jülich</address>
-        <address>52425 Jülich, Germany</address>
-        <a href="https://www.fz-juelich.de/inm/inm-1/EN/Home/home_node.html">website</a>
-      </div>   
-      <div class="contact-card">
-        <img src="images/mcgill.jpg" class="centre-pic">
-        <img src="images/logo-mcgill.png">
-        <address>McGill University</address>
-        <address>845 Sherbrooke St W</address>
-        <address>Montreal, QC, Canada</address> 
-        <address>H3A 0G4</address>
-        <a href="https://mcgill.ca">website</a>
+  <section class="lt-grey-bg">
+    <div class="section-content flex lt-grey-bg">
+      <h1 class="full-width text-center">The BigBrain Featured</h1>
+      <h2 class="full-width text-center">Major publications featuring the dataset</h2>
+      <div class="col-2">
+        <div class="col-2">
+          <img src="images/science-mag.jpg" class="BigBrainPic">
+        </div>
+        <div class="col-2">
+          <div class="text-box">
+            <h1>Science Magazine</h1>
+            <h2>BigBrain: An Ultrahigh-Resolution 3D Human Brain Model</h2>
+            <p>The original publication of the BigBrain</p>
+            <a href="https://science.sciencemag.org/content/340/6139/1472"><button class="float-right">read the full article</button></a>
+          </div>
+        </div>
       </div>  
+      <div class="col-2">
+        <div class="col-2">
+          <img src="images/mit-magazine.jpg" class="BigBrainPic">
+        </div>
+        <div class="col-2">
+          <div class="text-box">
+            <h1>MIT Technology Review</h1>
+            <h2>One of the Top 10 Breakthroughs of 2014 </h2>
+            <p>MIT Technology Review listed the BigBrain as 1 of the Top 10 Breakthroughs of 2014.</p>
+            <a href="http://www.technologyreview.com/featuredstory/526501/brain-mapping/"><button class="float-right">read the full article</button></a>
+          </div>
+        </div>
+      </div> 
     </div>
   </section>
   <div class="clear-all"></div>  
@@ -292,13 +357,13 @@
 
 
 <!-- Additional partners and sponsors -->
-  <section class="">
-    <div class="section-content flex partners flex-center end">
+  <section class="lt-grey-bg">
+    <div class="section-content flex partners flex-center lt-grey-bg end">
       <h1 class="full-width text-center">Partners and Sponsors</h1>
       <h2 class="full-width text-center">those that contributed to the HIBALL project</h2>     
       <div class="flex-center hiball-sponsors full-width">
         <a href="https://www.fz-juelich.de/">
-          <img src="images/logo-julich.jpg">
+          <img src="images/logo-julich.png">
         </a>
         <a href="https://www.helmholtz.de/en/ "><img src="images/partner-helmholtz.png"></a> 
         <a href="https://mcgill.ca/">
@@ -336,6 +401,8 @@
   <div class="brand-border-3"></div>
 </div>
 
+<script src="js/lightbox.js"></script>
+
 <script>
   $(function(){
     $("#showmenu").click(function(e){
@@ -357,9 +424,9 @@
    $(document).on('ready', function() {
     $('#slick-slider').slick({
       dots: true,
-      infinite: true,
+      infinite: false,
       autoplay: true,
-      autoplayspeed: 4000,
+      autoplayspeed: 6000,
       draggable: true,
       mobilefirst: true,
       pauseonhover: true,
@@ -371,7 +438,8 @@
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            infinite: true,
+            autoplayspeed: 4000,
+            infinite: false,
             dots: true
           }
         }
@@ -383,33 +451,4 @@
 });
 </script>
 
-<script type="text/javascript">
-   $(document).on('ready', function() {
-    $('#slick-slider-2').slick({
-      dots: true,
-      infinite: true,
-      autoplay: true,
-      autoplayspeed: 6000,
-      draggable: true,
-      mobilefirst: true,
-      pauseonhover: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      responsive: [
-        {
-          breakpoint: 1220,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: true
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-  });
-});
-</script>
 </body></html>
