@@ -106,7 +106,7 @@
   </section>
   <div class="clear-all"></div>
 
-<!-- value section -->
+<!-- timeline section -->
   <section>
     <div class="section-content max100">
       <h1 class="text-center spacer">History of BigBrain</h1>
@@ -118,7 +118,7 @@
             </div>
             <div class="col-2">
               <div class="text-box">
-                <h2>what is the BigBrain</h2>
+                <h2>What is the BigBrain</h2>
                 <p>BigBrain is a freely accessible high-resolution 3D digital model of the human brain, released in June 2013 by a team of researchers at the Montreal Neurological Institute (Canada) and the Forschungszentrum Jülich (Germany) and is part of the European Human Brain Project. The isotropic 3D spatial resolution of the BigBrain model is 20 µm, much finer than the typical 1 mm resolution of other existing 3D models of the human brain. In 2014, BigBrain was cited in the <a href="http://www.technologyreview.com/featuredstory/526501/brain-mapping/">Top 10 MIT Technology Review.</a></p>
               </div>
             </div>
@@ -126,30 +126,31 @@
 
           <div class="testimonial">
             <div class="col-2 flex-center">
-              <a href="images/history-aquisition.png">
-                  <img src="images/history-aquisition.png">                  
-                </a>
-                <p class="caption">Digital rendering with CIVET<br>
-                  <a href="http://mcin-cnim.ca/wp-content/uploads/2017/08/RBIQ2016BigBrain.png">OHBM poster from 2016</a>
-                </p> 
+              <a href="images/history-aquisition.png" data-lightbox="bbstory">
+                <img src="images/history-aquisition.png">                  
+              </a>
+              <p class="caption">Digital rendering with CIVET<br>
+                <a href="http://mcin-cnim.ca/wp-content/uploads/2017/08/RBIQ2016BigBrain.png">OHBM poster from 2016</a>
+              </p> 
             </div>
             <div class="col-2">
               <div class="text-box">
-                <h2>Acquisition: source brain</h2>
+                <h2>Acquisition: Source brain</h2>
                 <p>The 3D model was created from the brain of an unidentified 65-year-old man who died with no known brain pathology. His brain, after being removed from the skull, was first scanned using an MRI machine, then embedded in paraffin. </p>
               </div>
             </div>
           </div>
+
           <div class="testimonial">
             <div class="col-2 flex-baseline">
-                <div class="two-col"  data-lightbox="bbstory">
-                  <a href="images/history-digitize1.png">
+                <div class="two-col">
+                  <a href="images/history-digitize1.png" data-lightbox="bbstory">
                     <img src="images/history-digitize1.png">
                   </a>
                   <p class="caption">Cutting of "BigBrain": using a microtome sections from the brain preserved in paraffin wax were cut into tiny slivers 20-micrometers thick. <br> Copyright: Amunts, Zilles, Evans et al.</p>
                 </div>
-                <div class="two-col"  data-lightbox="bbstory">
-                  <a href="images/history-digitize2.png">
+                <div class="two-col">
+                  <a href="images/history-digitize2.png" data-lightbox="bbstory">
                     <img src="images/history-digitize2.png">
                   </a>
                   <p class="caption">Histological stained sections of the "BigBrain". <br> Copyright:  Amunts, Zilles, Evans et al. </p>
@@ -157,8 +158,78 @@
             </div>
             <div class="col-2">
               <div class="text-box">
-                <h2>Digitization: scanning at 20μm</h2>
+                <h2>Digitization: Scanning at 20μm</h2>
                 <p>In April 2004 the brain was sliced into 7,404 sections 20µm thick using a large-scale microtome. After each section was removed, the uncut face was photographed in order to provide an additional reference for removing distortion. The brain sections were placed on large glass slides and then stained for cell bodies using the Merker method, a process that causes the grey matter in the brain to be darkly stained while leaving the white matter uncolored. The stained sections were scanned and digitized using a flatbed scanner at 2400dpi, creating a one terabyte raw record. The acquisition process took about 1,000 hours of labor.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="col-2 flex-center">
+              <a href="images/processing.png" data-lightbox="bbstory">
+                <img src="images/processing.png">                  
+              </a>
+            </div>
+            <div class="col-2">
+              <div class="text-box">
+                <h2>Processing: Manualy repairing the images</h2>
+                <p>The resulting digital images were then processed by human operators to remove artifacts, and using software to align them with the reference images and with neighboring sections, thereby correcting distortions that inevitably arise during histological processing.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="col-2 flex-center">
+              <a href="images/servers.jpg" data-lightbox="bbstory">
+                <img src="images/servers.jpg">                  
+              </a>
+            </div>
+            <div class="col-2">
+              <div class="text-box">
+                <h2>Digital Processing: Digital processing with HPC</h2>
+                <p>Corrected images of consecutive sections were then registered and all data were assembled into a three-dimensional digital model with isotropic spatial resolution of 20 µm, which would not have been possible without supercomputers. Nevertheless, including all manual work, the atlas took five years to complete.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="col-2 flex-center">
+              <a href="images/neuroglancer.png" data-lightbox="bbstory">
+                <img src="images/neuroglancer.png">                  
+              </a>
+            </div>
+            <div class="col-2">
+              <div class="text-box">
+                <h2>Visualization: Rendering the BigBrain in 3D</h2>
+                <p>In Summer 2017 the first version of the Human Brain Project’s web-based 3D model viewer was released. NeHuBa (neuroglancer for human brain atlas) is  capable of displaying very large brain volumes, including oblique slicing, a whole brain overview, surface meshes, and maps. It allows to interactively choose difference template spaces and reference parcellations, find brain areas by name or visual selection, and browse additional region-specific multimodal data. The rendering of large volumetric data builds on the open source project Neuroglancer. BigBrain can be directly accessed at <a href="https://bigbrain.humanbrainproject.eu ">https://bigbrain.humanbrainproject.eu</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="col-2 flex-center">
+              <a href="images/history-analysis.png" data-lightbox="bbstory">
+                <img src="images/history-analysis.png">                  
+              </a>
+            </div>
+            <div class="col-2">
+              <div class="text-box">
+                <h2>Analysis: Segmentation of the BigBrain</h2>
+                <p>Different approaches are currently being used to trace distinct areas on the BigBrain: manual delineation of brain cortical areas and subcortical structures based on existing atlases, and automatic methods derived from artificial intelligence (machine learning and deep learning) to extract cortical layers or count groups of cells.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="col-2 flex-center">
+              <a href="images/a3d.png" data-lightbox="bbstory">
+                <img src="images/a3d.png">                  
+              </a>
+            </div>
+            <div class="col-2">
+              <div class="text-box">
+                <h2>Dissemination: Sharing the model with the world</h2>
+                <p>Different approaches are currently being used to trace distinct areas on the BigBrain: manual delineation of brain cortical areas and subcortical structures based on existing atlases, and automatic methods derived from artificial intelligence (machine learning and deep learning) to extract cortical layers or count groups of cells.</p>
               </div>
             </div>
           </div>
@@ -166,7 +237,7 @@
     </div>
   </section>
 
-  <!-- partners section -->
+  <!-- publications section -->
   <section class="lt-grey-bg">
     <div class="section-content flex lt-grey-bg">
       <h1 class="full-width text-center">The BigBrain Featured</h1>
