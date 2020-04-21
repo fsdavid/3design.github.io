@@ -78,6 +78,9 @@ a {
   color: #8c0000;
   transition: all 0.25s ease;
 }
+footer a {
+  color: #fff;
+}
 a:hover,
 a:focus {
   color: #DC2627;
@@ -1207,7 +1210,7 @@ div.accordian li {
 }
 .gallery {
   display: flex;
-  align-items: baseline;
+  /*align-items: baseline;*/
   list-style: none;
   flex-flow: wrap;
   justify-content: space-evenly;
