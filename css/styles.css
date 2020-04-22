@@ -226,7 +226,11 @@ cite {
   font-weight: 900;
   font-size: 30px;
 }
-
+.no-side-pad {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  /*it's a hack, I know...*/
+}
 /*** 
 *
 * Content 
@@ -1330,6 +1334,60 @@ height: 100%;
   }
 }
 
+.mosaic {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.mosaic-overlay {
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    padding: .25em 1em;
+    overflow: hidden;
+    background: rgba(255,255,255,0.6);
+    height: 2em;
+    color: #fff;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    -webkit-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+    color: #343434;
+}
+.mosaic-overlay:hover {
+  height: 100%;
+  background: rgba(255,255,255,0.90);
+  padding: 1em;
+  width: 100%;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.mosiac-overlay-name {
+  font-size: 1em;
+  line-height: 1.6em;
+  font-weight: bold;
+}
+@media screen and (min-width: 400px ) {
+  .mosaic {
+    width: 33%
+  }
+}
+@media screen and (min-width: 600px ) {
+  .mosaic {
+    width: 25%
+  }
+}
+@media screen and (min-width: 800px ) {
+  .mosaic {
+    width: 20%
+  }
+}
+@media screen and (min-width: 1200px ) {
+  .mosaic {
+    width: 14.285%;
+  }
+}
 /* anchors */
 a.anchor {
   display: block;
