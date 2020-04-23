@@ -1261,6 +1261,9 @@ div.accordian li {
   line-height: 1.5em;
   font-size: 12px;
 }
+.atlas-image-holder {
+  padding: 20px;
+}
 .youtube-container{
 position: relative;
 width: 100%;

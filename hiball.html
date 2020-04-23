@@ -121,7 +121,9 @@
       <div class="clear-all"></div>
     </div>
   </section>
-  <section class="lt-grey-bg">
+
+  <!-- atlas gallery -->
+<!--   <section class="lt-grey-bg">
     <div class="section-content lt-grey-bg">
       <h1 class="text-center spacer">Atlas Gallery</h1>
       <ul class="gallery">
@@ -147,9 +149,38 @@
         </li>
       </ul>
     </div>
-  </section>
+  </section> -->
       
+  <section class="lt-grey-bg">
+    <div class="section-content lt-grey-bg ">
+      <h1 class="text-center spacer">Atlas Gallery</h1>
+      <div id="slick-slider" class="slider">
+          <div class="atlas-image-holder">
+            <a href="images/gallery/palomero-gallagher-thomas-funck.jpg" data-lightbox="hiball-images">
+            <img src="images/gallery/palomero-gallagher-thomas-funck-tn.jpg">
+          </a><strong>Palomero-Gallagher and Funck</strong>, 2020
+          </div>
 
+          <div class="atlas-image-holder">
+             <a href="images/gallery/atlas-xindi.png" data-lightbox="hiball-images">
+            <img src="images/gallery/atlas-xindi-tn.png">
+            </a><strong>Wang et al.</strong>, 2020
+          </div>
+
+          <div class="atlas-image-holder">
+            <a href="images/gallery/CRC_F1.png" data-lightbox="hiball-images">
+            <img src="images/gallery/CRC_F1-tn.png">
+            </a><strong>Bernhardt et al.</strong>, 2020
+          </div>
+
+          <div class="atlas-image-holder">
+            <a href="images/gallery/YasharZ_Figure_1.png" data-lightbox="hiball-images">
+            <img src="images/gallery/YasharZ_Figure_1_tn.png">
+            </a><strong>Zeighami et al.</strong>, 2020
+          </div>
+      </div>
+    </div>
+  </section>
   
   <!-- goals section -->
 <!--   <section class="lt-grey-bg">
@@ -525,10 +556,47 @@
       dots: true,
       infinite: true,
       autoplay: true,
-      autoplayspeed: 4000,
+      autoplaySpeed: 6000,
       draggable: true,
       mobilefirst: true,
-      pauseonhover: true
+      pauseonhover: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplaySpeed: 6000,
+            infinite: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplaySpeed: 6000,
+            infinite: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplaySpeed: 6000,
+            infinite: false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
   });
 });
 </script>
