@@ -256,8 +256,8 @@ cite {
   background: url(../images/backgrounds/coronal-mobile.png);
   background-position: top left;
   background-size: cover;
-  height: 100vh;
   width: 100%;
+  overflow: initial;
 }
 .hero-content {
   position: relative;
@@ -307,6 +307,10 @@ cite {
   margin-bottom: 20px;
   max-width: 400px;
 }
+.quad-holder {
+    display: block;
+    width: 100%;
+}
 @media screen and (min-width: 401px) {
   .hero {
     background: url(../images/backgrounds/coronal-small.png);
@@ -315,6 +319,9 @@ cite {
   }
 }
 @media screen and (min-width: 600px) {
+  .hero {
+    height: 100vh;
+  }
   .hero-logos-link {
     height: auto;
     width: 25%;
@@ -333,6 +340,16 @@ cite {
   .hero-content-extra {
     min-width: 50%;
   }
+  .goal-holder {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    z-index: 9999;
+  } 
+  .about-hero {
+    bottom: 50% ;
+  }
 }
 @media screen and (min-width: 801px) {
   .hero {
@@ -345,6 +362,15 @@ cite {
   }
   .hero-content-extra h1 {
     font-size: 2em;
+  }
+  .about-hero {
+    bottom: 200px;
+  }
+  .goal-holder {
+    bottom: calc(-9.5vw);
+  }
+  .about-padding {
+    padding: 120px 40px !important;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -370,12 +396,18 @@ cite {
   .hero-content-extra h1 {
     font-size: 2em;
   }
+  .about-padding {
+    padding: 200px 40px !important;
+  }
 }
 @media screen and (min-width: 1600px) {
   .hero {
     background: url(../images/backgrounds/coronal-large.png);
     background-position: center;
     background-size: cover;
+  }
+  .goal-holder {
+    bottom: -150px;
   }
 }
 .section-content {
@@ -664,19 +696,21 @@ ul.hide {
 }
 .quad-image {
   position: relative;
-  width: calc(100% - 30px);
+  width: calc(50% - 30px);
   margin: 15px;
 }
 @media screen and (min-width: 500px) {
   .quad-image {
-    width: calc(50% - 30px);
+    width: calc(33% - 30px);
     margin: 15px;
+    max-width: 150px;
   }
 }
 @media screen and (min-width: 800px) {
   .quad-image {
     width: calc(20% - 30px);
     margin: 15px;
+    max-width: 300px;
   }
 }
 .one-to-one-aspect {

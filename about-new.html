@@ -99,16 +99,99 @@
   </nav>
   <!-- intro section -->
   <section class="hero">
-    <div class="hero-content hero-content-extra">
+    <div class="hero-content hero-content-extra about-hero">
       <h1>Vision and Mission</h1>
       <p>Neuroimaging methods rely on accurate brain models as ground truth to develop reliable approaches for probing the brain. Currently existing computer-based 3D neuroimaging tools cannot reproduce the anatomical details available from freshly cut brains, particularly for very convoluted cortical regions and in the subcortical areas. With the advent of the BigBrain - a human brain that has been sectioned post-mortem, stained with a marker for cell bodies and scanned at very high resolution, then reconstructed in 3D - (Amunts et al., 2013), we believe that there will be improvement in the precision and quality of neuroimaging support for qualitative and quantitative investigation of the brain. The platform is developed in close interaction with the European "Human Brain Project", and tightly integrated with their web services.</p> 
+    </div>
+  <!-- goals section -->
+    <div class="goal-holder">
+      <div class="text-center">
+        <!-- <h2 class="small-spacer">HIBALL Goals</h2> -->
+        <div class="flex">
+          <div class="quad-image scene">
+            <div class="animated-card">
+              <div class="one-to-one-aspect"></div>
+              <div class="card-face face-front">
+                <img src="images/bigbrain.png"  alt="Hiball goal: multimodal atlas">
+                <span class="flex-center">Multimodal Atlas</span>
+              </div>
+              <div class="card-face face-back">
+                <span class="flex-center">High quality parcellations of the BigBrain. </span>
+                <a href="hiball-goal-one.html"><button>read more</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="quad-image scene">
+            <div class="animated-card">
+              <div class="one-to-one-aspect"></div>
+              <div class="card-face face-front">
+                <img src="images/bigbrain.png"  alt="Hiball goal: multimodal atlas">
+                <span class="flex-center">Cellular BigBrain Infrastructure and Tools</span>
+              </div>
+              <div class="card-face face-back">
+                <span class="flex-center">Expanding with AI-based 3D reconstruction of brain sections.</span> 
+                <a href="hiball-goal-two.html"><button>read more</button></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="quad-image scene">
+            <div class="animated-card">
+              <div class="one-to-one-aspect"></div>
+              <div class="card-face face-front">
+                <img src="images/bigbrain.png"  alt="Hiball goal: multimodal atlas">
+                <span class="flex-center">AI Link to Data Science and Brain Inspired Computing </span>
+              </div>
+              <div class="card-face face-back">
+                <span class="flex-center">Generate a 3D map of functional neuroanatomy at the cellular level. </span>
+                <a href="hiball-goal-three.html"><button>read more</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="quad-image scene">
+            <div class="animated-card">
+              <div class="one-to-one-aspect"></div>
+              <div class="card-face face-front">
+                <img src="images/bigbrain.png"  alt="Hiball goal: multimodal atlas">
+                <span class="flex-center">Virtual BigBrain and Simulation Platform </span>
+              </div>
+              <div class="card-face face-back">
+                <span class="flex-center">Build on the BigBrain Project’s AI-based 3D reconstruction. </span>
+                <a href="hiball-goal-four.html"><button>read more</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="quad-image scene">
+            <div class="animated-card">
+              <div class="one-to-one-aspect"></div>
+              <div class="card-face face-front">
+                <img src="images/bigbrain.png"  alt="Hiball goal: multimodal atlas">
+                <span class="flex-center">Open Community Resource</span>
+              </div>
+              <div class="card-face face-back">
+                <span class="flex-center">Optimize to become highly interoperable. </span>
+                <a href="hiball-goal-five.html"><button>read more</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <div class="clear-all"></div>
 
+<script type="text/javascript">
+    $('.scene').on('click', '.animated-card', function() {
+    $(this).toggleClass('card-flip');
+  });
+</script>
+
 <!-- timeline section -->
   <section>
-    <div class="section-content max100">
+    <div class="section-content max100 about-padding">
       <h1 class="text-center spacer">History of BigBrain</h1>
       <div id="slick-slider" class="slider slider-padding">
 
@@ -323,7 +406,7 @@
         </div>
       </div>
       <div class="mosaic">
-        <img src="images/team/profile-temp.png" class="">
+        <img src="images/team/profile-temp2.png" class="">
         <div class="mosaic-overlay">
           <div class="mosiac-overlay-name mcgill-small">Claude Lepage</div>
           <div class="card-jobtitle">Development and programming of image-processing tools for 3D reconstruction/alignment and automatic repair pipelines, manual repairs, registration, quality control and documentation</div>
@@ -347,7 +430,7 @@
         </div>
       </div>
       <div class=" mosaic">
-        <img src="images/team/profile-temp.png" class="">
+        <img src="images/team/profile-temp2.png" class="">
         <div class="mosaic-overlay">
           <div class="mosiac-overlay-name julich-small">Hartmut Mohlberg</div>
           <div class="card-jobtitle">Institute structural and functional organisation of the brain (INM-1)</div>
@@ -640,7 +723,7 @@
    $(document).on('ready', function() {
     $('#slick-slider').slick({
       dots: true,
-      infinite: false,
+      infinite: true,
       autoplay: true,
       autoplayspeed: 6000,
       draggable: true,
