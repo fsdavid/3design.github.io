@@ -454,7 +454,7 @@
   <!-- value section -->
   <section>
     <div class="section-content end">
-      <div id="slick-slider" class="slider">
+      <div id="slick-slider2" class="slider">
           <div class="testimonial">
             <div class="col-2 flex-center">
               <img src="images/dr-zilles-palomero.jpg" class="BigBrainPic">
@@ -585,6 +585,37 @@
         },
         {
           breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplaySpeed: 6000,
+            infinite: false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  });
+});
+</script>
+
+<script type="text/javascript">
+   $(document).on('ready', function() {
+    $('#slick-slider2').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      draggable: true,
+      mobilefirst: true,
+      pauseonhover: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1200,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
