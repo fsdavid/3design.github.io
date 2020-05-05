@@ -253,7 +253,8 @@ cite {
 }
 .hero {
   position: relative;
-  background: url(../images/backgrounds/coronal-mobile.png);
+  background-color: #fff;
+  background-image: url(../images/backgrounds/background-bw.png);
   background-position: top left;
   background-size: cover;
   width: 100%;
@@ -313,7 +314,7 @@ cite {
 }
 @media screen and (min-width: 401px) {
   .hero {
-    background: url(../images/backgrounds/coronal-small.png);
+    /*background: url(../images/backgrounds/background.png);*/
     background-position: top left;
     background-size: cover;
   }
@@ -332,7 +333,7 @@ cite {
     max-width: 800px;
     bottom: 100px;
     left: 0;
-    background: rgba(255,255,255,.75);
+    background: rgba(255,255,255,1);
   }
   .bottom-zero {
     bottom: 0;
@@ -353,7 +354,7 @@ cite {
 }
 @media screen and (min-width: 801px) {
   .hero {
-    background: url(../images/backgrounds/coronal-medium.png);
+    /*background: url(../images/backgrounds/background.png);*/
     background-position: top left;
     background-size: cover;
   }
@@ -402,7 +403,7 @@ cite {
 }
 @media screen and (min-width: 1600px) {
   .hero {
-    background: url(../images/backgrounds/coronal-large.png);
+    /*background: url(../images/backgrounds/background.png);*/
     background-position: center;
     background-size: cover;
   }
