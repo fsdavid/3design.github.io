@@ -253,17 +253,19 @@ cite {
 }
 .hero {
   position: relative;
-  background: url(../images/backgrounds/coronal-mobile.png);
-  background-position: top left;
-  background-size: cover;
   width: 100%;
   overflow: initial;
+}
+.hero-pic {
+  background: no-repeat center url(../images/backgrounds/background-bw-mobile.png);
+}
+.hero-coronal {
+  background: no-repeat center url(../images/backgrounds/coronal-mobile.png);
 }
 .hero-content {
   position: relative;
   margin-top: 70px;
   padding: 20px;
-
 }
 .hero-content h1 {
   margin-bottom: 30px;
@@ -312,10 +314,8 @@ cite {
     width: 100%;
 }
 @media screen and (min-width: 401px) {
-  .hero {
-    background: url(../images/backgrounds/coronal-small.png);
-    background-position: top left;
-    background-size: cover;
+  .hero-pic {
+    background: no-repeat center url(../images/backgrounds/background-bw-medium.png);
   }
 }
 @media screen and (min-width: 600px) {
@@ -352,10 +352,8 @@ cite {
   }
 }
 @media screen and (min-width: 801px) {
-  .hero {
-    background: url(../images/backgrounds/coronal-medium.png);
-    background-position: top left;
-    background-size: cover;
+  .hero-pic {
+    background: no-repeat center url(../images/backgrounds/background-bw-large.png);
   }
   .hero-content h1 {
     font-size: 35px;
@@ -374,6 +372,9 @@ cite {
   }
 }
 @media screen and (min-width: 1200px) {
+  .hero-pic {
+    background: no-repeat center url(../images/backgrounds/background-bw.png);
+  }
   .hero-logos-link {
     height: auto;
     width: 25%;
@@ -401,10 +402,8 @@ cite {
   }
 }
 @media screen and (min-width: 1600px) {
-  .hero {
-    background: url(../images/backgrounds/coronal-large.png);
-    background-position: center;
-    background-size: cover;
+  .hero-pic {
+    background: no-repeat center/50% url(../images/backgrounds/background-bw.png);
   }
   .goal-holder {
     bottom: -150px;
@@ -730,16 +729,17 @@ ul.hide {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,0.2);
   color: #fff;
+  text-shadow: #000 0px 0px 4px;
   font-weight: 700;
   padding: 20px;
   text-align: center;
   transition: all 0.25s ease;
   backface-visibility: hidden;
-  transform-style: preserve-3d; 
+  transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d; 
+  -webkit-transform-style: preserve-3d;
 }
 .card-face span:hover,
 .card-face span:focus {
@@ -1380,7 +1380,7 @@ height: 100%;
   position: absolute;
     bottom: 0;
     left: 0;
-    width: 90%;
+    width: 95%;
     padding: .25em 1em;
     overflow: hidden;
     background: rgba(255,255,255,0.6);
@@ -1463,6 +1463,65 @@ a.anchor {
     visibility: visible;
   }
 }
+/*New Hero Section*/
+.grid-container {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 30px 1fr 1fr 30px;
+  grid-template-rows: 60px 1fr 3fr 30px;
+  gap: 1px 1px;
+  grid-template-areas: 
+  ". . . ."
+  ". . . ."
+  "hero-content hero-content hero-content hero-content"
+  "hero-content hero-content hero-content hero-content";
+}
+
+.hero-content-grid { 
+  grid-area: hero-content; 
+  padding: 30px;
+  background-color: rgba(255,255,255,.8);
+}
+.hero-content-grid h1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 400px) {
+  .grid-container {
+    grid-template-rows: 60px 1fr 2fr 30px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .grid-container {
+    grid-template-columns: 30px 2fr 1fr 30px;
+    grid-template-rows: 60px 1.5fr 1fr 30px;
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". hero-content . ."
+    ". . . .";
+  }
+  .hero-content-grid h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 30px 1fr 1fr 30px;
+  }
+  .hero-content-grid {
+    border-radius: 15px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .grid-container {
+    grid-template-columns: 30px fit-content(800px) 1fr 30px;
+  }
+}
+
 
 /* slick slider */
 #slick-slider,
