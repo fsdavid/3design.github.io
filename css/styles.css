@@ -794,7 +794,7 @@ ul.hide {
 .hiball-sponsors a img {
   display: inline-block;
   width: 100%;
-  margin: 1.5%;
+  padding: 1.5%;
   max-width: 200px;
 }
 .hiball-text {
