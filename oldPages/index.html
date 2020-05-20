@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145481065-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145481065-1');
+</script>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
+<!-- general -->
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/timeline.css" />
+<link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+<link href="css/lightbox.css" rel="stylesheet" />
+<meta charset="utf-8">
+<title>the BigBrain</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="This is the website of the BigBrain Project.">
+<meta name="keywords" content="Neuro, Brain, Research, Big Data, Science, Medicine">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/drop-down.js"></script>
+<script src="js/jquery.matchHeight.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="main-wrapper">
+  <div class="social-media">
+    <a href="https://twitter.com/BigBrainProject" class="tooltip">
+      <i class="fab fa-twitter-square"></i>
+      <span class="tooltiptext">Twitter</span>
+    </a>
+    <a href="mailto:info@bigbrainproject.org" class="tooltip">
+      <i class="fas fa-envelope-square"></i>
+      <span class="tooltiptext">Email</span>
+    </a>
+    <a href="#main-wrapper" class="tooltip">
+      <i class="fas fa-arrow-up"></i>
+      <span class="tooltiptext">Top</span>
+    </a>
+  </div>
+  <!-- navigation -->
+  <nav class="site-nav">
+    <div class="brand-border-1"></div>
+    <div class="brand-border-2"></div>
+    <div class="brand-border-3"></div>
+    <div class="nav-container">
+      <div class="branding active"><a href="index.html">the BigBrain Project</a></div>
+      <div id="showmenu">Menu</div>
+      <ul id="menu" class="nav-list hide">
+<!--         <li class="nav-item"><a href="#!"><strong>HIBALL</strong></a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="hiball.html">About HIBALL</a>
+            </li>
+            <li>
+              <a href="hiball-goal-one.html">Multimodal Atlas</a>
+            </li>
+            <li>
+              <a href="hiball-goal-two.html">Cellular BigBrain Infrastructure and Tools</a>
+            </li>
+            <li>
+              <a href="hiball-goal-three.html">AI Link to Data Science and Brain Inspired Computing</a>
+            </li>
+            <li>
+              <a href="hiball-goal-four.html">Virtual BigBrain and Simulation Platform</a>
+            </li>
+            <li>
+              <a href="hiball-goal-five.html">Open Community Resource</a>
+            </li>
+          </ul>
+        </li> -->
+        <li class="nav-item"><a href="hiball.html"><strong>HIBALL</strong></a></li>
+        <li class="nav-item"><a href="history.html">History</a></li>
+        <li class="nav-item"><a href="dataset.html">Dataset</a></li>
+        <li class="nav-item"><a href="community.html">Community</a></li>
+        <li class="nav-item"><a href="tools.html">Tools</a></li>
+        <li class="nav-item"><a href="news.html">News</a></li>
+        <li class="nav-item"><a href="references.html">References</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- intro section -->
+  <section>
+    <div class="section-content">
+      <div class="sidebar-right">
+        <div class="flex-center">
+          <h1>A Joint Project Between</h1>
+          <a class="sidebar-logo"href="https://www.fz-juelich.de/">
+            <img src="images/logo-julich.jpg">
+          </a>
+          <a class="sidebar-logo" href="https://mcgill.ca/">
+            <img src="images/logo-mcgill.png">
+          </a>          
+        </div>
+      </div>
+      <div class="sidebar-left">
+        <div class="col-2">
+          <img src="images/bigbrain.png" class="BigBrainPic">
+        </div>
+        <div class="col-2">
+          <div class="text-box">
+            <h1>The BigBrain</h1>
+            <h2 class="small-spacer">a freely accessible, microscopic resolution 3D model of the human brain.</h2>
+            <div class="full-width clear-all spacer">
+              <div class="button-holder">
+                <a href="https://bigbrain.humanbrainproject.org/"><button class="float-left">view in Browser</button></a>
+                <a href="dataset.html#download"><button class="float-right">access Data</button></a>
+                <div class="clear-all"></div>
+              </div>
+            </div>
+            <h2>our mission</h2>
+            <p>Neuroimaging methods rely on accurate brain models as ground truth to develop reliable approaches for probing the brain. Currently existing computer-based 3D neuroimaging tools cannot reproduce the anatomical details available from freshly cut brains, particularly for very convoluted cortical regions and in the subcortical areas. With the advent of the BigBrain - a human brain that has been sectioned post-mortem, stained with a marker for cell bodies and scanned at very high resolution, then reconstructed in 3D - (Amunts et al., 2013), we believe that there will be improvement in the precision and quality of neuroimaging support for qualitative and quantitative investigation of the brain.</p>
+            <!-- <a href="history.html"><button class="float-right">see the History</button></a> -->
+          </div>
+        </div>
+        <div class="clear-all"></div>
+        <!-- mission section -->
+        <div class="col-2">
+          <img src="images/a3d.png" class="BigBrainPic">
+        </div>
+        <div class="col-2">
+          <div class="text-box">
+            <h2>our vision</h2>
+            <p>Our goal is to create an open-source, web-based, federated, high-resolution reference brain atlas and mapping tool as a neuroinformatics platform and neuroscience resource for research, training, education and outreach. We hope to build a pluridisciplinary community around this platform, with users and contributors from multiple and diverse fields of study exchanging information (methods, data, results) and sharing experiences online (real-time online collaboration). This open science platform will facilitate exchange and dissemination of research that make use of the BigBrain dataset alone or in combination with biological samples (omics data), high resolution postmortem (sMRI, photon microscopy, polarised light imaging), and <em>in vivo</em> imaging data (functional and metabolic from MRI, MRS, PET, EEG/MEG, etc). The platform is developed in close interaction with the European "Human Brain Project", and tightly integrated with their web services.</p>
+            <!-- <a href="community.html"><button class="float-right">join the Community</button></a> -->
+            <a href="history.html"><button class="float-right">see the History</button></a>
+          </div>
+        </div>
+        <div class="clear-all"></div>
+        <!-- vision section -->
+        <div class="col-2">
+          <img src="images/science-mag.jpg" class="BigBrainPic">
+        </div>
+        <div class="col-2">
+          <div class="text-box">
+            <!-- <h2>what is the BigBrain?</h2> -->
+            <h2>the initial BigBrain publication</h2>
+            <p>Amunts, K., Lepage, C., Borgeat, L., Mohlberg, H., Dickscheid, T., Rousseau, M.-É., Bludau, S., Bazin, P.-L., Lewis, L. B., Oros-Peusquens, A.-M., Shah, N. J., Lippert, T., Zilles, K. & Evans, A. C. (2013). BigBrain: An Ultrahigh-Resolution 3D Human Brain Model. Science, 340, 1472--1475. doi: <a href="https://science.sciencemag.org/content/340/6139/1472">10.1126/science.1235381</a> </p>
+<!--       <p class="flex logo-small">
+            <a href="https://www.fz-juelich.de/">
+              <img src="images/logo-julich.jpg">
+            </a>
+            <a href="https://mcgill.ca/">
+              <img src="images/logo-mcgill.png">
+            </a>
+          </p> -->
+          <!-- <a href="history.html"><button class="float-right">see the History</button></a> -->
+          </div>
+        </div>
+      </div> <!-- end of sidebar-left -->       
+      <div class="sidebar-right flex">
+        <h1><a href="news.html">News & Events</a></h1>
+        <div class="flex">
+          <div class="sidebar-card">
+            <a class="twitter-timeline" data-width="100%" data-height="250" href="https://twitter.com/BigBrainProject?ref_src=twsrc%5Etfw">Tweets by BigBrainProject</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <div class="sidebar-card">
+            <div class="card-image-square">
+              <img src="images/partner-helmholtz.png">
+              <img src="images/logo-hbhl.png" >
+            </div>
+            
+            <div class="tool-name">HIBALL</div>
+            <div class="tool-maker"><em>date:</em> Jan 20 2020</div>
+            <div class="tool-description">HIBALL, the new German-Canadian Lab, will build on the BigBrain Project’s AI-based 3D reconstruction of brain sections 
+            </div>
+            <a href="hiball.html" class="tool-link">To HIBALL page <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="sidebar-card">
+            <img src="images/logo-neuro.jpg" class="card-image-square">
+            <div class="tool-name">4th BigBrain Workshop: Launch of HIBALL</div>
+            <div class="tool-maker"><em>date:</em> June 26 2020</div>
+            <div class="tool-description">This pre-OHBM event is dedicated to the formal inauguration of <a href="hiball.html" class="inline-link">HIBALL</a>. The workshop will be comprised of invited talks covering recent work on the BigBrain data. A poster session will facilitate in-depth discussion and opportunity for young researchers to present their work.
+            </div>
+            <a href="https://www.mcgill.ca/neuro/channels/event/fourth-bigbrain-workshop-launch-helmholtz-international-bigbrain-analytics-learning-laboratory-320401" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+          </div>
+<!--           <div class="sidebar-card">
+            <img src="images/news/caiac2019.jpg" class="card-image-square">
+            <div class="tool-name">Canadian Conference on Artificial Intelligence</div>
+            <div class="tool-maker"><em>date:</em> May 12-15 2020</div>
+            <div class="tool-description">This conference will bring together hundreds of leaders in research, industry, and government, as well as Canada's most accomplished students. Past events:
+              <a href="https://www.caiac.ca/en/conferences/canadianai-2019/home" class="news-inline-link">CAIAC 2019</a>
+            </div>
+            <a href="https://www.caiac.ca/en/conferences/canadianai-2020/home" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+          </div> -->
+        </div>
+      </div>
+    </div> <!-- end of content-section -->
+  </section>
+  <div class="clear-all"></div>
+
+  <!-- technical section -->
+  <section class="lt-grey-bg">
+    <div class="section-content lt-grey-bg flex">
+      <h1 class="full-width text-center">About the BigBrain</h1>
+      <h2 class="full-width text-center">technical information</h2>
+      <div class="icon">
+        <img src="images/icon-dataset.png">
+        <p>Full dataset over 1TB</p>
+      </div>
+      <div class="icon">
+        <img src="images/icon-resolution.png">
+        <p>Scans at 20μm resolution</p>
+      </div>
+      <div class="icon">
+        <img src="images/icon-formats.png">
+        <p>Multiple formats</p>
+      </div>
+      <div class="icon">
+        <img src="images/icon-brain.png">
+        <p>An expanding brain atlas</p>
+      </div>
+      <div class="icon">
+        <img src="images/icon-discourse.png">
+        <p>A thriving community</p>
+      </div>
+      <div class="full-width clear-all">
+        <!-- <div class="button-holder">
+          <a href="https://bigbrain.humanbrainproject.org/"><button class="float-left">see it on NeHuBa</button></a>
+          <a href="https://bigbrain.loris.ca/"><button class="float-right">access data on LORIS</button></a>
+          <div class="clear-all"></div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <div class="clear-all"></div>
+
+      <!-- value section -->
+  <section>
+    <div class="section-content end">
+      <div class="col-2">
+        <img src="images/mit-magazine.jpg" class="BigBrainPic">
+      </div>
+      <div class="col-2">
+        <div class="text-box">
+          <h1>What others say</h1>
+          <h2>the BigBrain in the news </h2>
+          <p>MIT Technology Review listed the BigBrain as 1 of the Top 10 Breakthroughs of 2014.</p>
+          <a href="http://www.technologyreview.com/featuredstory/526501/brain-mapping/"><button class="float-right">read the full story</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>  
+    <blockquote class="quote-holder">
+      <img class="quote-image" src="images/icon-aquisition.png">
+      <p class="quote-text">A community in the making.</p>
+    </blockquote>
+    <div class="section-content flex">
+      <a href="https://www.fz-juelich.de/">
+        <img src="images/logo-julich.jpg">
+      </a>
+      <a href="https://mcgill.ca/">
+        <img src="images/logo-mcgill.png">
+      </a>
+    </div>
+    <p class="center" style="color: #fff;">For information please email us at <a href="mailto:info@bigbrainproject.org" class="contact">info@bigbrainproject.org</a></p>
+  </footer>
+  <div class="brand-border-1"></div>
+  <div class="brand-border-2"></div>
+  <div class="brand-border-3"></div>
+</div>
+
+<!-- <div class="ticker-wrap">
+  <div class="ticker">
+    <div class="ticker__item">News & Events:</div>
+    <div class="ticker__item"><a href="news.html#news4">Medical Imaging with Deep Learning: Montreal, July 06-08 2020.</a></div>
+    <div class="ticker__item"><a href="news.html#news3">The Organization for Human Brain Mapping Annual Meeting, June 26-30 2020.</a></div>
+    <div class="ticker__item"><a href="news.html#news2">Canadian Conference on Artificial Intelligence, May 12-15 2020.</a></div>
+    <div class="ticker__item"><a href="news.html#news1">The Montreal Artificial Intelligence and Neuroscience, Nov 14-17 2019.</a></div>
+  </div>
+</div> -->
+<!-- <script>
+    $(document).ready(function() {
+        $('#showmenu').click(function() {
+                $('.nav-list').toggleClass("hide");
+        });
+    });
+</script> -->
+<script>
+  $(function(){
+    $("#showmenu").click(function(e){
+    $("#menu").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+</body></html>

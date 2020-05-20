@@ -1120,9 +1120,9 @@ p.quote-text {
   }
 }
 @media screen and (min-width: 1024px){
-  .namecard {
+  /*.namecard {
     width: calc(25% - 30px);
-  }
+  }*/
   .pi {
     width: calc(35% - 30px);
   }
