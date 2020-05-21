@@ -756,6 +756,23 @@ ul.hide {
   margin-bottom: 0;
   width: 100%;
 }
+.wide-card {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #fff;
+  margin: 10px;
+}
+.wide-card .col-2 {
+  margin: 0;
+}
+.wide-card .text-box {
+  overflow: auto;
+}
+@media screen and (min-width: 640px) {
+  .wide-card {
+    width: calc(50% - 20px);
+  }
+}
 /*Hiball Animations*/
 .scene {
   perspective: 400px;
