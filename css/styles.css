@@ -259,8 +259,21 @@ cite {
 .hero-pic {
   background: no-repeat center url(../images/backgrounds/background-bw-mobile.png);
 }
+.hiball-bg {
+  background: no-repeat center url(../images/backgrounds/hiball-bg.png);
+  background-size: cover;
+}
+.maps-models-bg {
+  background: no-repeat center url(../images/backgrounds/konrad-1bg.jpg);
+  background-size: cover;
+}
+.tools-services-bg {
+  background: no-repeat center url(../images/backgrounds/hippocampal_subfileds.png);
+  background-size: cover;
+}
 .hero-coronal {
-  background: no-repeat center url(../images/backgrounds/coronal-mobile.png);
+  background: no-repeat center url(../images/backgrounds/coronal-2.png);
+  background-size: cover;
 }
 .hero-content {
   position: relative;
@@ -800,7 +813,7 @@ ul.hide {
   background-color: white;
 }
 .face-back {
-  background-color: grey;
+  background-color: #000;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
@@ -1497,8 +1510,12 @@ a.anchor {
 
 .hero-content-grid { 
   grid-area: hero-content; 
+  /*padding: 30px;*/
+  /*background-color: rgba(255,255,255,.8);*/
+}
+.hero-content-container {
   padding: 30px;
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(255,255,255,.9);
 }
 .hero-content-grid h1 {
   font-size: 1.5em;
@@ -1524,7 +1541,7 @@ a.anchor {
     font-size: 2em;
     margin-bottom: 1em;
   }
-  .hero-content-grid {
+  .hero-content-container {
     border-radius: 15px;
   }
 }
