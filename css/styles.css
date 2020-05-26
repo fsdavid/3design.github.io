@@ -1089,7 +1089,8 @@ p.quote-text {
   overflow: hidden;
   width: 100%;
 }
-#slick-slider-2 .frontpage-card {
+#slick-slider-2 .frontpage-card,
+#slick-slider-3 .frontpage-card {
   margin: 0;
 }
 .slider-card-holder {
@@ -1112,7 +1113,8 @@ p.quote-text {
     width: calc(33% - 30px);
     margin: 0 15px; 
   }
-  #slick-slider-2 .frontpage-card {
+  #slick-slider-2 .frontpage-card,
+  #slick-slider-3 .frontpage-card {
     width: 100%;
   }
 }
@@ -1562,14 +1564,16 @@ a.anchor {
 
 /* slick slider */
 #slick-slider,
-#slick-slider-2 {
+#slick-slider-2,
+#slick-slider-3 {
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s ease;
     -webkit-transition: opacity 1s ease;
 }
 #slick-slider.slick-initialized,
-#slick-slider-2.slick-initialized {
+#slick-slider-2.slick-initialized,
+#slick-slider-3.slick-initialized {
     visibility: visible;
     opacity: 1;    
 }
