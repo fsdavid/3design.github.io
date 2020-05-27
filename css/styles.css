@@ -1140,6 +1140,11 @@ p.quote-text {
   max-width: 200px;
   margin: 0 15px 15px;
 }
+.partners a.special {
+  width: auto;
+  max-width: 400px !important;
+  margin-top: 40px; 
+}
 
 @media screen and (min-width: 640px){
   .partners a {
