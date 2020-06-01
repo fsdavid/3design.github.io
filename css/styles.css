@@ -55,13 +55,14 @@ h1, h2 {
 h1 {
   text-decoration: none; 
   font-size: 2rem;
-  color: #2C8EB3;
+  color: #144E76;
   margin-bottom: .5rem;
 }
 h2 {
   font-size: 1.5rem;
   font-style: italic;
-  color: #144E76;
+  
+  color: #2C8EB3;
   margin-bottom: .5rem;
 }
 h3 {
@@ -190,6 +191,9 @@ h2.full-width/*:last-of-type*/ {
 .small-spacer {
   margin-bottom: 20px;
 }
+.big-spacer {
+  margin-bottom: 80px;
+}
 .center-spacer {
   margin: 0 auto !important;
 }
@@ -257,7 +261,8 @@ cite {
   overflow: initial;
 }
 .hero-pic {
-  background: no-repeat center url(../images/backgrounds/background-bw-mobile.png);
+  background: no-repeat center url(../images/backgrounds/render-small.png);
+  background-size: cover;
 }
 .hiball-bg {
   background: no-repeat center url(../images/backgrounds/hiball-bg.png);
@@ -333,7 +338,8 @@ cite {
 }
 @media screen and (min-width: 401px) {
   .hero-pic {
-    background: no-repeat center url(../images/backgrounds/background-bw-medium.png);
+    background: no-repeat center url(../images/backgrounds/render-small.png);
+    background-size: cover;
   }
 }
 @media screen and (min-width: 600px) {
@@ -371,7 +377,8 @@ cite {
 }
 @media screen and (min-width: 801px) {
   .hero-pic {
-    background: no-repeat center url(../images/backgrounds/background-bw-large.png);
+    background: no-repeat center url(../images/backgrounds/render-medium.png);
+    background-size: cover;
   }
   .hero-content h1 {
     font-size: 35px;
@@ -391,7 +398,8 @@ cite {
 }
 @media screen and (min-width: 1200px) {
   .hero-pic {
-    background: no-repeat center url(../images/backgrounds/background-bw.png);
+    background: no-repeat center url(../images/backgrounds/render-large.png);
+    background-size: cover;
   }
   .hero-logos-link {
     height: auto;
@@ -421,7 +429,8 @@ cite {
 }
 @media screen and (min-width: 1600px) {
   .hero-pic {
-    background: no-repeat center/50% url(../images/backgrounds/background-bw.png);
+    background: no-repeat center url(../images/backgrounds/render-large.png);
+    background-size: cover;
   }
   .goal-holder {
     bottom: -150px;
@@ -761,7 +770,7 @@ ul.hide {
 }
 .card-face span:hover,
 .card-face span:focus {
-  background-color:rgba(0,0,0,.75);
+  background-color:rgba(44,142,179,.75);
 }
 .card-face a,
 .card-face a button {
@@ -818,7 +827,7 @@ ul.hide {
   background-color: white;
 }
 .face-back {
-  background-color: #000;
+  background-color: #2C8EB3;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
@@ -1094,7 +1103,10 @@ p.quote-text {
   width: 100%;
 }
 #slick-slider-2 .frontpage-card,
-#slick-slider-3 .frontpage-card {
+#slick-slider-3 .frontpage-card,
+#slick-slider-4 .frontpage-card,
+#slick-slider-5 .frontpage-card,
+#slick-slider-6 .frontpage-card {
   margin: 0;
 }
 .slider-card-holder {
@@ -1118,7 +1130,10 @@ p.quote-text {
     margin: 0 15px; 
   }
   #slick-slider-2 .frontpage-card,
-  #slick-slider-3 .frontpage-card {
+  #slick-slider-3 .frontpage-card,
+  #slick-slider-4 .frontpage-card,
+  #slick-slider-5 .frontpage-card,
+  #slick-slider-6 .frontpage-card   {
     width: 100%;
   }
 }
@@ -1527,7 +1542,7 @@ a.anchor {
 }
 .hero-content-container {
   padding: 30px;
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255,255,255,.75);
 }
 .hero-content-grid h1 {
   font-size: 1.5em;
@@ -1548,7 +1563,7 @@ a.anchor {
     grid-template-areas: 
     ". . . ."
     ". . . ."
-    ". hero-content . ."
+    "hero-content hero-content . ."
     ". . . .";
   }
   .hero-content-grid h1 {
@@ -1574,7 +1589,9 @@ a.anchor {
 /* slick slider */
 #slick-slider,
 #slick-slider-2,
-#slick-slider-3 {
+#slick-slider-3,
+#slick-slider-4,
+#slick-slider-5 {
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s ease;
@@ -1582,7 +1599,9 @@ a.anchor {
 }
 #slick-slider.slick-initialized,
 #slick-slider-2.slick-initialized,
-#slick-slider-3.slick-initialized {
+#slick-slider-3.slick-initialized,
+#slick-slider-4.slick-initialized,
+#slick-slider-5.slick-initialized  {
     visibility: visible;
     opacity: 1;    
 }
@@ -1648,3 +1667,16 @@ a.anchor {
 .max100 {
   max-width: 100%;
 }
+/* Tabs styles */
+.tabs-list {
+  display: flex;
+  list-style: none;
+  margin-bottom: 80px;
+}
+.tabs-list li {
+  margin: 0 10px;
+}
+.tabs-list li a .button {
+  max-width: calc(20% - 20px)
+}
+

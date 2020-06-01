@@ -38,6 +38,7 @@
 <script type="text/javascript" src="js/drop-down.js"></script>
 <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
 <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 <div id="main-wrapper">
@@ -93,138 +94,199 @@
     <div class="section-content lt-grey-bg end">
       <h1 class="full-width text-center">Tools</h1>
       <h2 class="full-width text-center">partner and community developed BigBrain tools</h2>
-      <div id="slick-slider-2" class="slider">
-        <!-- start cards -->
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/a3d.jpg" class="card-image-square">
-            <div class="tool-name">Atelier3D</div>
-            <div class="tool-maker"><em>by:</em> Louis Borgeat, Philippe Massicotte, et al</div>
-            <div class="tool-description">Atelier3D is a visualisation and annotation tool from NRC Computer Vision and Graphics</div>
-            <a href="https://nrc.canada.ca/en/research-development/products-services/technical-advisory-services/computer-vision-graphics" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+      <div  id="tabs" class="">
+        <ul class="tabs-list">
+          <li>
+            <a href="#tabs-1">
+              <button>
+                Browsing hi-res brain models online
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="#tabs-2">
+              <button>
+                Annotation of brain models
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="#tabs-3">
+              <button>
+                Neuroinformatics services
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="#tabs-4">
+              <button>
+                Base infrastructure
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="#tabs-5">
+              <button>
+                Supported standards
+              </button>
+            </a>
+          </li>
+        </ul>
+        <div id="tabs-1" class="big-spacer">
+          <h2 class="full-width text-center">Browsing hi-res brain models online</h2>
+          <div id="slick-slider-6" class="slider">
+            <!-- start cards -->
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/brainbrowser.png" class="card-image-square">
+                <div class="tool-name">BrainBrowser</div>
+                <div class="tool-maker"><em>by:</em> Tarek Sherif et al</div>
+                <div class="tool-description">BrainBrowser is a set of web-based 3D visualization tools primarily used for viewing neurological data, such as MRI scans. The surface viewer was modified by Natacha Beck and Lindsay B Lewis to handle the BigBrain surfaces created by C Lepage, A Altinkaya, and various contributors.</div>
+                <a href="http://natacha-beck.github.io/brainbrowser/BrainBrowserSurfaceUI/" class="tool-link">Open in browser <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/hbp-logo.jpg" class="card-image-square">
+                <div class="tool-name">Human Brain Project Tools</div>
+                <div class="tool-maker"><em>by:</em> Various</div>
+                <div class="tool-description">Tools and visualization applications on the HBP website.</div>
+                <a href="https://www.humanbrainproject.eu/en/explore-the-brain/atlases/#bigbrain" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/huron.png" class="card-image-square">
+                <div class="tool-name">Huron Scanners</div>
+                <div class="tool-maker"></div>
+                <div class="tool-description">High resolution scanners from Huron Digital Pathology.</div>
+                <a href="http://www.hurondigitalpathology.com/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/brainbrowser.png" class="card-image-square">
-            <div class="tool-name">BrainBrowser</div>
-            <div class="tool-maker"><em>by:</em> Tarek Sherif et al</div>
-            <div class="tool-description">BrainBrowser is a set of web-based 3D visualization tools primarily used for viewing neurological data, such as MRI scans. The surface viewer was modified by Natacha Beck and Lindsay B Lewis to handle the BigBrain surfaces created by C Lepage, A Altinkaya, and various contributors.</div>
-            <a href="http://natacha-beck.github.io/brainbrowser/BrainBrowserSurfaceUI/" class="tool-link">Open in browser <i class="fas fa-arrow-right"></i></a>
+        <div id="tabs-2" class="big-spacer">
+          <h2 class="full-width text-center">Annotation of brain models</h2>
+          <div id="slick-slider-2" class="slider">
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/a3d.jpg" class="card-image-square">
+                <div class="tool-name">Atelier3D</div>
+                <div class="tool-maker"><em>by:</em> Louis Borgeat, Philippe Massicotte, et al</div>
+                <div class="tool-description">Atelier3D is a visualisation and annotation tool from NRC Computer Vision and Graphics</div>
+                <a href="https://nrc.canada.ca/en/research-development/products-services/technical-advisory-services/computer-vision-graphics" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/display.jpg" class="card-image-square">
+                <div class="tool-name">Display</div>
+                <div class="tool-maker"><em>by:</em> David MacDonald et al</div>
+                <div class="tool-description">Display is designed to visualize and manipulate three dimensional objects, such as human cortical surfaces and sulcal curves.</div>
+                <a href="http://mcin.ca/technology/visualization/display/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/microdraw.jpg" class="card-image-square">
+                <div class="tool-name">MicroDraw</div>
+                <div class="tool-maker"><em>by:</em> Roberto Toro et al</div>
+                <div class="tool-description">MicroDraw is a web application to visualise and annotate collaboratively high resolution histology data.</div>
+                <a href="http://microdraw.pasteur.fr/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/boutiques.jpg" class="card-image-square">
-            <div class="tool-name">Boutiques</div>
-            <div class="tool-maker"><em>by:</em> Tristan Glatard et al</div>
-            <div class="tool-description">A cross-platform descriptive command-line framework for applications.</div>
-            <a href="https://boutiques.github.io/" class="tool-link">Open in Github <i class="fas fa-arrow-right"></i></a>
+        <div id="tabs-3" class="big-spacer">
+          <h2 class="full-width text-center">Neuroinformatic services</h2>
+          <div id="slick-slider-3" class="slider">
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/cbrain.jpg" class="card-image-square">
+                <div class="tool-name">CBRAIN</div>
+                <div class="tool-maker"><em>by:</em> CBRAIN team</div>
+                <div class="tool-description">CBRAIN is an infrastructure that connects researchers and data from all walks of science to high performance and cloud computing in an easy to manage, reproducible, and user-friendly manner.</div>
+                <a href="http://www.cbrain.ca/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/LORIS-logo-color.png" class="card-image-square">
+                <div class="tool-name">LORIS</div>
+                <div class="tool-maker"><em>by:</em> LORIS team</div>
+                <div class="tool-description">(Longitudinal Online Research and Imaging System) is a web-based data and project management software for neuroimaging research studies. It is an OPEN SOURCE framework for storing and processing behavioural, clinical, neuroimaging and genetic data.</div>
+                <a href="http://loris.ca/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/virtualbrain.jpg" class="card-image-square">
+                <div class="tool-name">The Virtual Brain</div>
+                <div class="tool-maker"><em>by:</em> Viktor Jirsa et al</div>
+                <div class="tool-description">A multiscale integration and simulation platform for brain network computation.</div>
+                <a href="https://www.thevirtualbrain.org/tvb/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/calculquebec.png" class="card-image-square">
-            <div class="tool-name">Calcul Québec</div>
-            <div class="tool-maker"></div>
-            <div class="tool-description">Calcul Québec’s supercomputers, located in various universities, are available to researchers from across Quebec and Canada. Our systems total over 80 000 cores in a variety of configurations.</div>
-            <a href="https://www.calculquebec.ca/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+        <div id="tabs-4" class="big-spacer">
+          <h2 class="full-width text-center">Base Infrastructure</h2>
+          <div id="slick-slider-4" class="slider">
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/calculquebec.png" class="card-image-square">
+                <div class="tool-name">Calcul Québec</div>
+                <div class="tool-maker"></div>
+                <div class="tool-description">Calcul Québec’s supercomputers, located in various universities, are available to researchers from across Quebec and Canada. Our systems total over 80 000 cores in a variety of configurations.</div>
+                <a href="https://www.calculquebec.ca/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/computecanada.jpg" class="card-image-square">
+                <div class="tool-name">Compute Canada</div>
+                <div class="tool-maker"></div>
+                <div class="tool-description">High performance computing</div>
+                <a href="https://www.computecanada.ca/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/jsc.jpg" class="card-image-square">
+                <div class="tool-name">Juelich Supercomputing Centre</div>
+                <div class="tool-maker"></div>
+                <div class="tool-description">The Jülich Supercomputing Centre (JSC) at Forschungszentrum Jülich enables scientists and engineers to solve highly complex, grand challenges in science and engineering within collaborative infrastructures for both supercomputing and grid technologies.</div>
+                <a href="https://www.gauss-centre.eu/about-us/our-centres/juelich-supercomputing-centre/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/cbrain.jpg" class="card-image-square">
-            <div class="tool-name">CBRAIN</div>
-            <div class="tool-maker"><em>by:</em> CBRAIN team</div>
-            <div class="tool-description">CBRAIN is an infrastructure that connects researchers and data from all walks of science to high performance and cloud computing in an easy to manage, reproducible, and user-friendly manner.</div>
-            <a href="http://www.cbrain.ca/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/computecanada.jpg" class="card-image-square">
-            <div class="tool-name">Compute Canada</div>
-            <div class="tool-maker"></div>
-            <div class="tool-description">High performance computing</div>
-            <a href="https://www.computecanada.ca/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/display.jpg" class="card-image-square">
-            <div class="tool-name">Display</div>
-            <div class="tool-maker"><em>by:</em> David MacDonald et al</div>
-            <div class="tool-description">Display is designed to visualize and manipulate three dimensional objects, such as human cortical surfaces and sulcal curves.</div>
-            <a href="http://mcin.ca/technology/visualization/display/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/hbp-logo.jpg" class="card-image-square">
-            <div class="tool-name">Human Brain Project Tools</div>
-            <div class="tool-maker"><em>by:</em> Various</div>
-            <div class="tool-description">Tools and visualization applications on the HBP website.</div>
-            <a href="https://www.humanbrainproject.eu/en/explore-the-brain/atlases/#bigbrain" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/huron.png" class="card-image-square">
-            <div class="tool-name">Huron Scanners</div>
-            <div class="tool-maker"></div>
-            <div class="tool-description">High resolution scanners from Huron Digital Pathology.</div>
-            <a href="http://www.hurondigitalpathology.com/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/jsc.jpg" class="card-image-square">
-            <div class="tool-name">Juelich Supercomputing Centre</div>
-            <div class="tool-maker"></div>
-            <div class="tool-description">The Jülich Supercomputing Centre (JSC) at Forschungszentrum Jülich enables scientists and engineers to solve highly complex, grand challenges in science and engineering within collaborative infrastructures for both supercomputing and grid technologies.</div>
-            <a href="https://www.gauss-centre.eu/about-us/our-centres/juelich-supercomputing-centre/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/LORIS-logo-color.png" class="card-image-square">
-            <div class="tool-name">LORIS</div>
-            <div class="tool-maker"><em>by:</em> LORIS team</div>
-            <div class="tool-description">(Longitudinal Online Research and Imaging System) is a web-based data and project management software for neuroimaging research studies. It is an OPEN SOURCE framework for storing and processing behavioural, clinical, neuroimaging and genetic data.</div>
-            <a href="http://loris.ca/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/microdraw.jpg" class="card-image-square">
-            <div class="tool-name">MicroDraw</div>
-            <div class="tool-maker"><em>by:</em> Roberto Toro et al</div>
-            <div class="tool-description">MicroDraw is a web application to visualise and annotate collaboratively high resolution histology data.</div>
-            <a href="http://microdraw.pasteur.fr/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/chimera.jpg" class="card-image-square">
-            <div class="tool-name">The Human Brain in Chimera</div>
-            <div class="tool-maker"><em>by:</em> Tom Goddard</div>
-            <div class="tool-description">A tutorial on how to visualize the BigBrain in Chimera using the MINC format.</div>
-            <a href="https://www.cgl.ucsf.edu/chimera/data/bigbrain-jul2013/bigbrain.html" class="tool-link">Go to tool <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="toolcard">
-            <img src="images/tools/virtualbrain.jpg" class="card-image-square">
-            <div class="tool-name">The Virtual Brain</div>
-            <div class="tool-maker"><em>by:</em> Viktor Jirsa et al</div>
-            <div class="tool-description">A multiscale integration and simulation platform for brain network computation.</div>
-            <a href="https://www.thevirtualbrain.org/tvb/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+        <div id="tabs-5" class="big-spacer">
+          <h2 class="full-width text-center">Supported standards</h2>
+          <div id="slick-slider-5" class="slider">
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/boutiques.jpg" class="card-image-square">
+                <div class="tool-name">Boutiques</div>
+                <div class="tool-maker"><em>by:</em> Tristan Glatard et al</div>
+                <div class="tool-description">A cross-platform descriptive command-line framework for applications.</div>
+                <a href="https://boutiques.github.io/" class="tool-link">Open in Github <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="toolcard">
+                <img src="images/tools/chimera.jpg" class="card-image-square">
+                <div class="tool-name">The Human Brain in Chimera</div>
+                <div class="tool-maker"><em>by:</em> Tom Goddard</div>
+                <div class="tool-description">A tutorial on how to visualize the BigBrain in Chimera using the MINC format.</div>
+                <a href="https://www.cgl.ucsf.edu/chimera/data/bigbrain-jul2013/bigbrain.html" class="tool-link">Go to tool <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <div class="clear-all"></div>
 
 
@@ -281,7 +343,151 @@
 
 <script type="text/javascript">
    $(document).on('ready', function() {
+    $('#slick-slider-6').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      draggable: true,
+      mobilefirst: true,
+      pauseonhover: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  });
     $('#slick-slider-2').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      draggable: true,
+      mobilefirst: true,
+      pauseonhover: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  });
+    $('#slick-slider-3').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      draggable: true,
+      mobilefirst: true,
+      pauseonhover: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  });
+    $('#slick-slider-4').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      draggable: true,
+      mobilefirst: true,
+      pauseonhover: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  });
+    $('#slick-slider-5').slick({
       dots: true,
       infinite: true,
       autoplay: true,
