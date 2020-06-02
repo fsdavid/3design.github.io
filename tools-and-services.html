@@ -62,16 +62,27 @@
     <div class="brand-border-2"></div>
     <div class="brand-border-3"></div>
     <div class="nav-container">
-      <div class="branding"><a href="index.html">the BigBrain Project</a></div>
+      <div class="branding"><a href="index.html">BigBrain Project</a></div>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
         <li class="nav-item"><a href="hiball.html"><strong>HIBALL</strong></a></li>
-        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="#">About</a>
+          <ul class="nav-dropdown">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a href="maps-and-models.html">Maps & Models</a></li>
         <li class="nav-item"><a href="tools-and-services.html" class="active">Tools & Services</a></li>
-        <li class="nav-item"><a href="community.html">Community</a></li>
-        <li class="nav-item"><a href="references.html">References</a></li>
-        <li class="nav-item"><a href="contact.html">Contact</a></li>  
+        <li class="nav-item"><a href="#">Community</a>
+          <ul class="nav-dropdown">
+            <li><a href="community.html">Our Community</a></li>
+            <li><a href="news.html">News & Events</a></li>
+            <li><a href="#">Teaching</a></li>
+            <li><a href="https://bigbrain-forum.loris.ca/">Forum</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </nav>
@@ -133,7 +144,7 @@
           </li>
         </ul>
         <div id="tabs-1" class="big-spacer">
-          <h2 class="full-width text-center">Browsing hi-res brain models online</h2>
+          <h2 class="full-width text-center">Browsing brain models online</h2>
           <div id="slick-slider-6" class="slider">
             <!-- start cards -->
             <div class="slider-card-holder">
@@ -523,6 +534,24 @@
         // instead of a settings object
       ]
   });
+});
+</script>
+
+<script>
+$("document").ready(function($){
+    var $stick = $('#tabs');
+    var $win = $(window);
+    var winH = $win.height();   // Get the window height.
+
+    $win.on("scroll", function () {
+        if ($(this).scrollTop() > winH ) {
+            $stick.addClass("stick");
+        } else {
+            $stick.removeClass("stick");
+        }
+    }).on("resize", function(){ // If the user resizes the window
+       winH = $(this).height(); // you'll need the new height value
+    });
 });
 </script>
 

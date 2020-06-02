@@ -59,16 +59,27 @@
     <div class="brand-border-2"></div>
     <div class="brand-border-3"></div>
     <div class="nav-container">
-      <div class="branding"><a href="index.html">the BigBrain Project</a></div>
+      <div class="branding"><a href="index.html">BigBrain Project</a></div>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
         <li class="nav-item"><a href="hiball.html" class="active"><strong>HIBALL</strong></a></li>
-        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="#">About</a>
+          <ul class="nav-dropdown">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a href="maps-and-models.html">Maps & Models</a></li>
         <li class="nav-item"><a href="tools-and-services.html">Tools & Services</a></li>
-        <li class="nav-item"><a href="community.html">Community</a></li>
-        <li class="nav-item"><a href="references.html">References</a></li>
-        <li class="nav-item"><a href="contact.html">Contact</a></li>  
+        <li class="nav-item"><a href="#">Community</a>
+          <ul class="nav-dropdown">
+            <li><a href="community.html">Our Community</a></li>
+            <li><a href="news.html">News & Events</a></li>
+            <li><a href="#">Teaching</a></li>
+            <li><a href="https://bigbrain-forum.loris.ca/">Forum</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </nav>
@@ -81,9 +92,22 @@
           <img src="images/logo-hiball.png">
           </a>
           <p>HIBALL is the new funding umbrella for the BigBrain Project. It aims to transform the successful collaboration between McGill (MNI, BIC) and Forschungszentrum Jülich (INM, JSC) to the next level by reinforcing utilization and co-development of the latest AI and high-performance computing (HPC) technologies for building highly detailed 3D brain models. It establishes a close collaboration with CIFAR and MILA in Canada, and HAICU, the Helmholtz AI in Germany.</p>
-          <a class="hero-logos-link hero-logos-link-2" href="https://www.helmholtz.de/en/">
-            <img src="images/partner-helmholtz.png">
-          </a> 
+          <div class="hero-logos">
+            <div class="flex-center">
+              <a class="hero-logos-link" href="https://www.fz-juelich.de/">
+                <img src="images/logo-julich.png">
+              </a>
+              <a class="hero-logos-link" href="https://mcgill.ca/">
+                <img src="images/logo-mcgill.png">
+              </a>
+              <a class="hero-logos-link" href="https://www.helmholtz.de/en/ ">
+                <img src="images/logo-helmholtz.png">
+              </a>  
+              <a class="hero-logos-link" href="https://www.mcgill.ca/hbhl/">
+                <img src="images/logo-hbhl.png">
+              </a>         
+            </div>
+          </div>
           <div class="clear-all"></div>
         </div>
       </div>
@@ -123,8 +147,8 @@
 <!-- HIBALL teams -->
 <!-- team section  -->
 
-  <section>
-    <div class="section-content no-side-pad max100">
+  <section class="med-grey-bg">
+    <div class="section-content no-side-pad max100 med-grey-bg">
       <h1 class="full-width text-center">The HIBALL team</h1>
       <div class="mosaic">
         <img src="images/profile-katrin-amunts.png" class="">
