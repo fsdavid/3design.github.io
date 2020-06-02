@@ -1497,6 +1497,9 @@ a.anchor {
     top: -140px;
   }
 }
+#tabs a.anchor {
+  top: -200px;
+}
 
 /* tooltips */
 .tooltip {
@@ -1671,15 +1674,33 @@ a.anchor {
   max-width: 100%;
 }
 /* Tabs styles */
+#tabs {
+  position: relative;
+}
 .tabs-list {
+  position: relative;
   display: flex;
   list-style: none;
   margin-bottom: 80px;
+  z-index: 9999;
 }
 .tabs-list li {
   margin: 0 10px;
-}
-.tabs-list li a .button {
   max-width: calc(20% - 20px)
 }
 
+.stick {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%,0);
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 40px;
+}
+.tabs-list.stick li a button {
+  box-shadow: 1px 1px 8px rgba(0,0,0,.75);
+}
+.stick-pad {
+  padding-bottom: 134px;
+}

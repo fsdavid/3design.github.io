@@ -104,46 +104,47 @@
   <section class="extra-pad lt-grey-bg">
     <div class="section-content lt-grey-bg end">
       <h1 class="full-width text-center">Tools</h1>
-      <h2 class="full-width text-center">partner and community developed BigBrain tools</h2>
-      <div  id="tabs" class="">
-        <ul class="tabs-list">
+      <h2 id="stickypad" class="full-width text-center">partner and community developed BigBrain tools</h2>
+      <div  id="tabs">
+        <ul id="second-nav" class="tabs-list">
           <li>
             <a href="#tabs-1">
-              <button>
+              <button data-mh="button">
                 Browsing hi-res brain models online
               </button>
             </a>
           </li>
           <li>
             <a href="#tabs-2">
-              <button>
+              <button data-mh="button">
                 Annotation of brain models
               </button>
             </a>
           </li>
           <li>
             <a href="#tabs-3">
-              <button>
+              <button data-mh="button">
                 Neuroinformatics services
               </button>
             </a>
           </li>
           <li>
             <a href="#tabs-4">
-              <button>
+              <button data-mh="button">
                 Base infrastructure
               </button>
             </a>
           </li>
           <li>
             <a href="#tabs-5">
-              <button>
+              <button data-mh="button">
                 Supported standards
               </button>
             </a>
           </li>
         </ul>
-        <div id="tabs-1" class="big-spacer">
+        <a href="" class="anchor" id="tabs-1"></a>
+        <div class="big-spacer">
           <h2 class="full-width text-center">Browsing brain models online</h2>
           <div id="slick-slider-6" class="slider">
             <!-- start cards -->
@@ -176,7 +177,8 @@
             </div>
           </div>
         </div>
-        <div id="tabs-2" class="big-spacer">
+        <a href="" class="anchor" id="tabs-2"></a>
+        <div class="big-spacer">
           <h2 class="full-width text-center">Annotation of brain models</h2>
           <div id="slick-slider-2" class="slider">
             <div class="slider-card-holder">
@@ -208,7 +210,8 @@
             </div>
           </div>
         </div>
-        <div id="tabs-3" class="big-spacer">
+        <a href="" class="anchor" id="tabs-3"></a>
+        <div class="big-spacer">
           <h2 class="full-width text-center">Neuroinformatic services</h2>
           <div id="slick-slider-3" class="slider">
             <div class="slider-card-holder">
@@ -272,6 +275,7 @@
             </div>
           </div>
         </div>
+        <a href="" class="anchor" id="tabs-5"></a>
         <div id="tabs-5" class="big-spacer">
           <h2 class="full-width text-center">Supported standards</h2>
           <div id="slick-slider-5" class="slider">
@@ -539,20 +543,24 @@
 
 <script>
 $("document").ready(function($){
-    var $stick = $('#tabs');
+    var $stick = $('#second-nav');
+    var $pad = $('#stickypad')
     var $win = $(window);
-    var winH = $win.height();   // Get the window height.
+    var winH = $win.height() + 120;   // Get the window height.
 
     $win.on("scroll", function () {
         if ($(this).scrollTop() > winH ) {
             $stick.addClass("stick");
+            $pad.addClass("stick-pad");
         } else {
             $stick.removeClass("stick");
+            $pad.removeClass("stick-pad");
         }
     }).on("resize", function(){ // If the user resizes the window
        winH = $(this).height(); // you'll need the new height value
     });
 });
 </script>
+
 
 </body></html>
