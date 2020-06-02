@@ -1686,9 +1686,7 @@ a.anchor {
 }
 .tabs-list li {
   margin: 0 10px;
-  max-width: calc(20% - 20px)
 }
-
 .stick {
   position: fixed;
   top: 80px;
@@ -1699,7 +1697,7 @@ a.anchor {
   padding: 0 40px;
 }
 .tabs-list.stick li a button {
-  box-shadow: 1px 1px 8px rgba(0,0,0,.75);
+  box-shadow: 1px 1px 8px rgba(0,0,0,.5);
 }
 .stick-pad {
   padding-bottom: 134px;
