@@ -206,8 +206,12 @@
   $("document").ready(function($){
     var $flipper = $('.animated-card');
       $('.scene').on('click', '.animated-card', function() {
-      $flipper.removeClass("card-flip");
-      $(this).toggleClass('card-flip');
+        if ($(this).hasClass("card-flip")) {
+            $flipper.removeClass("card-flip");
+        } else {
+            $flipper.removeClass("card-flip");
+            $(this).toggleClass('card-flip');
+        } 
     });
   });
 </script>
