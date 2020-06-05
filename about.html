@@ -203,8 +203,12 @@
   </section>
 
 <script type="text/javascript">
-    $('.scene').on('click', '.animated-card', function() {
-    $(this).toggleClass('card-flip');
+  $("document").ready(function($){
+    var $flipper = $('.animated-card');
+      $('.scene').on('click', '.animated-card', function() {
+      $flipper.removeClass("card-flip");
+      $(this).toggleClass('card-flip');
+    });
   });
 </script>
 
