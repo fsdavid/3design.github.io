@@ -264,7 +264,7 @@ cite {
   overflow: initial;
 }
 .hero-pic {
-  background: no-repeat center url(../images/backgrounds/render-small.png);
+  background: no-repeat center url(../images/backgrounds/background-small.png);
   background-size: cover;
 }
 .hiball-bg {
@@ -341,7 +341,7 @@ cite {
 }
 @media screen and (min-width: 401px) {
   .hero-pic {
-    background: no-repeat center url(../images/backgrounds/render-small.png);
+    background: no-repeat center url(../images/backgrounds/background-small.png);
     background-size: cover;
   }
 }
@@ -380,7 +380,7 @@ cite {
 }
 @media screen and (min-width: 801px) {
   .hero-pic {
-    background: no-repeat center url(../images/backgrounds/render-medium.png);
+    background: no-repeat center url(../images/backgrounds/background-medium.png);
     background-size: cover;
   }
   .hero-content h1 {
@@ -401,8 +401,8 @@ cite {
 }
 @media screen and (min-width: 1200px) {
   .hero-pic {
-    background: no-repeat center url(../images/backgrounds/render-large.png);
-    background-size: cover;
+    background: no-repeat center url(../images/backgrounds/background-large.png);
+    background-size: contain;
   }
   .hero-logos-link {
     height: auto;
@@ -432,8 +432,8 @@ cite {
 }
 @media screen and (min-width: 1600px) {
   .hero-pic {
-    background: no-repeat center url(../images/backgrounds/render-large.png);
-    background-size: cover;
+    background: no-repeat center url(../images/backgrounds/background.png);
+    background-size: contain;
   }
   .goal-holder {
     bottom: -150px;
