@@ -287,6 +287,10 @@ cite {
   background: no-repeat center url(../images/gallery/palomero-gallagher-thomas-funck.jpg);
   background-size: cover;
 }
+.sab-bg {
+  background: no-repeat left url(../images/backgrounds/background-sab.png);
+  background-size: cover;
+}
 .hero-content {
   position: relative;
   margin-top: 70px;
@@ -1475,20 +1479,32 @@ height: 100%;
   .mosaic {
     width: 33%
   }
+  .sab-size .mosaic  {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 600px ) {
   .mosaic {
     width: 25%
+  }
+  .sab-size .moscaic {
+    width: 25%;
   }
 }
 @media screen and (min-width: 800px ) {
   .mosaic {
     width: 20%
   }
+  .sab-size .mosaic {
+    width: 25%;
+  }
 }
 @media screen and (min-width: 1200px ) {
   .mosaic {
     width: 14.285%;
+  }
+  .sab-size .mosaic {
+    width: 25%;
   }
 }
 /* anchors */
