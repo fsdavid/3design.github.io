@@ -264,31 +264,27 @@ cite {
   overflow: initial;
 }
 .hero-pic {
-  background: no-repeat center url(../images/backgrounds/background.png), linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(218,218,218,1) 100%);
+  background: no-repeat center url(../images/backgrounds/background-640.png), linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(218,218,218,1) 100%);
   background-size: cover;
 }
 .hiball-bg {
-  background: no-repeat center url(../images/backgrounds/hiball-bg.png);
+  background: no-repeat center url(../images/backgrounds/hiball-bg-640.png);
   background-size: cover;
 }
 .maps-models-bg {
-  background: no-repeat center url(../images/backgrounds/konrad-1bg.jpg);
+  background: no-repeat center url(../images/backgrounds/konrad-1bg-640.jpg);
   background-size: cover;
 }
 .tools-services-bg {
-  background: no-repeat center url(../images/backgrounds/hippocampal_subfileds.png);
+  background: no-repeat center url(../images/backgrounds/hippocampal_subfileds-640.png);
   background-size: cover;
 }
 .hero-coronal {
-  background: no-repeat center url(../images/backgrounds/coronal-2.png);
+  background: no-repeat center url(../images/backgrounds/coronal-2-640.png);
   background-size: cover;
 }
 .community-bg {
-  background: no-repeat center url(../images/gallery/palomero-gallagher-thomas-funck.jpg);
-  background-size: cover;
-}
-.sab-bg {
-  background: no-repeat left url(../images/backgrounds/background-sab.png);
+  background: no-repeat center url(../images/backgrounds/palomero-gallagher-thomas-funck-640.jpg);
   background-size: cover;
 }
 .hero-content {
@@ -345,7 +341,27 @@ cite {
 }
 @media screen and (min-width: 401px) {
   .hero-pic {
-    background: no-repeat center url(../images/backgrounds/background.png), linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(218,218,218,1) 100%);
+    background: no-repeat center url(../images/backgrounds/background-800.png), linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(218,218,218,1) 100%);
+    background-size: cover;
+  }
+  .hiball-bg {
+  background: no-repeat center url(../images/backgrounds/hiball-bg-800.png);
+  background-size: cover;
+  }
+  .maps-models-bg {
+  background: no-repeat center url(../images/backgrounds/konrad-1bg-800.jpg);
+  background-size: cover;
+  }
+  .tools-services-bg {
+    background: no-repeat center url(../images/backgrounds/hippocampal_subfileds-800.png);
+    background-size: cover;
+  }
+  .hero-coronal {
+    background: no-repeat center url(../images/backgrounds/coronal-2-800.png);
+    background-size: cover;
+  }
+  .community-bg {
+    background: no-repeat center url(../images/backgrounds/palomero-gallagher-thomas-funck-800.jpg);
     background-size: cover;
   }
 }
@@ -384,7 +400,27 @@ cite {
 }
 @media screen and (min-width: 801px) {
   .hero-pic {
-    background: no-repeat center url(../images/backgrounds/background.png), linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(218,218,218,1) 100%);
+    background: no-repeat center url(../images/backgrounds/background-1200.png), linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(218,218,218,1) 100%);
+    background-size: cover;
+  }
+  .hiball-bg {
+  background: no-repeat center url(../images/backgrounds/hiball-bg-1200.png);
+  background-size: cover;
+  }
+  .maps-models-bg {
+  background: no-repeat center url(../images/backgrounds/konrad-1bg-1200.jpg);
+  background-size: cover;
+  }
+  .tools-services-bg {
+    background: no-repeat center url(../images/backgrounds/hippocampal_subfileds-1200.png);
+    background-size: cover;
+  }
+  .hero-coronal {
+    background: no-repeat center url(../images/backgrounds/coronal-2-1200.png);
+    background-size: cover;
+  }
+  .community-bg {
+    background: no-repeat center url(../images/backgrounds/palomero-gallagher-thomas-funck-1200.jpg);
     background-size: cover;
   }
   .hero-content h1 {
@@ -408,6 +444,26 @@ cite {
     background: no-repeat center url(../images/backgrounds/background.png), linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(218,218,218,1) 100%);
     background-size: contain;
     background-position: right;
+  }
+  .hiball-bg {
+  background: no-repeat center url(../images/backgrounds/hiball-bg.png);
+  background-size: cover;
+  }
+  .maps-models-bg {
+  background: no-repeat center url(../images/backgrounds/konrad-1bg.jpg);
+  background-size: cover;
+  }
+  .tools-services-bg {
+    background: no-repeat center url(../images/backgrounds/hippocampal_subfileds.png);
+    background-size: cover;
+  }
+  .hero-coronal {
+    background: no-repeat center url(../images/backgrounds/coronal-2.png);
+    background-size: cover;
+  }
+  .community-bg {
+    background: no-repeat center url(../images/backgrounds/palomero-gallagher-thomas-funck.jpg);
+    background-size: cover;
   }
   .hero-logos-link {
     height: auto;
@@ -436,11 +492,6 @@ cite {
   }
 }
 @media screen and (min-width: 1600px) {
-  .hero-pic {
-    background: no-repeat center url(../images/backgrounds/background.png), linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(218,218,218,1) 100%);
-    background-size: contain;
-    background-position: right;
-  }
   .goal-holder {
     bottom: -150px;
   }
