@@ -731,6 +731,37 @@ ul.hide {
   margin-right: 0px; 
 }
 
+/* pagination */
+.pagination {
+  display: flex;
+  width: 100%;
+}
+.pagination ul {
+  display: inline-block;
+  list-style: none;
+  list-style-position: inside;
+  margin: 0 auto;
+  text-align: center;
+}
+.pagination ul li {
+  display: inline-block;
+}
+.pagination ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #343434;
+  -webkit-transition: 0.25s; /* Safari */
+  transition: 0.25s;
+}
+.pagination ul li a:hover {
+  background: #DC2627;
+  background-color: #8B8B8B;
+  color: #fff;
+}
+.pagination ul li a.pagination-active {
+  background-color: #dadada;
+}
 /* body content */
 
 .BigBrainPic {
