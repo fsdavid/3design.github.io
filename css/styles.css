@@ -1557,8 +1557,8 @@ height: 100%;
   border-top-right-radius: 0;
 }
 .mosiac-overlay-name {
-  font-size: 1em;
-  line-height: 1.6em;
+  font-size: 0.9em;
+  line-height: 2em;
   font-weight: bold;
 }
 .mosaic-overlay a {
