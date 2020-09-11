@@ -258,6 +258,12 @@ cite {
   width: 100%;
   margin: 0 auto;
 }
+.col-2 img.hiballlaunch,
+.col-3 img.hiballlaunch,
+.col-4 img.hiballlaunch {
+  width: 100%;
+  padding: 0 15px 15px 0;
+}
 .hero {
   position: relative;
   width: 100%;
