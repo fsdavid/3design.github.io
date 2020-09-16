@@ -78,7 +78,7 @@
 
   <!-- contact section -->
   <section class="extra-pad">
-    <div class="section-content end">
+    <div class="section-content">
       <h1 class="full-width text-center">Fourth BigBrain Workshop and Launch of HIBALL</h1>
       <h2 class="full-width text-center">June 26, 2020 Virtual Meeting</h2>
       <div>
@@ -97,19 +97,126 @@
           <p>The new Helmholtz International BigBrain analytics and Learning Lab Space at The Neuro</p>
         </div>
         <div class="col-3">
-          
           <p >The scientific program was highly appreciated and time for discussion was well used by the audience. We thank our speakers for their valuable contributions and look forward to exciting developments around the BigBrain in the near future. Please stay tuned via <a href="https://bigbrainproject.org">bigbrainproject.org</a> and follow us on twitter <a href="https://twitter.com/bigbrainproject">@BigBrainProject.org</a></p> 
         </div>
       </div>
-      
-             
-      <img src="images/hiball-map.png" class="spacer">
+      <div class="clear-all"></div>
+    </div>
+  </section>
+  <section class="lt-grey-bg">
+    <div class="section-content">
+      <h2 class="full-width text-center">Participants</h2>
+        <table class="overview">
+          <tbody>
+            <tr>
+              <td>156 Registrants</td>
+              <td>22 Countries</td>
+              <td>100 Joining Live</td>
+              <td>40 Watching Live on Youtube</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="clear-all"></div>
+        <div class="map-col map">
+          <iframe src="https://batchgeo.com/map/3f9b891e6742ee451922b9969ee728fa" frameborder="0" width="100%" height="550" sandbox="allow-top-navigation allow-scripts allow-popups allow-same-origin allow-modals allow-forms" style="border:1px solid #aaa;"></iframe>
+          <em>Click the gear icon to toggle clusters, or view <a href="https://batchgeo.com/map/3f9b891e6742ee451922b9969ee728fa">full screen map</a></em>
+        </div>
+        <div class="map-stats">
+          <table class="tg">
+            <tbody>
+              <tr>
+                <td class="tg-0lax">Canada</td>
+                <td class="tg-lqy6">57</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">China</td>
+                <td class="tg-lqy6">3</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Croatia</td>
+                <td class="tg-lqy6">3</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Cuba</td>
+                <td class="tg-lqy6">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Dominica</td>
+                <td class="tg-lqy6">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">France</td>
+                <td class="tg-lqy6">3</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Germany</td>
+                <td class="tg-lqy6">48</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Iceland</td>
+                <td class="tg-lqy6">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">India </td>
+                <td class="tg-lqy6">5</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Iran</td>
+                <td class="tg-lqy6">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Italy </td>
+                <td class="tg-lqy6">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Mexico</td>
+                <td class="tg-lqy6">2</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Netherlands</td>
+                <td class="tg-lqy6">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Poland</td>
+                <td class="tg-lqy6">2</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Potugal</td>
+                <td class="tg-lqy6">2</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Singapore</td>
+                <td class="tg-lqy6">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Spain</td>
+                <td class="tg-lqy6">22</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Sweden</td>
+                <td class="tg-lqy6">1</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">United Kingdom</td>
+                <td class="tg-lqy6">4</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">United States</td>
+                <td class="tg-lqy6">15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="clear-all"></div>
+      </div>
+      <div class="clear-all"></div>
+  </section>
+  <section>
+    <div class="section-content end">
       <h2 class="full-width text-center">Program and material</h2>
-      <img src="images/desktop.png" class="spacer">
-      <img src="images/desktop2.png" class="spacer">
       <p class="center">For information please email us at <a href="mailto:info@bigbrainproject.org">info@bigbrainproject.org</a></p>
     </div>
-  </section> 
+  </section>    
   <div class="clear-all"></div>
 
   <!-- footer -->
@@ -161,5 +268,33 @@
       }
     });
   });
+</script>
+
+<script>
+$('.map')
+  .click(function(){
+      $(this).find('iframe').addClass('clicked')})
+  .mouseleave(function(){
+      $(this).find('iframe').removeClass('clicked')});
+</script>
+<script type="text/javascript">
+  // The function actually applying the offset
+function offsetAnchor() {
+  if (location.hash.length !== 0) {
+    window.scrollTo(window.scrollX, window.scrollY - 100);
+  }
+}
+
+// Captures click events of all <a> elements with href starting with #
+$(document).on('click', 'a[href^="#"]', function(event) {
+  // Click events are captured before hashchanges. Timeout
+  // causes offsetAnchor to be called after the page jump.
+  window.setTimeout(function() {
+    offsetAnchor();
+  }, 0);
+});
+
+// Set the offset when entering page with hash present in the url
+window.setTimeout(offsetAnchor, 0);
 </script>
 </body></html>

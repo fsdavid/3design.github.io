@@ -1821,3 +1821,73 @@ a.anchor {
 .stick-pad {
   padding-bottom: 134px;
 }
+/* map styles for HIBALL map */
+.map-col {
+  width: 100%;
+  margin: 0 auto 20px;
+}
+.map-stats {
+  width: 100%;
+  margin: 0 auto 20px;
+}
+.tg  {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  height: 550px;
+  background: #fff;
+}
+.tg td{
+  border-color: #aaa;
+  border-style: solid;
+  border-width: 1px;
+  font-size: .9em;
+  overflow: hidden;
+  padding: 5px 5px;
+  word-break: normal;
+}
+.tg .tg-lqy6{
+  text-align: right;
+  vertical-align: top;
+}
+.tg .tg-0lax{
+  text-align: left;
+  vertical-align: top;
+}
+.overview {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+.overview td {
+  border: none;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 5px 5px;
+  word-break: normal;
+  text-align: center;
+}
+@media screen and (min-width: 640px) {
+  .map-col {
+    width: 75%;
+    float: left;
+  }
+  .map-stats {
+    width: 25%;
+    float: left;
+  }
+  .tg td {
+    border-left: 0px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .overview td {
+    font-size: 1.25em;
+  }
+}
+.map iframe {
+  pointer-events: none;
+}
+.map iframe.clicked{
+  pointer-events: auto;
+}
