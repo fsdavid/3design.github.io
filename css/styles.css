@@ -1928,3 +1928,23 @@ a.anchor {
     width: 16.66%;
   }
 }
+.hiballlaunch-card {
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+.hiballlaunch-description {
+  padding: 15px 0 0 0;
+}
+.hiballlaunch-button {
+  float: right;
+  margin-left: 15px;
+}
+@media screen and (min-width: 640px) {
+  .hiballlaunch-description {
+    padding: 0 0 0 15px;
+  }
+}
+
