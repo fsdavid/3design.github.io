@@ -1964,3 +1964,6 @@ a.anchor {
 .hiballlaunch-description.col-3 p {
     line-height: 1.3em;
 }
+.hiball-title-link {
+  font-size: 1rem;
+}
