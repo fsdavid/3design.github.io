@@ -1955,7 +1955,7 @@ a.anchor {
   font-weight: bold;
   -webkit-transition: 0.25s;
   transition: 0.25s;
-  border-radius: 10px;
+  text-decoration: none;
 }
 .small-button:hover {
   background: #DC2627;
