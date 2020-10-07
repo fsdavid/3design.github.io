@@ -1616,9 +1616,16 @@ a.anchor {
   top: -80px;
   visibility: hidden;
 }
+#second-nav {
+  display: none;
+}
 @media screen and (min-width: 640px) {
   a.anchor {
     top: -140px;
+  }
+  #second-nav {
+    display: flex;
+    justify-content: center;
   }
 }
 #tabs a.anchor {
@@ -1826,6 +1833,9 @@ a.anchor {
 }
 .stick-pad {
   padding-bottom: 134px;
+}
+.stick-pad2 {
+  padding-bottom: 118px;
 }
 /* map styles for HIBALL map */
 .map-col {
