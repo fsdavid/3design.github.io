@@ -270,7 +270,7 @@ cite {
   overflow: initial;
 }
 .hero-pic {
-  background: no-repeat center url(../images/backgrounds/background-640.png), linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(218,218,218,1) 100%);
+  background: no-repeat center url(../images/backgrounds/background-640.png), linear-gradient(45deg, rgba(0,0,0,.4) 0%, rgba(218,218,218,1) 100%);
   background-size: cover;
 }
 .hiball-bg {
@@ -347,7 +347,7 @@ cite {
 }
 @media screen and (min-width: 401px) {
   .hero-pic {
-    background: no-repeat center url(../images/backgrounds/background-800.png), linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(218,218,218,1) 100%);
+    background: no-repeat center url(../images/backgrounds/background-800.png), linear-gradient(45deg, rgba(0,0,0,.4) 0%, rgba(218,218,218,1) 100%);
     background-size: cover;
   }
   .hiball-bg {
@@ -406,7 +406,7 @@ cite {
 }
 @media screen and (min-width: 801px) {
   .hero-pic {
-    background: no-repeat center url(../images/backgrounds/background-1200.png), linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(218,218,218,1) 100%);
+    background: no-repeat center url(../images/backgrounds/background-1200.png), linear-gradient(45deg, rgba(0,0,0,.4) 0%, rgba(218,218,218,1) 100%);
     background-size: cover;
   }
   .hiball-bg {
@@ -447,7 +447,7 @@ cite {
 }
 @media screen and (min-width: 1200px) {
   .hero-pic {
-    background: no-repeat center url(../images/backgrounds/background.png), linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(218,218,218,1) 100%);
+    background: no-repeat center url(../images/backgrounds/background.png), linear-gradient(45deg, rgba(0,0,0,.4) 0%, rgba(218,218,218,1) 100%);
     background-size: contain;
     background-position: right;
   }
