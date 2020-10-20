@@ -10,6 +10,7 @@
 
   gtag('config', 'UA-145481065-1');
 </script>
+<!-- favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -20,19 +21,24 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="author" content="Derek Lo @ 3design-dlo.com">
 <!-- general -->
+<link rel="stylesheet" type="text/css" href="slick/slick.css">
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <link rel="stylesheet" type="text/css" href="css/timeline.css" />
 <link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
 <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
 <link href="css/lightbox.css" rel="stylesheet" />
 <meta charset="utf-8">
 <title>the BigBrain</title>
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="This is news page of the website of the BigBrain Project.">
+<meta name="description" content="This is the website of the BigBrain Project.">
 <meta name="keywords" content="Neuro, Brain, Research, Big Data, Science, Medicine">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/drop-down.js"></script>
 <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
+<script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 <div id="main-wrapper">
@@ -64,15 +70,15 @@
           <ul class="nav-dropdown">
             <li><a href="about.html">About Us</a></li>
             <li><a href="references.html">References</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </li>
         <li class="nav-item"><a href="maps-and-models.html">Maps & Models</a></li>
-        <li class="nav-item"><a href="tools-and-services.html">Tools & Services</a></li>
-        <li class="nav-item"><a href="#!" class="active">Community</a>
+        <li class="nav-item"><a href="tools-and-services.html" class="active">Tools & Services</a></li>
+        <li class="nav-item"><a href="#!">Community</a>
           <ul class="nav-dropdown">
             <li><a href="community.html">Our Community</a></li>
-            <li><a href="news.html" class="active">News & Events</a></li>
+            <li><a href="news.html">News & Events</a></li>
             <!-- <li><a href="#!">Teaching</a></li> -->
             <li><a href="https://bigbrain-forum.loris.ca/">Forum</a></li>
           </ul>
@@ -80,127 +86,343 @@
       </ul>
     </div>
   </nav>
- 
-  <!-- news section  -->
-  <section class="extra-pad lt-grey-bg">
-    <div class="section-content flex namecard-holder end lt-grey-bg">
-      <h1 class="full-width text-center spacer">BigBrain News and Events</h1>
-      <!-- start cards -->
-      <!-- template -->
-      <!-- <div class="namecard fullcard">
-        <img src="" class="card-image-square">
-        <div class="tool-name"></div>
-        <div class="tool-maker"><em>date:</em> July 06 2020</div>
-        <div class="tool-description"></div>
-        <a href="" class="tool-link">link <i class="fas fa-arrow-right"></i></a>
-      </div> -->
-      <div class="namecard fullcard">
-        <img src="images/news/hiball-plaque-news.png" class="card-image-square">
-        <div class="tool-name">4th BigBrain Workshop and Launch of HIBALL</div>
-        <div class="tool-maker"><em>date:</em> Sept 21 2020</div>
-        <div class="tool-description">On June 26th we officially launched HIBALL with the virtual 4th BigBrain Workshop. Out distinguished guests spoke about current work as well as the future of the BigBrain. The recordings are now available for viewing.
-        </div>
-        <a href="hiball-launch.html" class="tool-link">Read More <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="namecard fullcard">
-        <img src="images/news/hbhl-hiball.png" class="card-image-square">
-        <div class="tool-name">Helmholtz International BigBrain Analytics and Learning Laboratory</div>
-        <div class="tool-maker"><em>date:</em> Aug 20 2020</div>
-        <div class="tool-description">Reaching data size at the Petabyte scale, HIBALL addresses Big Data challenges. These infrastructure development efforts will be aligned with the developments of the Human Brain Project and the Canadian Healthy Brains for Healthy Lives (HBHL) program to maximize compatibility with the international initiatives.
-        </div>
-        <a href="https://www.humanbrainproject.eu/en/about/project-structure/partnering-projects/hiball/" class="tool-link">Read More <i class="fas fa-arrow-right"></i></a>
-      </div>
 
-      <div class="namecard fullcard">
-        <img src="images/news/research_day_presenter_nerve_tree.png" class="card-image-square">
-        <div class="tool-name">Virtual HBHL Research Day 2020</div>
-        <div class="tool-maker"><em>date:</em> Aug 17 2020</div>
-        <div class="tool-description">HBHL's annual Research Day is designed to showcase the research of trainees (graduate students and postdoctoral fellows) who are working in areas related to <a href="https://www.mcgill.ca/hbhl/files/hbhl/hbhl_strategic_research_plan.pdf">HBHL's goals and priorities.</a></div>
-        <a href="https://www.mcgill.ca/hbhl/events/research-day/research-day-2020" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="namecard fullcard">
-        <img src="images/news/crc-pin.jpg" class="card-image-square">
-        <div class="tool-name">Canada Research Chairs Program announces new and renewed chairs for McGill Profs</div>
-        <div class="tool-maker"><em>date:</em> JULY 9 2020</div>
-        <div class="tool-description">Thirty-four Canada Research Chairs awarded to McGill researchers, in Tier 1 and Tier 2</div>
-        <a href="https://reporter.mcgill.ca/canada-research-chairs-program-announces-new-and-renewed-chairs-for-mcgill-profs/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="namecard fullcard">
-        <img src="images/news/richards.png" class="card-image-square">
-        <div class="tool-name">Predictive cost functions in the neocortex</div>
-        <div class="tool-maker"><em>date:</em> July 06 2020</div>
-        <div class="tool-description">Neural computation is the product of two optimization procedures: natural selection and learning in the individual's lifetime. But, identifying what the neocortex has been optimized for, given its repeated circuit motifs and complex relationship to behaviour, is very challenging.
-        </div>
-        <a href="https://indico-jsc.fz-juelich.de/event/140/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <a class= "anchor" id="news6"></a>
-      <div class="namecard fullcard">
-        <img src="images/news/hiball-plaque.png" class="card-image-square">
-        <div class="tool-name">HIBALL Inauguration Video</div>
-        <div class="tool-maker"><em>date:</em> July 01 2020</div>
-        <div class="tool-description">TWatch the inauguration of the <a href="hiball.html" class="inline-link">HIBALL</a> project. 
-        </div>
-        <a href="https://youtu.be/OB2XICKZaRU" class="tool-link">See Video <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="namecard fullcard">
-        <img src="images/logo-julich.jpg" class="card-image-square">
-        <div class="tool-name">Mikrometer um Mikrometer: Dem Gehirn auf der Spur</div>
-        <div class="tool-maker"><em>date:</em> June 30 2020</div>
-        <div class="tool-description">"Der Startschuss ist gefallen: Das deutsch-kanadische Helmholtz International BigBrain Analytics and Learning Laboratory (HIBALL) nimmt seine Arbeit auf. Das Ziel: ein dreidimensionaler Hirnatlas auf zellulärer Auflösungsstufe. Der Weg: die enge Verzahnung von Künstlicher Intelligenz, Supercomputing und Neurowissenschaften.  Mit dabei: über 40 Wissenschaftler."</div>
-        <a href="https://www.fz-juelich.de/portal/DE/Presse/beitraege/2020/2020-06-26-hiball/_node.html" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="namecard fullcard">
-        <img src="images/news/mcgill-reporter.png" class="card-image-square">
-        <div class="tool-name">New laboratory to advance research in 3D brain modelling</div>
-        <div class="tool-maker"><em>date:</em> June 27 2020</div>
-        <div class="tool-description">"Using the latest artificial intelligence and high-performance computing technologies, HIBALL will build on previous work done by Amunts and Evans on the BigBrain dataset, currently the highest-resolution 3D model of the human brain."</div>
-        <a href="https://reporter.mcgill.ca/new-laboratory-to-advance-research-in-3d-brain-modelling-news/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="namecard fullcard">
-        <img src="images/logo-neuro.jpg" class="card-image-square">
-        <div class="tool-name">4th BigBrain Workshop: Launch of HIBALL</div>
-        <div class="tool-maker"><em>date:</em> June 26 2020</div>
-        <div class="tool-description">This pre-OHBM event is dedicated to the formal inauguration of <a href="hiball.html" class="inline-link">HIBALL</a>. The workshop will be comprised of invited talks covering recent work on the BigBrain data. A poster session will facilitate in-depth discussion and opportunity for young researchers to present their work.
-        </div>
-        <a href="https://www.mcgill.ca/neuro/channels/event/fourth-bigbrain-workshop-launch-helmholtz-international-bigbrain-analytics-learning-laboratory-320401" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="namecard fullcard">
-        <img src="images/logo-hbhl.png" class="card-image-square">
-        <div class="tool-name">New German-Canadian lab decodes the brain with artificial intelligence</div>
-        <div class="tool-maker"><em>date:</em> June 25 2020</div>
-        <div class="tool-description">"The new German-Canadian lab HIBALL aims to create a microscopic 3D map of functional neuroanatomy at the cellular level with the help of high-performance computing and artificial intelligence. The lab will be officially kicked off this Friday with a virtual satellite event at the annual Organisation of Human Brain Mapping (OHBM) conference. HIBALL is led by longtime collaborators Katrin Amunts, Scientific Research Director of the European Human Brain Project (HBP), and Alan Evans, director of Canada’s Healthy Brains for Healthy Lives initiative."</div>
-        <a href="https://www.humanbrainproject.eu/en/follow-hbp/news/new-transatlantic-lab-decodes-the-brain-with-ai/" class="tool-link">Go to Website <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="namecard fullcard">
-        <img src="images/news/nm-logo-4.png" class="card-image-square">
-        <div class="tool-name">New German-Canadian lab decodes the brain with artificial intelligence</div>
-        <div class="tool-maker"><em>date:</em> June 25 2020</div>
-        <div class="tool-description">The new German-Canadian lab HIBALL aims to create a microscopic 3D map of functional neuroanatomy at the cellular level with the help of high-performance computing and artificial intelligence. </div>
-        <a href="https://www.news-medical.net/news/20200625/New-German-Canadian-lab-decodes-the-brain-with-artificial-intelligence.aspx" class="tool-link">Go to Website <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="namecard fullcard">
-          <img src="images/news/ebrains-vid.png" class="card-image-square">
-          <div class="tool-name">New video at ebrains</div>
-          <div class="tool-maker"><em>date:</em> June 19 2020</div>
-          <div class="tool-description">Exploring multimodal neuroscience data using the EBRAINS Knowledge Graph & Multilevel Brain Atlases
-          </div>
-          <a href="https://www.youtube.com/watch?v=BnkAojiq4h8&feature=youtu.be" class="tool-link">See Video <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="clear-all"></div>
-      <div class="pagination">
-        <ul>
-          <li><a href="news.html" class="pagination-active">1</a></li>
-          <li><a href="news-2.html">2</a></li>
+<!-- news section  -->
+  <section class="extra-pad lt-grey-bg">
+    <div class="section-content lt-grey-bg end">
+      <h1 class="full-width text-center">BigBrain News and Events</h1>
+      <h2 id="stickypad" class="full-width text-center">A listing of official and related news & events.</h2>
+      <div  id="tabs">
+        <ul id="second-nav" class="tabs-list">
+          <li>
+            <a href="#tabs-1">
+              <button data-mh="button">
+                BigBrain News
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="#tabs-2">
+              <button data-mh="button">
+                BigBrain Events
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="#tabs-3">
+              <button data-mh="button">
+                Related Events
+              </button>
+            </a>
+          </li>
+<!--           <li>
+            <a href="#tabs-4">
+              <button data-mh="button">
+                Base infrastructure
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="#tabs-5">
+              <button data-mh="button">
+                Supported standards
+              </button>
+            </a>
+          </li> -->
         </ul>
+        <a href="" class="anchor" id="tabs-1"></a>
+        <div class="big-spacer">
+          <h2 class="full-width text-center">BigBrain News</h2>
+          <div id="slick-slider-6" class="slider">
+            <!-- start cards -->
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/hbhl-hiball.png" class="card-image-square">
+                <div class="tool-name">Helmholtz International BigBrain Analytics and Learning Laboratory</div>
+                <div class="tool-maker"><em>date: Aug 20 2020</em></div>
+                <div class="tool-description">Reaching data size at the Petabyte scale, HIBALL addresses Big Data challenges. These infrastructure development efforts will be aligned with the developments of the Human Brain Project and the Canadian Healthy Brains for Healthy Lives (HBHL) program to maximize compatibility with the international initiatives.
+                </div>
+                <a href="https://www.humanbrainproject.eu/en/about/project-structure/partnering-projects/hiball/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a><br>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/richards.png" class="card-image-square">
+                <div class="tool-name">Predictive cost functions in the neocortex</div>
+                <div class="tool-maker"><em>date:</em> July 06 2020</div>
+                <div class="tool-description">Neural computation is the product of two optimization procedures: natural selection and learning in the individual's lifetime. But, identifying what the neocortex has been optimized for, given its repeated circuit motifs and complex relationship to behaviour, is very challenging.
+                </div>
+                <a href="https://indico-jsc.fz-juelich.de/event/140/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/hiball-plaque.png" class="card-image-square">
+                <div class="tool-name">HIBALL Inauguration Video</div>
+                <div class="tool-maker"><em>date:</em> July 01 2020</div>
+                <div class="tool-description">Watch the inauguration of the <a href="hiball.html" class="inline-link">HIBALL</a> project
+                </div>
+                <a href="https://youtu.be/OB2XICKZaRU" class="tool-link">See Video <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/ebrains-vid.png" class="card-image-square">
+                <div class="tool-name">New video at ebrains</div>
+                <div class="tool-maker"><em>date:</em> June 19 2020</div>
+                <div class="tool-description">Exploring multimodal neuroscience data using the EBRAINS Knowledge Graph & Multilevel Brain Atlases
+                </div>
+                <a href="https://www.youtube.com/watch?v=BnkAojiq4h8&feature=youtu.be" class="tool-link">See Video <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/ctv.png" class="card-image-square">
+                <div class="tool-name">Alan Evans speaks of the BigBrain on CTV</div>
+                <div class="tool-maker"><em>date:</em> June 17 2020</div>
+                <div class="tool-description">Alan Evans speaks about the potential neurological impact of Covid-19 as well as the benefits the BigBrain project brings to the future of neuroscience.
+                </div>
+                <a href="https://montreal.ctvnews.ca/video?clipId=1978400&jwsource=cl" class="tool-link">See Video <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/memorial-dr-zilles.jpg" class="card-image-square">
+                <div class="tool-name">Memorial for Dr Karl Zilles</div>
+                <div class="tool-maker"><em>date:</em> May 27 2020</div>
+                <div class="tool-description">With great sadness we say goodbye to Karl Zilles who passed away on 26 April 2020. We lose a brilliant scientist, friend, and key partner of the BigBrain Project.
+                </div>
+                <a href="https://www.fz-juelich.de/inm/inm-1/EN/UeberUns/Mitarbeiter/NachrufZilles/_node.html" class="tool-link">Read Obituary <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/alan-prize.png" class="card-image-square">
+                <div class="tool-name">Alan Evans awarded Killam Prize</div>
+                <div class="tool-maker"><em>date:</em> May 26 2020</div>
+                <div class="tool-description">"I am deeply honoured to receive this award. It is indeed very humbling and motivating to be considered for a prize that has been awarded to so many great Canadian scientists in the past."
+                </div>
+                <a href="https://killamprogram.canadacouncil.ca/prizes#winners" class="tool-link">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/logo-hiball.png" class="card-image-square">
+                <div class="tool-name">HIBALL</div>
+                <div class="tool-maker"><em>date:</em> Jan 20 2020</div>
+                <div class="tool-description">HIBALL, the new German-Canadian Lab, will build on the BigBrain Project’s AI-based 3D reconstruction of brain sections 
+                </div>
+                <div class="clear-all small-spacer"></div>
+                <div>
+                  <img src="images/partner-helmholtz.png" class="col-2">
+                  <img src="images/logo-hbhl.png" class="col-2">
+                </div>
+                <a href="hiball.html" class="tool-link">To HIBALL page <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>  
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/logo-neuro.jpg" class="card-image-square">
+                <div class="tool-name">4th BigBrain Workshop: Launch of HIBALL</div>
+                <div class="tool-maker"><em>date:</em> June 26 2020</div>
+                <div class="tool-description">This pre-OHBM event is dedicated to the formal inauguration of <a href="hiball.html" class="inline-link">HIBALL</a>. The workshop will be comprised of invited talks covering recent work on the BigBrain data. A poster session will facilitate in-depth discussion and opportunity for young researchers to present their work.
+                </div>
+                <a href="https://www.mcgill.ca/neuro/channels/event/fourth-bigbrain-workshop-launch-helmholtz-international-bigbrain-analytics-learning-laboratory-320401" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/ctv.png" class="card-image-square">
+                <div class="tool-name">Alan Evans speaks of the BigBrain on CTV</div>
+                <div class="tool-maker"><em>date:</em> June 17 2020</div>
+                <div class="tool-description">Alan Evans speaks about the potential neurological impact of Covid-19 as well as the benefits the BigBrain project brings to the future of neuroscience.
+                </div>
+                <a href="https://montreal.ctvnews.ca/video?clipId=1978400&jwsource=cl" class="tool-link">See Video <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/thomas-talk.png" class="card-image-square">
+                <div class="tool-name">Thomas Funck presents: Towards an ultra-high resolution 3D neurotransmitter receptor atlas</div>
+                <div class="tool-maker"><em>date:</em> June 3 2020</div>
+                <div class="tool-description">Thomas Funck presented a talk at the Feindel Virtual Brain and Mind Seminar entitled Towards an ultra-high resolution 3D neurotransmitter receptor atlas.
+                </div>
+                <a href="https://www.youtube.com/watch?v=7fDFuksnuGE&list=PLWrLXTCK7baKPUiFFtinlws_JktDMmXQo" class="tool-link">See Video <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/memorial-dr-zilles.jpg" class="card-image-square">
+                <div class="tool-name">Memorial for Dr Karl Zilles</div>
+                <div class="tool-maker"><em>date:</em> May 27 2020</div>
+                <div class="tool-description">With great sadness we say goodbye to Karl Zilles who passed away on 26 April 2020. We lose a brilliant scientist, friend, and key partner of the BigBrain Project.
+                </div>
+                <a href="https://www.fz-juelich.de/inm/inm-1/EN/UeberUns/Mitarbeiter/NachrufZilles/_node.html" class="tool-link">Read Obituary <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <!-- end of slides -->
+          </div>
+        </div>
+        <!-- events -->
+        <a href="" class="anchor" id="tabs-2"></a>
+        <div class="big-spacer">
+          <h2 class="full-width text-center">BigBrain Events</h2>
+          <div id="slick-slider-2" class="slider">
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/hiball-plaque-news.png" class="card-image-square">
+                <div class="tool-name">4th BigBrain Workshop and Launch of HIBALL</div>
+                <div class="tool-maker"><em>date: Sept 21 2020</em></div>
+                <div class="tool-description">On June 26th we officially launched HIBALL with the virtual 4th BigBrain Workshop. Out distinguished guests spoke about current work as well as the future of the BigBrain. The recordings are now available for viewing.
+                </div>
+                <a href="hiball-launch.html" class="tool-link">Read More <i class="fas fa-arrow-right"></i></a><br>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/bbworkshop-2019.jpg" class="card-image-square">
+                <div class="tool-name">BigBrain Workshop 2019 Duesseldorf: AI methods and HPC based processing.</div>
+                <div class="tool-maker"><em>date: Aug 20 2019</em></div>
+                <div class="tool-description">After two successful BigBrain workshops held 2015 in Jülich and 2017 in Montreal, we are pleased to announce the 3rd workshop on the BigBrain and its applications, to be held in Düsseldorf and Jülich on August 20 - 21, 2019. The workshop will last 2 days, with informal reception on Tuesday evening.
+                </div>
+                <a href="https://indico-jsc.fz-juelich.de/event/98/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a><br>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/bbworkshop-2017.jpg" class="card-image-square">
+                <div class="tool-name">BigBrain Workshop 2017 Montreal: From open data to novel applications.</div>
+                <div class="tool-maker"><em>date: Nov 03 2017</em></div>
+                <div class="tool-description">We are pleased to announce an international workshop on BigBrain and its applications, to be held at the Montreal Neurological Institute on November 3rd, 2017. The day will start with a plenary session, with a keynote lecture by Pr. Karl Zilles (Germany).
+                </div>
+                <a href="http://mcin.ca/bigbrain-workshop-2017-montreal-from-open-data-to-novel-applications/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a><br>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/bbworkshop-2015.jpg" class="card-image-square">
+                <div class="tool-name">BigBrain Workshop 2015 Juelich: BigBrain and its applications.</div>
+                <div class="tool-maker"><em>date: Mar 31 2015</em></div>
+                <div class="tool-description">We are pleased to announce a workshop on BigBrain and its applications, to be held in Jülich on March 31st, - April, 1st, 2015. The workshop will last 1.5 days, with informal reception on Tuesday evening and a full-day session on Wednesday, April 1st.
+                </div>
+                <a href="https://www.fz-juelich.de/inm/inm-1/EN/Aktuelles/BigBrain%20meeting/_node.html" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a><br>
+              </div>
+            </div>
+            <!-- End of slides -->
+          </div>
+        </div>
+        <!-- related news -->
+        <a href="" class="anchor" id="tabs-3"></a>
+        <div class="big-spacer">
+          <h2 class="full-width text-center">Related News & Events</h2>
+          <div id="slick-slider-3" class="slider">
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/research_day_presenter_nerve_tree.png" class="card-image-square">
+                <div class="tool-name">Virtual HBHL Research Day 2020</div>
+                <div class="tool-maker"><em>date:</em> Aug 17 2020</div>
+                <div class="tool-description">HBHL's annual Research Day is designed to showcase the research of trainees (graduate students and postdoctoral fellows) who are working in areas related to <a href="https://www.mcgill.ca/hbhl/files/hbhl/hbhl_strategic_research_plan.pdf">HBHL's goals and priorities.</a></div>
+                <a href="https://www.mcgill.ca/hbhl/events/research-day/research-day-2020" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/crc-pin.jpg" class="card-image-square">
+                <div class="tool-name">Canada Research Chairs Program announces new and renewed chairs for McGill Profs</div>
+                <div class="tool-maker"><em>date:</em> JULY 9 2020</div>
+                <div class="tool-description">Thirty-four Canada Research Chairs awarded to McGill researchers, in Tier 1 and Tier 2</div>
+                <a href="https://reporter.mcgill.ca/canada-research-chairs-program-announces-new-and-renewed-chairs-for-mcgill-profs/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/midl2020.jpg" class="card-image-square">
+                <div class="tool-name">Medical Imaging with Deep Learning: Montreal</div>
+                <div class="tool-maker"><em>date:</em> July 06-08 2020</div>
+                <div class="tool-description">The MIDL conference aims to be a forum for deep learning researchers, clinicians and health-care companies to apply deep learning based automatic image analysis in disease screening, diagnosis, prognosis, treatment selection and treatment monitoring.
+                </div>
+                <a href="https://2020.midl.io/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a><br>
+                <a href="https://www.youtube.com/watch?v=wNJQScMgpsI&feature=youtu.be" class="tool-link">See Video on Youtube <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/alan-prize.png" class="card-image-square">
+                <div class="tool-name">Alan Evans awarded Killam Prize</div>
+                <div class="tool-maker"><em>date:</em> May 26 2020</div>
+                <div class="tool-description">"I am deeply honoured to receive this award. It is indeed very humbling and motivating to be considered for a prize that has been awarded to so many great Canadian scientists in the past."
+                </div>
+                <a href="https://killamprogram.canadacouncil.ca/prizes#winners" class="tool-link">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/midl2020.jpg" class="card-image-square">
+                <div class="tool-name">Medical Imaging with Deep Learning: Montreal</div>
+                <div class="tool-maker"><em>date:</em> July 06-08 2020</div>
+                <div class="tool-description">The MIDL conference aims to be a forum for deep learning researchers, clinicians and health-care companies to apply deep learning based automatic image analysis in disease screening, diagnosis, prognosis, treatment selection and treatment monitoring.
+                </div>
+                <a href="https://2020.midl.io/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a><br>
+                <a href="https://www.youtube.com/watch?v=wNJQScMgpsI&feature=youtu.be" class="tool-link">See Video on Youtube <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/ohbm2020.jpg" class="card-image-square">
+                <div class="tool-name">OHBM 2020</div>
+                <div class="tool-maker"><em>date:</em> June 26-30 2020</div>
+                <div class="tool-description">The Organization for Human Brain Mapping Annual Meeting is the place to learn about the latest international research across modalities in human brain mapping.
+                </div>
+                <a href="https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=3958" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/caiac2019.jpg" class="card-image-square">
+                <div class="tool-name">Canadian Conference on Artificial Intelligence</div>
+                <div class="tool-maker"><em>date:</em> May 12-15 2020</div>
+                <div class="tool-description">This conference will bring together hundreds of leaders in research, industry, and government, as well as Canada's most accomplished students. Past events:
+                 <a href="https://www.caiac.ca/en/conferences/canadianai-2019/home" class="news-inline-link">CAIAC 2019</a>
+               </div>
+               <a href="https://www.caiac.ca/en/conferences/canadianai-2020/home" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+             </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/crm2019.jpg" class="card-image-square">
+                <div class="tool-name">MAIN conference</div>
+                <div class="tool-maker"><em>date:</em> Nov 14-17 2019</div>
+                <div class="tool-description">The Montreal Artificial Intelligence and Neuroscience event is now in its third edition and has gained in popularity. Past events:
+                 <a href="http://www.crm.umontreal.ca/2018/MAIN2018/index_e.php" class="news-inline-link">MAIN 2018</a>
+                 <a href="http://www.crm.umontreal.ca/2017/IntArt17/index_e.php">IntArt 2017</a>
+               </div>
+               <a href="http://www.crm.umontreal.ca/2019/MAIN2019/index_e.php" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+             </div>
+            </div>
+            <div class="slider-card-holder">
+              <div class="frontpage-card" data-mh="cards">
+                <img src="images/news/symposium-ai-2019.jpg" class="card-image-square">
+                <div class="tool-name">Montreal AI Symposium</div>
+                <div class="tool-maker"><em>date:</em> Sept 6 2019</div>
+                <div class="tool-description">The Montreal AI Symposium aims at gathering experts and professionals interested in fundamental advances and applications of artificial intelligence, with an emphasis on machine learning, deep learning and related approaches.
+                </div>
+                <a href="http://montrealaisymposium.com/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of news -->
       </div>
     </div>
   </section>
- 
+  <div class="clear-all"></div>
+
+
   <!-- footer -->
   <footer>  
     <blockquote class="quote-holder">
       <img class="quote-image" src="images/icon-aquisition.png">
-      <p class="quote-text">Share your news and events on <a href="https://bigbrain-forum.loris.ca">Discourse</a></p>
+      <p class="quote-text">An exciting new opportunity.</p>
     </blockquote>
     <div class="section-content flex">
       <a href="https://www.fz-juelich.de/">
@@ -210,12 +432,26 @@
         <img src="images/logo-mcgill.png">
       </a>
     </div>
-    <p class="center" style="color: #fff;">For information please email us at <a href="mailto:info@bigbrainproject.org">info@bigbrainproject.org</a></p>
+    <p class="center" style="color: #fff;">For information please email us at <a href="mailto:info@bigbrainproject.org">info@bigbrainproject.org</a>
   </footer>
   <div class="brand-border-1"></div>
   <div class="brand-border-2"></div>
   <div class="brand-border-3"></div>
 </div>
+
+<script>
+  $(function(){
+    $(".accordian h3").click(function(e){
+    $(".accordian ul p.answer").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+
+<script src="js/lightbox.js"></script>
+
 <script>
   $(function(){
     $("#showmenu").click(function(e){
@@ -226,17 +462,216 @@
     });
   });
 </script>
-<script src="js/lightbox.js"></script>
-<script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true,
-      'disableScrolling': true
-    })
-</script>
+
 <script type="text/javascript">
   $(function() {
     $('.item').matchHeight();
   });
 </script>
+
+<script type="text/javascript">
+   $(document).on('ready', function() {
+    $('#slick-slider-6').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      draggable: true,
+      mobilefirst: true,
+      pauseonhover: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  });
+    $('#slick-slider-2').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      draggable: true,
+      mobilefirst: true,
+      pauseonhover: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  });
+    $('#slick-slider-3').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      draggable: true,
+      mobilefirst: true,
+      pauseonhover: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  });
+    $('#slick-slider-4').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      draggable: true,
+      mobilefirst: true,
+      pauseonhover: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  });
+    $('#slick-slider-5').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      draggable: true,
+      mobilefirst: true,
+      pauseonhover: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  });
+});
+</script>
+
+<script>
+$("document").ready(function($){
+    var $stick = $('#second-nav');
+    var $pad = $('#stickypad');
+    var $win = $(window);
+    // var winH = $win.height() + 120;   // Get the window height.
+
+    $win.on("scroll", function () {
+        if ($(this).scrollTop() > 119 ) {
+            $stick.addClass("stick");
+            $pad.addClass("stick-pad2");
+        } else {
+            $stick.removeClass("stick");
+            $pad.removeClass("stick-pad2");
+        }
+    })
+});
+</script>
+
+
 </body></html>
