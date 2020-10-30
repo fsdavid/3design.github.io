@@ -1217,7 +1217,8 @@ p.quote-text {
 #slick-slider-3 .frontpage-card,
 #slick-slider-4 .frontpage-card,
 #slick-slider-5 .frontpage-card,
-#slick-slider-6 .frontpage-card {
+#slick-slider-6 .frontpage-card,
+#slick-slider-7 .frontpage-card {
   margin: 0;
 }
 .slider-card-holder {
@@ -1244,7 +1245,8 @@ p.quote-text {
   #slick-slider-3 .frontpage-card,
   #slick-slider-4 .frontpage-card,
   #slick-slider-5 .frontpage-card,
-  #slick-slider-6 .frontpage-card   {
+  #slick-slider-6 .frontpage-card,
+  #slick-slider-7 .frontpage-card   {
     width: 100%;
   }
 }
