@@ -140,6 +140,9 @@ button:hover {
 .med-grey-bg {
   background-color: #ececec;
 }
+.black-bg {
+  background-color: #000;
+}
 .center {
   text-align: center;
 }
@@ -291,6 +294,10 @@ cite {
 }
 .community-bg {
   background: no-repeat center url(../images/backgrounds/palomero-gallagher-thomas-funck-640.jpg);
+  background-size: cover;
+}
+.winterschool-bg {
+  background: no-repeat center url(../images/backgrounds/winter-school.jpg);
   background-size: cover;
 }
 .hero-content {
