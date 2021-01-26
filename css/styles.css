@@ -843,19 +843,20 @@ ul.hide {
 }
 .quad-image {
   position: relative;
-  width: calc(50% - 30px);
+  width: calc(100% - 30px);
   margin: 15px;
-}
-@media screen and (min-width: 500px) {
-  .quad-image {
-    width: calc(33% - 30px);
-    margin: 15px;
-    max-width: 150px;
-  }
+  max-width: 350px;
 }
 @media screen and (min-width: 800px) {
   .quad-image {
-    /*width: calc(20% - 30px);*/
+    width: calc(50% - 30px);
+    margin: 15px;
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .quad-image {
+    width: calc(33% - 30px);
     margin: 15px;
     max-width: 350px;
   }
@@ -921,6 +922,7 @@ ul.hide {
     width: calc(50% - 20px);
   }
 }
+
 /*Hiball Animations*/
 .scene {
   perspective: 1000px;
