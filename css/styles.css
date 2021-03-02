@@ -1897,6 +1897,10 @@ a.anchor {
   word-break: normal;
   text-align: center;
 }
+.map img,
+.ws-height {
+  height: auto;
+}
 @media screen and (min-width: 640px) {
   .map-col {
     width: 75%;
@@ -1909,10 +1913,18 @@ a.anchor {
   .tg td {
     border-left: 0px;
   }
+  .map img,
+  .ws-height {
+    height: 351px;
+  }
 }
 @media screen and (min-width: 800px) {
   .overview td {
     font-size: 1.25em;
+  }
+  .map img,
+  .ws-height {
+    height: 400px;
   }
 }
 .map iframe {
