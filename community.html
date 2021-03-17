@@ -92,10 +92,8 @@
       <div class="hero-content-grid">
         <div class="hero-content-container">
           <h1>The BigBrain Community</h1>
-          <p>The BigBrain Project has a thriving community of users and developers. We hold biennial conferences to meet (old and new) members, share and probe new ideas, and provide updates about the various activities around the data. Visit our website -- see who we are, learn what we do -- share your BigBrain data-related stories and work (publications, results, derived data, tools) - join our community to start a conversation, or to keep one going.
-</p> 
+          <p>The BigBrain Project has a thriving community of users and developers. We hold biennial conferences to meet (old and new) members, share and probe new ideas, and provide updates about the various activities around the data. Visit our website -- see who we are, learn what we do -- share your BigBrain data-related stories and work (publications, results, derived data, tools) - join our community to start a conversation, or to keep one going.</p> 
         </div>
-        
       </div>
     </div>
   </section>
@@ -128,6 +126,30 @@
     </div>  
   </section>
 
+  <div class="clear-all"></div>
+
+<!-- feature section  -->
+<!-- <section class="extra-pad">
+    <div class="section-content">
+      <h1 class="full-width text-center">Featured</h1>
+      <h2 class="full-width text-center">Community spotlight</h2>
+      <div id="slick-slider-4" class="slider"> -->
+        <!-- start cards -->
+        <!-- <div class="slider-card-holder">
+          <div class="frontpage-card" data-mh="toolcard">
+            <div class="small-spacer">
+              <a href="images/gallery/konrad-1.jpg" data-lightbox="bbimages">
+                <img src="images/gallery/konrad-1.jpg">
+              </a>
+            </div>
+            <div class="tool-maker">
+              <strong>Konrad Wagstyl et al</strong>, <a href="https://www.biorxiv.org/content/10.1101/580597v1">BigBrain Cortical layer segmentation,</a> 2019
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
   <div class="clear-all"></div>
 
 <!-- gallery section  -->
@@ -407,6 +429,46 @@
 <script type="text/javascript">
    $(document).on('ready', function() {
     $('#slick-slider-3').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      draggable: true,
+      mobilefirst: true,
+      pauseonhover: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplayspeed: 4000,
+            infinite: false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  });
+});
+</script>
+<script type="text/javascript">
+   $(document).on('ready', function() {
+    $('#slick-slider-4').slick({
       dots: true,
       infinite: true,
       autoplay: true,
