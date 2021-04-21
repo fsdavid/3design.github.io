@@ -303,6 +303,10 @@ cite {
   background: no-repeat center url(../images/backgrounds/winter-school.jpg);
   background-size: cover;
 }
+.featured-bg {
+  background: no-repeat url(../images/featured/featured-bg.png);
+  background-size: cover;
+}
 .hero-content {
   position: relative;
   margin-top: 70px;

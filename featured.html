@@ -88,6 +88,22 @@
     </div>
   </nav>
 
+    <!-- intro section -->
+  <section class="hero featured-bg">
+    <div class="grid-container">
+      <div class="hero-content-grid">
+        <div class="hero-content-container">
+          <h1>Featured: BigBrain Warp</h1>
+          <p>BigBrain is a singular dataset that offers an ultra-high-resolution (20µm) volumetric reconstruction of a sliced and stained post-mortem human brain (Amunts et al. 2013). BigBrainWarp aims to enable integration of BigBrain with neuroimaging and other neurobiological modalities, helping a wide range of neuroscientists to utilise the cytoarchitectural information encoded in BigBrain for multi-scale neuroscientific discovery.</p>
+          <div class="hero-flex">
+            <a href="https://bigbrainwarp.readthedocs.io/en/latest/"><button>view the slides</button></a>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="clear-all"></div>
+
 <!-- news section  -->
   <section class="extra-pad lt-grey-bg">
     <div class="section-content lt-grey-bg end">
@@ -442,17 +458,19 @@ $("document").ready(function($){
     var $stick = $('#second-nav');
     var $pad = $('#stickypad');
     var $win = $(window);
-    // var winH = $win.height() + 120;   // Get the window height.
+    var winH = $win.height() + 120;   // Get the window height.
 
     $win.on("scroll", function () {
-        if ($(this).scrollTop() > 119 ) {
+        if ($(this).scrollTop() > winH ) {
             $stick.addClass("stick");
-            $pad.addClass("stick-pad2");
+            $pad.addClass("stick-pad");
         } else {
             $stick.removeClass("stick");
-            $pad.removeClass("stick-pad2");
+            $pad.removeClass("stick-pad");
         }
-    })
+    }).on("resize", function(){ // If the user resizes the window
+       winH = $(this).height(); // you'll need the new height value
+    });
 });
 </script>
 
