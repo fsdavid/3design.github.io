@@ -1,6 +1,6 @@
 const zoteroId = '4306971'
 let receivedData = []
-let sortBy = 'titleAsc'
+let sortBy = 'dateDesc'
 let searchString = ''
 let loading = false
 
@@ -51,27 +51,34 @@ const fetchReferences = ({sort = null, direction= null, queryString = null} = {}
     const listEl = document.getElementById('ref-list-el')
     if(listEl) listEl.remove()
 
+
     fetch(`https://api.zotero.org/groups/${zoteroId}/items/top?format=json&limit=2000
                     &direction=${direction}&sort=${sort}` + (queryString? `&qmode=everything&q=${queryString}` : ''))
         .then(res => res.json())
         .then(data => {
 
+            const getCreatorName = (creators) => {
+                return creators.map(c => c.name? c.name : ` ${c.firstName && c.firstName} ${c.lastName && c.lastName}`)
+            }
+
             disableLoading()
             receivedData = data.map(d => d.data)
 
             const listEl = document.getElementById('ref-list-el')
-            if(listEl) listEl.remove()
 
             const html = `<div id="ref-list-el">${data.map((d, i) =>
                 `<p className="reference julich-bar"
-                    onclick="openNav(${i})"
                     class="lt-grey-bg ref-item">
                     <span style="font-size: 20px">${d.data.itemType === 'journalArticle'? '📄' : d.data.itemType === 'thesis'? '🎓' : d.data.itemType === 'conferencePaper'? '📝' : d.data.itemType === 'report'? '📈' : '🖥'}</span>
-                    <span class="ref-title">${d.data.title}.</span>                    
-                    <i>${d.data.creators.map((c, i) => {return c.firstName + ' ' + c.lastName}).join(', ')}</i>
-                    ${d.data.accessDate.substring(0, 4)}
-                    ${d.data.journalAbbreviation}, 
-                     <a href="${d.data.url}" target="_blank">link</a>
+                    <span onclick="openNav(${i})" class="ref-title">${d.data.title}.</span>      
+                    <br>
+              
+                    <i>${getCreatorName(d.data.creators)},</i>
+                    ${d.data.date},
+                    ${d.data.publicationTitle? `${d.data.publicationTitle},` : d.data.proceedingsTitle? `${d.data.proceedingsTitle},` : ''}
+                    ${d.data.volume? `${d.data.volume}(${d.data.issue}),` : ''}
+                    ${d.data.pages? `${d.data.pages},` : ''}
+                    ${d.data.DOI? `<a href="https://doi.org/${d.data.DOI}" target="_blank">${d.data.DOI}</a>` : ''}
                 </p><br>`
             ).join('')}</div>`
 
@@ -90,10 +97,17 @@ const fetchItemChildren = (itemKey) => {
             const selectedItemChildren = data.map(d => d.data)
 
 
+            const notesTabEl = document.getElementById('Notes-button')
+            notesTabEl.style.display = 'none'
+            const attachmentsTabEl = document.getElementById('Attachments-button')
+            attachmentsTabEl.style.display = 'none'
+
             const notesPanel = document.getElementById('ref-preview-panel-note')
             if (notesPanel) {
                 const notes = selectedItemChildren.filter(i => i.itemType === 'note')
                 if (notes.length) {
+                    notesTabEl.style.display = 'inline'
+
                     const noteHtml = `<div id="ref-detail-note">${notes.map(n => (`<div class="ref-tag lt-grey-bg">${n.note}</div>`)).join('')}</div>`
                     notesPanel.insertAdjacentHTML('beforeend', noteHtml)
                 }
@@ -103,6 +117,7 @@ const fetchItemChildren = (itemKey) => {
             if(attachmentPanel) {
                 const attachments = selectedItemChildren.filter(i => i.itemType === 'attachment')
                 if (attachments.length) {
+                    attachmentsTabEl.style.display = 'inline'
                     const attachmentHtml = `<div id="ref-detail-attachment">${attachments.map(a => (`<p><a href="${a.url}" target="_blank">${a.title} ${a.filename? `(${a.filename})` : ''}</a></p>`)).join('')}</div>`
                     attachmentPanel.insertAdjacentHTML('beforeend', attachmentHtml)
                 }
@@ -238,7 +253,7 @@ const openNav = (i = 0) => {
         
         ${ref.DOI ? `<div class="flex lt-grey-bg ref-detail-row">
             <div class="ref-detail-row-key">DOI</div>
-            <div class="ref-detail-row-value">${ref.DOI}</div>
+            <div class="ref-detail-row-value">${`<a href="https://doi.org/${ref.DOI}" target="_blank">${ref.DOI}</a>`}</div>
         </div>` : ''}
         
         ${ref.ISSN ? `<div class="flex lt-grey-bg ref-detail-row">
@@ -252,12 +267,13 @@ const openNav = (i = 0) => {
         </div>` : ''}
         ${ref.url ? `<div class="flex lt-grey-bg ref-detail-row">
             <div class="ref-detail-row-key">URL</div>
-            <div class="ref-detail-row-value">${ref.url}</div>
+            <div class="ref-detail-row-value">${`<a href="${ref.url}" target="_blank">${ref.url}</a>`}</div>
         </div>` : ''}
-        ${ref.accessDate ? `<div class="flex lt-grey-bg ref-detail-row">
+        
+        <!--${ref.accessDate ? `<div class="flex lt-grey-bg ref-detail-row">
             <div class="ref-detail-row-key">Accessed</div>
             <div class="ref-detail-row-value">${ref.accessDate}</div>
-        </div>` : ''}
+        </div>` : ''}-->
 
         ${ref.archive ? `<div class="flex lt-grey-bg ref-detail-row">
             <div class="ref-detail-row-key">Archive</div>
@@ -297,15 +313,26 @@ const openNav = (i = 0) => {
       </div>
     </div>`
 
-    const tagHtml = `<div id="ref-detail-tag" class="flex-column">
-        ${ref.tags && ref.tags.length? ref.tags.map(tag => 
-        (`<div class="ref-tag lt-grey-bg">${tag.tag}</div>`)).join('') 
-        : ''}
-    </div>`
-
     selectRefTab('Info')
     document.getElementById('ref-preview-panel-info').insertAdjacentHTML('beforeend', infoHtml)
-    document.getElementById('ref-preview-panel-tag').insertAdjacentHTML('beforeend', tagHtml)
+
+
+
+    const tagsTabEl = document.getElementById('Tags-button')
+
+    if (ref.tags && ref.tags.length) {
+        tagsTabEl.style.display = 'inline'
+        const tagHtml = `<div id="ref-detail-tag" class="flex-column">
+        ${ref.tags && ref.tags.length? ref.tags.map(tag =>
+                (`<div class="ref-tag lt-grey-bg">${tag.tag}</div>`)).join('')
+            : ''}
+        </div>`
+
+        document.getElementById('ref-preview-panel-tag').insertAdjacentHTML('beforeend', tagHtml)
+    } else {
+        tagsTabEl.style.display = 'none'
+    }
+
 }
 
 const closeNav = () => {

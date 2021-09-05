@@ -99,12 +99,12 @@
           <label for="sort-ref">Sort by:</label>
 
           <select name="sort-ref" id="sort-ref" onchange="sortChanged()">
-            <option value="titleAsc">Name asc</option>
-            <option value="titleDesc">Name desc</option>
-            <option value="itemTypeAsc">Type asc</option>
-            <option value="itemTypeDesc">Type desc</option>
-            <option value="dateAsc">Date asc</option>
             <option value="dateDesc">Date desc</option>
+            <option value="dateAsc">Date asc</option>
+<!--            <option value="titleDesc">Name desc</option>-->
+<!--            <option value="titleAsc">Name asc</option>-->
+            <option value="itemTypeDesc">Type desc</option>
+            <option value="itemTypeAsc">Type asc</option>
           </select>
         </div>
       </div>
@@ -118,9 +118,9 @@
 
           <div class="ref-tab">
             <button class="tab-link" id="Info-button" onclick="selectRefTab('Info')">Info</button>
-            <button class="tab-link" id="Notes-button" onclick="selectRefTab('Notes')">Notes</button>
-            <button class="tab-link" id="Tags-button" onclick="selectRefTab('Tags')">Tags</button>
-            <button class="tab-link" id="Attachments-button" onclick="selectRefTab('Attachments')">Attachments</button>
+            <button class="tab-link display-none" id="Notes-button" onclick="selectRefTab('Notes')">Notes</button>
+            <button class="tab-link display-none" id="Tags-button" onclick="selectRefTab('Tags')">Tags</button>
+            <button class="tab-link display-none" id="Attachments-button" onclick="selectRefTab('Attachments')">Attachments</button>
           </div>
 
           <div id="Info" class="tab-content">

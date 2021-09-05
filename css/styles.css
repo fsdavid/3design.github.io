@@ -2115,6 +2115,10 @@ a.anchor {
   background-color: #ccc;
 }
 
+.display-none {
+  display: none;
+}
+
 .tab-content {
   display: none;
   padding: 6px 12px;
